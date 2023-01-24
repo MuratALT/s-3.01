@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Tableau de Bord{% endtrans %}{% endblock %}
+
+{% block body %}
+
+
+    <div class="container">
+
+        {% for message in app.flashes('message') %}
+            <div class="alert alert-success m-3">
+                {{message}}
+            </div>
+        {% endfor %}
+        {% for message in app.flashes("success") %}
+            <div class="alert alert-success alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+
+
+        {{ form_start(form) }}
+
+        {{ form_row(form.referent) }}
+        {{ form_row(form.sujet) }}
+        {{ form_row(form.message) }}
+
+
+        <div class="d-flex justify-content-center">
+            {{ form_row(form.submit) }}
+
+            {{ form_end(form) }}
+        </div>
+
+
+
+
+
+
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{"Erreur 403"|trans}}{% endblock %}
+{% block body %}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titre-page">{{ "Erreur"|trans }}</h1>
+                <p>{{"Une erreur est survenue, veuillez réessayer ultérieurement."|trans}}</p>
+                <div class="d-flex justify-content-center">
+                    <img src="{{ asset('img/403.png') }}" alt="Erreur 403" class="img-responsive center-block text-center" width="30%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

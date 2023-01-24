@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="de" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="YdaVBBA" resname="Connexion">
+        <source>Connexion</source>
+        <target>Verbindung</target>
+      </trans-unit>
+      <trans-unit id="brS4EVB" resname="AUTHENTICATION">
+        <source>AUTHENTICATION</source>
+        <target>AUTHENTIFIZIERUNG</target>
+      </trans-unit>
+      <trans-unit id="dS_ohLO" resname="AUTHENTIFICATION">
+        <source>AUTHENTIFICATION</source>
+        <target>AUTHENTIFIZIERUNG</target>
+      </trans-unit>
+      <trans-unit id="B_1sz2v" resname="Mail">
+        <source>Mail</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id=".5yLjAZ" resname="Mot de passe">
+        <source>Mot de passe</source>
+        <target>Passwort</target>
+      </trans-unit>
+      <trans-unit id="ssEkU20" resname="Nom">
+        <source>Nom</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="_1_eksG" resname="Déconnexion">
+        <source>Déconnexion</source>
+        <target>Abmelden</target>
+      </trans-unit>
+      <trans-unit id="i0lTg3x" resname="INSCRIPTION">
+        <source>INSCRIPTION</source>
+        <target>Registrierung</target>
+      </trans-unit>
+      <trans-unit id="4yW.j5A" resname="Prénom">
+        <source>Prénom</source>
+        <target>Vorname</target>
+      </trans-unit>
+      <trans-unit id="1ncZDgq" resname="Service">
+        <source>Service</source>
+        <target>Abteilung</target>
+      </trans-unit>
+      <trans-unit id="6eWsxA4" resname="Sélectionner un département">
+        <source>Sélectionner un département</source>
+        <target>Wählen Sie eine Abteilung</target>
+      </trans-unit>
+      <trans-unit id="Rkn0tV4" resname="Date de naissance">
+        <source>Date de naissance</source>
+        <target>Geburtsdatum</target>
+      </trans-unit>
+      <trans-unit id="Ems6dlJ" resname="jj-mm-aaaa">
+        <source>jj-mm-aaaa</source>
+        <target>tt-mm-jjjj</target>
+      </trans-unit>
+      <trans-unit id="Ii_d6ee" resname="Fonction">
+        <source>Fonction</source>
+        <target>Funktion</target>
+      </trans-unit>
+      <trans-unit id="IECnipr" resname="Sélectionner une fonction">
+        <source>Sélectionner une fonction</source>
+        <target>eine Funktion auswählen</target>
+      </trans-unit>
+      <trans-unit id="PCX0_17" resname="S'inscrire">
+        <source>S'inscrire</source>
+        <target>Registrieren</target>
+      </trans-unit>
+      <trans-unit id="nP8SJ6B" resname="Besoin d'un compte ?">
+        <source>Besoin d'un compte ?</source>
+        <target>Benötigen Sie ein Konto ?</target>
+      </trans-unit>
+      <trans-unit id="8BaKkQV" resname="INSCRIVEZ-VOUS">
+        <source>INSCRIVEZ-VOUS</source>
+        <target>MELDEN SIE SICH</target>
+      </trans-unit>
+      <trans-unit id="UTHJPFA" resname="Répétez le mot de passe">
+        <source>Répétez le mot de passe</source>
+        <target>Passwort wiederholen</target>
+      </trans-unit>
+      <trans-unit id="UNBlBwg" resname="Modifier ses informations">
+        <source>Modifier ses informations</source>
+        <target>Ändern Sie Ihre Informationen</target>
+      </trans-unit>
+      <trans-unit id="V73ywaC" resname="Modifier son mot de passe">
+        <source>Modifier son mot de passe</source>
+        <target>Ändern Sie Ihr Passwort</target>
+      </trans-unit>
+      <trans-unit id="im1OF09" resname="Votre email doit contenir au moins {{ limit }} caractères">
+        <source>Votre email doit contenir au moins {{ limit }} caractères</source>
+        <target>Ihre E-Mail muss mindestens {{ limit }} Zeichen enthalten</target>
+      </trans-unit>
+      <trans-unit id="9F.OHy8" resname="Votre nom doit contenir au moins {{ limit }} caractères">
+        <source>Votre nom doit contenir au moins {{ limit }} caractères</source>
+        <target>Ihr Name muss mindestens {{ limit }} Zeichen enthalten</target>
+      </trans-unit>
+      <trans-unit id="N3CY.B3" resname="Votre prénom doit contenir au moins {{ limit }} caractères">
+        <source>Votre prénom doit contenir au moins {{ limit }} caractères</source>
+        <target>Ihr Vorname muss mindestens {{ limit }} Zeichen enthalten</target>
+      </trans-unit>
+      <trans-unit id="KN9EErm" resname="Veuillez renseigner une date de naissance">
+        <source>Veuillez renseigner une date de naissance</source>
+        <target>Bitte geben Sie ein Geburtsdatum ein</target>
+      </trans-unit>
+      <trans-unit id="h8bnOV4" resname="Veuillez renseigner une date de naissance valide">
+        <source>Veuillez renseigner une date de naissance valide</source>
+        <target>Bitte geben Sie ein gültiges Geburtsdatum ein</target>
+      </trans-unit>
+      <trans-unit id="dn8SVHS" resname="Veuillez renseigner un département">
+        <source>Veuillez renseigner un département</source>
+        <target>Bitte geben Sie eine Abteilung ein</target>
+      </trans-unit>
+      <trans-unit id="u9KJ5az" resname="Veuillez renseigner votre fonction">
+        <source>Veuillez renseigner votre fonction</source>
+        <target>Bitte füllen Sie Ihre Funktion aus</target>
+      </trans-unit>
+      <trans-unit id="RULWH19" resname="Mot de passe oublié">
+        <source>Mot de passe oublié</source>
+        <target>Haben Sie Ihr Passwort vergessen</target>
+      </trans-unit>
+      <trans-unit id="J04T_C3" resname="Réinitialisez votre mot de passe">
+        <source>Réinitialisez votre mot de passe</source>
+        <target>Setze dein Passwort zurück</target>
+      </trans-unit>
+      <trans-unit id="yRWwY3b" resname="Entrez votre adresse e-mail et nous vous enverrons un&#10;                    lien pour réinitialiser votre mot de passe.">
+        <source>Entrez votre adresse e-mail et nous vous enverrons un
+                    lien pour réinitialiser votre mot de passe.</source>
+        <target>Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen eine
+                     Link zum Zurücksetzen Ihres Passworts.</target>
+      </trans-unit>
+      <trans-unit id="ZCWD868" resname="Envoyer la demande">
+        <source>Envoyer la demande</source>
+        <target>Anfrage senden</target>
+      </trans-unit>
+      <trans-unit id="WzXg41W" resname="Réinitialiser">
+        <source>Réinitialiser</source>
+        <target>Zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="kJgi9GH" resname="Réinitialisation du mot de passe">
+        <source>Réinitialisation du mot de passe</source>
+        <target>Passwort zurücksetzen</target>
+      </trans-unit>
+      <trans-unit id="1mRfSz4" resname="Vérifiez vos mail">
+        <source>Vérifiez vos mail</source>
+        <target>Überprüfe deine Emails</target>
+      </trans-unit>
+      <trans-unit id="_310hF_" resname="Si un compte correspondant à votre adresse e-mail existe, un e-mail vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe.">
+        <source>Si un compte correspondant à votre adresse e-mail existe, un e-mail vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe.</source>
+        <target>Wenn ein Konto vorhanden ist, das mit Ihrer E-Mail-Adresse übereinstimmt, wurde gerade eine E-Mail mit einem Link gesendet, mit dem Sie Ihr Passwort zurücksetzen können.</target>
+      </trans-unit>
+      <trans-unit id="WvYM7DZ" resname="Ce lien expire dans">
+        <source>Ce lien expire dans</source>
+        <target>Dieser Link läuft ab in</target>
+      </trans-unit>
+      <trans-unit id="gikaCS0" resname="Si vous ne recevez pas d'e-mail, veuillez vérifier votre dossier spam ou">
+        <source>Si vous ne recevez pas d'e-mail, veuillez vérifier votre dossier spam ou</source>
+        <target>Sollten Sie keine E-Mail erhalten, prüfen Sie bitte Ihren Spam-Ordner bzw</target>
+      </trans-unit>
+      <trans-unit id="OTgLvK0" resname="réessayer">
+        <source>réessayer</source>
+        <target>Versuch es noch einmal</target>
+      </trans-unit>
+      <trans-unit id="kXLo7sm" resname="Bonjour">
+        <source>Bonjour</source>
+        <target>Hallo</target>
+      </trans-unit>
+      <trans-unit id="NiNa.XU" resname="Pour réinitialiser votre mot de passe, veuillez visiter le lien suivant">
+        <source>Pour réinitialiser votre mot de passe, veuillez visiter le lien suivant</source>
+        <target>Um Ihr Passwort zurückzusetzen, besuchen Sie bitte den folgenden Link</target>
+      </trans-unit>
+      <trans-unit id="A0khFX6" resname="Merci !">
+        <source>Merci !</source>
+        <target>Vielen Dank !</target>
+      </trans-unit>
+      <trans-unit id="gbnGRZK" resname="Veuillez renseigner votre email">
+        <source>Veuillez renseigner votre email</source>
+        <target>Bitte geben Sie ihre E-Mail-Adresse ein</target>
+      </trans-unit>
+      <trans-unit id="Sh4FLqS" resname="Votre demande de réinitialisation de mot de passe">
+        <source>Votre demande de réinitialisation de mot de passe</source>
+        <target>Ihre Anfrage zum Zurücksetzen des Passworts</target>
+      </trans-unit>
+      <trans-unit id="o9ZcpWl" resname="Nouveau mot de passe">
+        <source>Nouveau mot de passe</source>
+        <target>Neues Passwort</target>
+      </trans-unit>
+      <trans-unit id="VPf3JPL" resname="Votre mot de passe doit comporter au moins {{ limit }} caractères">
+        <source>Votre mot de passe doit comporter au moins {{ limit }} caractères</source>
+        <target>Ihr Passwort muss mindestens {{ limit }} Zeichen lang sein</target>
+      </trans-unit>
+      <trans-unit id="X4sYKvU" resname="Répéter le mot de passe">
+        <source>Répéter le mot de passe</source>
+        <target>Passwort wiederholen</target>
+      </trans-unit>
+      <trans-unit id="kKfYdPb" resname="Les mot de passe doivent correspondre.">
+        <source>Les mot de passe doivent correspondre.</source>
+        <target>Die Passwörter müssen übereinstimmen.</target>
+      </trans-unit>
+      <trans-unit id="MtNetes" resname="Votre mot de passe a été changé avec succès">
+        <source>Votre mot de passe a été changé avec succès</source>
+        <target>Ihr Passwort wurde erfolgreich geändert</target>
+      </trans-unit>
+      <trans-unit id="e9IkeM7" resname="Vous ne pouvez pas utiliser le même mot de passe que les 3 précédents">
+        <source>Vous ne pouvez pas utiliser le même mot de passe que les 3 précédents</source>
+        <target>Sie können nicht dasselbe Passwort wie die vorherigen 3 verwenden</target>
+      </trans-unit>
+      <trans-unit id="ayl78Z_" resname="PROFIL">
+        <source>PROFIL</source>
+        <target>PROFIL</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>E-Mail</target>
+      </trans-unit>
+      <trans-unit id="QuN2BLY" resname="Modifier">
+        <source>Modifier</source>
+        <target>Ändern</target>
+      </trans-unit>
+      <trans-unit id="zaqrRC0" resname="Télécharger">
+        <source>Télécharger</source>
+        <target>Herunterladen</target>
+      </trans-unit>
+      <trans-unit id="JLfofvg" resname="Votre profil a été mis à jour avec succès !">
+        <source>Votre profil a été mis à jour avec succès !</source>
+        <target>Ihr Profil wurde erfolgreich aktualisiert!</target>
+      </trans-unit>
+      <trans-unit id="ZBUyEez" resname="Télécharger mes données">
+        <source>Télécharger mes données</source>
+        <target>Laden Sie meine Daten herunter</target>
+      </trans-unit>
+      <trans-unit id="oehMN.Z" resname="profil">
+        <source>profil</source>
+        <target>profil</target>
+      </trans-unit>
+      <trans-unit id="XFVRV7B" resname="Ancien mot de passe">
+        <source>Ancien mot de passe</source>
+        <target>Altes Passwort</target>
+      </trans-unit>
+      <trans-unit id="XR0DyC4" resname="Modifiez votre mot de passe">
+        <source>Modifiez votre mot de passe</source>
+        <target>Ändern Sie Ihr Passwort</target>
+      </trans-unit>
+      <trans-unit id="ro0bXMz" resname="Tableau de Bord">
+        <source>Tableau de Bord</source>
+        <target>Armaturenbrett</target>
+      </trans-unit>
+      <trans-unit id="zmfSLqV" resname="À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. &#10;                Si vous avez des questions, n'hésitez pas à &lt;a&gt;contacter l'administrateur&lt;/a&gt;">
+        <source>À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. 
+                Si vous avez des questions, n'hésitez pas à &lt;a&gt;contacter l'administrateur&lt;/a&gt;</source>
+        <target><![CDATA[Bisher gehören Sie keiner Abteilung des Unternehmens an. <br> Der Administrator wird Sie bald akzeptieren. Keine Sorge, bei Annahme wird Ihnen eine Benachrichtigung zugesandt.
+                 Wenn Sie Fragen haben, zögern Sie nicht, <a>den Administrator zu kontaktieren</a>]]></target>
+      </trans-unit>
+      <trans-unit id="Hw7EWPb" resname="Vous êtes en attente">
+        <source>Vous êtes en attente</source>
+        <target>Du wartest</target>
+      </trans-unit>
+      <trans-unit id=".hHQnh9" resname="À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. &#10;                Si vous avez des questions, n'hésitez pas à &lt;a style=&quot;font-family : Sen-Regular-Bold ; color : #AF929D&quot; href=&quot;#&quot;&gt;contacter l'administrateur&lt;/a&gt;">
+        <source>À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. 
+                Si vous avez des questions, n'hésitez pas à &lt;a style="font-family : Sen-Regular-Bold ; color : #AF929D" href="#"&gt;contacter l'administrateur&lt;/a&gt;</source>
+        <target><![CDATA[Bisher gehören Sie keiner Abteilung des Unternehmens an. <br> Der Administrator wird Sie bald akzeptieren. Keine Sorge, bei Annahme wird Ihnen eine Benachrichtigung zugesandt.
+                 Wenn Sie Fragen haben, zögern Sie nicht, <a style="font-family : Sen-Regular-Bold ; color : #AF929D" href="#">den Administrator zu kontaktieren</a>]]></target>
+      </trans-unit>
+      <trans-unit id="uyAqtQC" resname="Votre mot de passe a été mis à jour avec succès !">
+        <source>Votre mot de passe a été mis à jour avec succès !</source>
+        <target>Ihr Passwort wurde erfolgreich aktualisiert!</target>
+      </trans-unit>
+      <trans-unit id="Ivfzt38" resname="Votre mot de passe actuel est incorrect !">
+        <source>Votre mot de passe actuel est incorrect !</source>
+        <target>Ihr aktuelles Passwort ist falsch !</target>
+      </trans-unit>
+      <trans-unit id="21nrsnI" resname="Sujet">
+        <source>Sujet</source>
+        <target>Betreff</target>
+      </trans-unit>
+      <trans-unit id="L3dmip3" resname="Message">
+        <source>Message</source>
+        <target>Nachricht</target>
+      </trans-unit>
+      <trans-unit id="lZT7Tly" resname="Ajout type de média">
+        <source>Ajout type de média</source>
+        <target>Medientyp hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="f1YP.V9" resname="Création d'un type de média">
+        <source>Création d'un type de média</source>
+        <target>Erstellen eines Medientyps</target>
+      </trans-unit>
+      <trans-unit id="RZUfasG" resname="Enregistrer les modifications">
+        <source>Enregistrer les modifications</source>
+        <target>Änderungen speichern</target>
+      </trans-unit>
+      <trans-unit id="IDLg31f" resname="Ajouter le type de média">
+        <source>Ajouter le type de média</source>
+        <target>Medientyp hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="7yOllAJ" resname="Retour">
+        <source>Retour</source>
+        <target>Zurück</target>
+      </trans-unit>
+      <trans-unit id="XHopKnZ" resname="Les Types de Médias">
+        <source>Les Types de Médias</source>
+        <target>Medientypen</target>
+      </trans-unit>
+      <trans-unit id="QFoGcy6" resname="Retrouvez ici tous les type de médias">
+        <source>Retrouvez ici tous les type de médias</source>
+        <target>Alle Medientypen hier finden</target>
+      </trans-unit>
+      <trans-unit id="DS.kYns" resname="AJOUTER UN TYPE DE MÉDIA">
+        <source>AJOUTER UN TYPE DE MÉDIA</source>
+        <target>MEDIENTYP HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="zVuDKsX" resname="Libellé">
+        <source>Libellé</source>
+        <target>Label</target>
+      </trans-unit>
+      <trans-unit id=".4BZ3Gd" resname="Actions">
+        <source>Actions</source>
+        <target>Aktionen</target>
+      </trans-unit>
+      <trans-unit id="jF37atP" resname="MODIFIER">
+        <source>MODIFIER</source>
+        <target>BEARBEITEN</target>
+      </trans-unit>
+      <trans-unit id="gLKza9r" resname="SUPPRIMER">
+        <source>SUPPRIMER</source>
+        <target>LÖSCHEN</target>
+      </trans-unit>
+      <trans-unit id="D.N2Qe0" resname="Type de média non trouvé dans la base de données">
+        <source>Type de média non trouvé dans la base de données</source>
+        <target>Medientyp nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="Lq0Hg8k" resname="Ajout d'une catégorie de produit">
+        <source>Ajout d'une catégorie de produit</source>
+        <target>Produktkategorie hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="8mCE5T5" resname="Les Catégories de produit">
+        <source>Les Catégories de produit</source>
+        <target>Produktkategorien</target>
+      </trans-unit>
+      <trans-unit id="e_js6lu" resname="Retrouvez ici toutes les catégories de produit">
+        <source>Retrouvez ici toutes les catégories de produit</source>
+        <target>Hier finden Sie alle Produktkategorien</target>
+      </trans-unit>
+      <trans-unit id="6LsotaJ" resname="AJOUTER UNE CATÉGORIE">
+        <source>AJOUTER UNE CATÉGORIE</source>
+        <target>KATEGORIE HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="MNShTz9" resname="Catégorie non trouvée dans la base de données">
+        <source>Catégorie non trouvée dans la base de données</source>
+        <target>Kategorie nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="qmSSw43" resname="À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. &#10;                Si vous avez des questions, n'hésitez pas à &lt;a style=&quot;font-family : Sen-Regular-Bold ; color : #AF929D&quot; onclick=&quot;open_form()&quot; href=&quot;#&quot; id=&quot;btn-form&quot; &gt;contacter l'administrateur&lt;/a&gt;">
+        <source>À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. 
+                Si vous avez des questions, n'hésitez pas à &lt;a style="font-family : Sen-Regular-Bold ; color : #AF929D" onclick="open_form()" href="#" id="btn-form" &gt;contacter l'administrateur&lt;/a&gt;</source>
+        <target><![CDATA[Bisher gehören Sie keiner Abteilung des Unternehmens an. <br> Der Administrator wird Sie bald akzeptieren. Keine Sorge, bei Annahme wird Ihnen eine Benachrichtigung zugesandt.
+                 Wenn Sie Fragen haben, zögern Sie nicht, <a style="font-family : Sen-Regular-Bold ; color : #AF929D" onclick="open_form()" href="#" id="btn-form" >den Administrator zu kontaktieren</a>]]></target>
+      </trans-unit>
+      <trans-unit id="Rq05Fva" resname="Annuler">
+        <source>Annuler</source>
+        <target>Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="eQdSCfK" resname="Envoyer">
+        <source>Envoyer</source>
+        <target>Senden</target>
+      </trans-unit>
+      <trans-unit id="mRD866G" resname="Libéllé">
+        <source>Libéllé</source>
+        <target>Label</target>
+      </trans-unit>
+      <trans-unit id="wtl99kZ" resname="Le libellé existe déjà !">
+        <source>Le libellé existe déjà !</source>
+        <target>Label existiert bereits !</target>
+      </trans-unit>
+      <trans-unit id="pnrykDI" resname="Le type de média a bien été créé !">
+        <source>Le type de média a bien été créé !</source>
+        <target>Medientyp erfolgreich erstellt !</target>
+      </trans-unit>
+      <trans-unit id="H0.EwFT" resname="Le type de média a bien été modifié !">
+        <source>Le type de média a bien été modifié !</source>
+        <target>Medientyp erfolgreich geändert !</target>
+      </trans-unit>
+      <trans-unit id="LRQamIQ" resname="Le type de média a bien été supprimé !">
+        <source>Le type de média a bien été supprimé !</source>
+        <target>Medientyp erfolgreich gelöscht !</target>
+      </trans-unit>
+      <trans-unit id="ULSXHqq" resname="Le type de produit a bien été créé !">
+        <source>Le type de produit a bien été créé !</source>
+        <target>Produkttyp erfolgreich erstellt !</target>
+      </trans-unit>
+      <trans-unit id="NaCZRr1" resname="Le type de produit a bien été modifié !">
+        <source>Le type de produit a bien été modifié !</source>
+        <target>Produkttyp erfolgreich geändert !</target>
+      </trans-unit>
+      <trans-unit id="XhD61Ih" resname="La catégorie de produit a bien été supprimée !">
+        <source>La catégorie de produit a bien été supprimée !</source>
+        <target>Die Produktkategorie wurde erfolgreich gelöscht !</target>
+      </trans-unit>
+      <trans-unit id="ARVRoDF" resname="[Prise de Contact] Metz Connect">
+        <source>[Prise de Contact] Metz Connect</source>
+        <target>[Kontakt] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="T.8GQfu" resname="Mail envoyé !">
+        <source>Mail envoyé !</source>
+        <target>E-Mail gesendet !</target>
+      </trans-unit>
+      <trans-unit id="hA1jruK" resname="Prise de Contact">
+        <source>Prise de Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="h4EJ9UG" resname="Je vous recontacterais dans les plus brefs délais.">
+        <source>Je vous recontacterais dans les plus brefs délais.</source>
+        <target>Ich werde mich schnellstmöglich mit Ihnen in Verbindung setzen.</target>
+      </trans-unit>
+      <trans-unit id="MLWuCQo" resname="Voici le contenu de votre prise de contact">
+        <source>Voici le contenu de votre prise de contact</source>
+        <target>Hier ist der Inhalt Ihres Kontakts</target>
+      </trans-unit>
+      <trans-unit id="ynfrI9V" resname="Je vous souhaite une bonne journée">
+        <source>Je vous souhaite une bonne journée</source>
+        <target>Ich wünsche dir einen schönen Tag</target>
+      </trans-unit>
+      <trans-unit id="7.KcDXj" resname="Cordialement">
+        <source>Cordialement</source>
+        <target>Herzlich</target>
+      </trans-unit>
+      <trans-unit id="7FfevUO" resname="L' administration de MetzConnect">
+        <source>L' administration de MetzConnect</source>
+        <target>Die Verwaltung von Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="Ty4qhts" resname="Le type d'alimentation a bien été créé !">
+        <source>Le type d'alimentation a bien été créé !</source>
+        <target>Der Feedtyp wurde erfolgreich erstellt!</target>
+      </trans-unit>
+      <trans-unit id="sWiX7HC" resname="Le type d'alimentation a bien été modifié !">
+        <source>Le type d'alimentation a bien été modifié !</source>
+        <target>Der Netzteiltyp wurde geändert!</target>
+      </trans-unit>
+      <trans-unit id="akG2AnY" resname="La catégorie d'alimentation a bien été supprimée !">
+        <source>La catégorie d'alimentation a bien été supprimée !</source>
+        <target>Die Lebensmittelkategorie wurde erfolgreich gelöscht!</target>
+      </trans-unit>
+      <trans-unit id="izOIrsS" resname="La réglementation a bien été créé !">
+        <source>La réglementation a bien été créé !</source>
+        <target>Das Reglement ist erstellt!</target>
+      </trans-unit>
+      <trans-unit id="eufcLcR" resname="La réglementation a bien été modifié !">
+        <source>La réglementation a bien été modifié !</source>
+        <target>Die Regeln wurden geändert!</target>
+      </trans-unit>
+      <trans-unit id="3iIiN8M" resname="La catégorie de réglementation a bien été supprimée !">
+        <source>La catégorie de réglementation a bien été supprimée !</source>
+        <target>Die regulatorische Kategorie wurde erfolgreich gelöscht!</target>
+      </trans-unit>
+      <trans-unit id="AS56r4w" resname="Ajout reglementation">
+        <source>Ajout reglementation</source>
+        <target>Verordnung hinzugefügt</target>
+      </trans-unit>
+      <trans-unit id="og581mf" resname="Création d'une réglementation">
+        <source>Création d'une réglementation</source>
+        <target>Erstellung einer Verordnung</target>
+      </trans-unit>
+      <trans-unit id="4QaI7P3" resname="Ajouter la réglementation">
+        <source>Ajouter la réglementation</source>
+        <target>Verordnung hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="3MJkZ4l" resname="Les Réglementations">
+        <source>Les Réglementations</source>
+        <target>Vorschriften</target>
+      </trans-unit>
+      <trans-unit id="0ts1Hcy" resname="Retrouvez ici toutes les réglementations">
+        <source>Retrouvez ici toutes les réglementations</source>
+        <target>Alle Vorschriften finden Sie hier</target>
+      </trans-unit>
+      <trans-unit id="B6BLR4W" resname="Réglementation non trouvé dans la base de données">
+        <source>Réglementation non trouvé dans la base de données</source>
+        <target>Vorschrift nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="E8KiE2P" resname="Ajout type d'alimentation">
+        <source>Ajout type d'alimentation</source>
+        <target>Leistungstyp hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="FR7ombS" resname="Création d'un type d'alimentation">
+        <source>Création d'un type d'alimentation</source>
+        <target>Erstellen eines Netzteiltyps</target>
+      </trans-unit>
+      <trans-unit id="dabcJt7" resname="Ajouter le type d'alimentation">
+        <source>Ajouter le type d'alimentation</source>
+        <target>Leistungstyp hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="zhweaQ9" resname="Les Types d'Alimentations">
+        <source>Les Types d'Alimentations</source>
+        <target>Lebensmittelarten</target>
+      </trans-unit>
+      <trans-unit id="_AYdUN." resname="Retrouvez ici tous les types d'alimentations">
+        <source>Retrouvez ici tous les types d'alimentations</source>
+        <target>Hier finden Sie alle Arten von Netzteilen</target>
+      </trans-unit>
+      <trans-unit id="l9QG79y" resname="Type d'alimentation non trouvé dans la base de données">
+        <source>Type d'alimentation non trouvé dans la base de données</source>
+        <target>Netzteiltyp nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="wXqIPlX" resname="Ajouter le type de produit">
+        <source>Ajouter le type de produit</source>
+        <target>Produkttyp hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="8oT9h4_" resname="Le produit a bien été créé !">
+        <source>Le produit a bien été créé !</source>
+        <target>Das Produkt wurde erstellt!</target>
+      </trans-unit>
+      <trans-unit id="i89XX_p" resname="Le produit a bien été modifié !">
+        <source>Le produit a bien été modifié !</source>
+        <target>Das Produkt wurde geändert!</target>
+      </trans-unit>
+      <trans-unit id="vzwv_r2" resname="Le produit ">
+        <source>Le produit </source>
+        <target>Das Produkt</target>
+      </trans-unit>
+      <trans-unit id="v8Gbq3O" resname="Le libellé doit contenir au moins {{ limit }} caractères">
+        <source>Le libellé doit contenir au moins {{ limit }} caractères</source>
+        <target>Das Label muss mindestens {{ limit }} Zeichen enthalten</target>
+      </trans-unit>
+      <trans-unit id="OTyiarE" resname="Référence">
+        <source>Référence</source>
+        <target>Bezug</target>
+      </trans-unit>
+      <trans-unit id="sXWxX2Z" resname="Veuillez renseigner la référence">
+        <source>Veuillez renseigner la référence</source>
+        <target>Bitte füllen Sie die Referenz aus</target>
+      </trans-unit>
+      <trans-unit id="YMHjSz2" resname="Prix unitaire">
+        <source>Prix unitaire</source>
+        <target>Stückpreis</target>
+      </trans-unit>
+      <trans-unit id="jSwpeVY" resname="Veuillez renseigner le prix unitaire">
+        <source>Veuillez renseigner le prix unitaire</source>
+        <target>Bitte tragen Sie den Stückpreis ein</target>
+      </trans-unit>
+      <trans-unit id="Um4Ah8w" resname="Description">
+        <source>Description</source>
+        <target>Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="dgQbHXG" resname="Veuillez renseigner une fonctionnalité valide">
+        <source>Veuillez renseigner une fonctionnalité valide</source>
+        <target>Bitte geben Sie eine gültige Funktion ein</target>
+      </trans-unit>
+      <trans-unit id="vSFYwT3" resname="Fonctionnalités">
+        <source>Fonctionnalités</source>
+        <target>Merkmale</target>
+      </trans-unit>
+      <trans-unit id="6RJJPOU" resname="Longueur">
+        <source>Longueur</source>
+        <target>Länge</target>
+      </trans-unit>
+      <trans-unit id="9juU_5H" resname="Veuillez renseigner une longueur valide">
+        <source>Veuillez renseigner une longueur valide</source>
+        <target>Bitte geben Sie eine gültige Länge ein</target>
+      </trans-unit>
+      <trans-unit id="7gw9nbV" resname="Hauteur">
+        <source>Hauteur</source>
+        <target>Höhe</target>
+      </trans-unit>
+      <trans-unit id="Td.Bj6T" resname="Veuillez renseigner une hauteur valide">
+        <source>Veuillez renseigner une hauteur valide</source>
+        <target>Bitte geben Sie eine gültige Höhe ein</target>
+      </trans-unit>
+      <trans-unit id="1Vs6IZG" resname="Profondeur">
+        <source>Profondeur</source>
+        <target>Tiefe</target>
+      </trans-unit>
+      <trans-unit id="avQvtdO" resname="Veuillez renseigner une profondeur valide">
+        <source>Veuillez renseigner une profondeur valide</source>
+        <target>Bitte geben Sie eine gültige Tiefe ein</target>
+      </trans-unit>
+      <trans-unit id="7Ypc0tq" resname="Largeur">
+        <source>Largeur</source>
+        <target>Breite</target>
+      </trans-unit>
+      <trans-unit id="2BJZYt7" resname="Veuillez renseigner une largeur valide">
+        <source>Veuillez renseigner une largeur valide</source>
+        <target>Bitte geben Sie eine gültige Breite ein</target>
+      </trans-unit>
+      <trans-unit id="r3UMoX_" resname="Poids">
+        <source>Poids</source>
+        <target>Gewicht</target>
+      </trans-unit>
+      <trans-unit id="vMU4irW" resname="Veuillez renseigner un poids valide">
+        <source>Veuillez renseigner un poids valide</source>
+        <target>Bitte geben Sie ein gültiges Gewicht ein</target>
+      </trans-unit>
+      <trans-unit id="rtrbj8l" resname="Veuillez renseigner un type d'alimentation">
+        <source>Veuillez renseigner un type d'alimentation</source>
+        <target>Bitte geben Sie eine Art der Stromversorgung ein</target>
+      </trans-unit>
+      <trans-unit id="zwzZlH7" resname="Durée de vie">
+        <source>Durée de vie</source>
+        <target>Lebensdauer</target>
+      </trans-unit>
+      <trans-unit id="sJGNmlj" resname="Veuillez renseigner la durée de vie du produit">
+        <source>Veuillez renseigner la durée de vie du produit</source>
+        <target>Bitte tragen Sie die Lebensdauer des Produkts ein</target>
+      </trans-unit>
+      <trans-unit id="wbDe5fW" resname="Compatibilité">
+        <source>Compatibilité</source>
+        <target>Kompatibilität</target>
+      </trans-unit>
+      <trans-unit id="WqhIPvN" resname="Veuillez renseigner compatibilité destinée au produit">
+        <source>Veuillez renseigner compatibilité destinée au produit</source>
+        <target>Bitte füllen Sie die für das Produkt vorgesehene Kompatibilität aus</target>
+      </trans-unit>
+      <trans-unit id="zTNOCE." resname="Ajouter un produit">
+        <source>Ajouter un produit</source>
+        <target>Fügen Sie ein Produkt hinzu</target>
+      </trans-unit>
+      <trans-unit id="VMMk9sE" resname="Prix">
+        <source>Prix</source>
+        <target>Preis</target>
+      </trans-unit>
+      <trans-unit id="AkauXy9" resname="Type de produit">
+        <source>Type de produit</source>
+        <target>Produkttyp</target>
+      </trans-unit>
+      <trans-unit id="uq3fcPt" resname="Type">
+        <source>Type</source>
+        <target>Nett</target>
+      </trans-unit>
+      <trans-unit id="mv3sYB0" resname="Durée de garantie">
+        <source>Durée de garantie</source>
+        <target>Garantiedauer</target>
+      </trans-unit>
+      <trans-unit id="PMyeNqe" resname="Bénéfices">
+        <source>Bénéfices</source>
+        <target>Vorteile</target>
+      </trans-unit>
+      <trans-unit id="48ijocw" resname="Modifier un produit">
+        <source>Modifier un produit</source>
+        <target>Ändern Sie ein Produkt</target>
+      </trans-unit>
+      <trans-unit id="8dVyVow" resname="Modification du produit">
+        <source>Modification du produit</source>
+        <target>Produktmodifikation</target>
+      </trans-unit>
+      <trans-unit id="fIfysRk" resname="Les Produits">
+        <source>Les Produits</source>
+        <target>Produkte</target>
+      </trans-unit>
+      <trans-unit id="3YpKvMv" resname="Retrouvez ici tous les produits">
+        <source>Retrouvez ici tous les produits</source>
+        <target>Hier finden Sie alle Produkte</target>
+      </trans-unit>
+      <trans-unit id="QjptYP8" resname="AJOUTER UN PRODUIT">
+        <source>AJOUTER UN PRODUIT</source>
+        <target>PRODUKT HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="aKU0H8a" resname="Catégorie">
+        <source>Catégorie</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="NYBGnQb" resname="ACTION">
+        <source>ACTION</source>
+        <target>LAGER</target>
+      </trans-unit>
+      <trans-unit id="zPJpnTn" resname="CONSULTER">
+        <source>CONSULTER</source>
+        <target>KONSULTIEREN</target>
+      </trans-unit>
+      <trans-unit id="ocMBmsk" resname="Produit non trouvé dans la base de données">
+        <source>Produit non trouvé dans la base de données</source>
+        <target>Produkt nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="ZVeOT3L" resname="Consulter un produit">
+        <source>Consulter un produit</source>
+        <target>Konsultieren Sie ein Produkt</target>
+      </trans-unit>
+      <trans-unit id="frwi4BB" resname="Consultation du produit">
+        <source>Consultation du produit</source>
+        <target>Produktberatung</target>
+      </trans-unit>
+      <trans-unit id="UYedb6Y" resname="AJOUTER UNE RÈGLEMENTATION">
+        <source>AJOUTER UNE RÈGLEMENTATION</source>
+        <target>VORSCHRIFT HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="o6z2URW" resname="Retrouvez ici tous les types de médias">
+        <source>Retrouvez ici tous les types de médias</source>
+        <target>Hier finden Sie alle Arten von Medien</target>
+      </trans-unit>
+      <trans-unit id="j4pnP8B" resname="Produit modifié avec succès !">
+        <source>Produit modifié avec succès !</source>
+        <target>Produkt erfolgreich geändert!</target>
+      </trans-unit>
+      <trans-unit id="4ABeAV0" resname="Votre profil a bien été supprimé !">
+        <source>Votre profil a bien été supprimé !</source>
+        <target>Ihr Profil wurde erfolgreich gelöscht!</target>
+      </trans-unit>
+      <trans-unit id="i7DPbrm" resname="1234567">
+        <source>1234567</source>
+        <target>1234567</target>
+      </trans-unit>
+      <trans-unit id="1MD5rKM" resname="40,00">
+        <source>40,00</source>
+        <target>40,00</target>
+      </trans-unit>
+      <trans-unit id="VfaFoj7" resname="Mot de passe actuel">
+        <source>Mot de passe actuel</source>
+        <target>Jetziges Passwort</target>
+      </trans-unit>
+      <trans-unit id="kgvnG0A" resname="Entrez une description...">
+        <source>Entrez une description...</source>
+        <target>Geben Sie eine Beschreibung ein...</target>
+      </trans-unit>
+      <trans-unit id="Sl1Bs_n" resname="Entrez une brève étendue des fonctionnalités...">
+        <source>Entrez une brève étendue des fonctionnalités...</source>
+        <target>Geben Sie einen kurzen Funktionsumfang ein...</target>
+      </trans-unit>
+      <trans-unit id="RE4igt_" resname="Entrez une brève étendue des bénéfices...">
+        <source>Entrez une brève étendue des bénéfices...</source>
+        <target>Geben Sie einen kurzen Gewinnbereich ein...</target>
+      </trans-unit>
+      <trans-unit id="rVc2aGU" resname="100">
+        <source>100</source>
+        <target>100</target>
+      </trans-unit>
+      <trans-unit id="mDvWFLt" resname="300">
+        <source>300</source>
+        <target>300</target>
+      </trans-unit>
+      <trans-unit id="eQJpm_Q" resname="7">
+        <source>7</source>
+        <target>7</target>
+      </trans-unit>
+      <trans-unit id="bsEGBwK" resname="Supprimer son compte">
+        <source>Supprimer son compte</source>
+        <target>Lösche sein Konto</target>
+      </trans-unit>
+      <trans-unit id="GOp0yrR" resname="SUPPRESSION DU COMPTE">
+        <source>SUPPRESSION DU COMPTE</source>
+        <target>LÖSCHEN DES KONTOS</target>
+      </trans-unit>
+      <trans-unit id="Gnl7mA0" resname="Supprimer définitivement">
+        <source>Supprimer définitivement</source>
+        <target>Unbedingt löschen</target>
+      </trans-unit>
+      <trans-unit id="vn4vIBK" resname="Images">
+        <source>Images</source>
+        <target>Bilder</target>
+      </trans-unit>
+      <trans-unit id="OF2HlzJ" resname="La catégorie a bien été créée !">
+        <source>La catégorie a bien été créée !</source>
+        <target>Die Kategorie wurde erstellt !</target>
+      </trans-unit>
+      <trans-unit id="uNGVSfp" resname="La catégorie a bien été modifiée !">
+        <source>La catégorie a bien été modifiée !</source>
+        <target>Die Kategorie wurde geändert !</target>
+      </trans-unit>
+      <trans-unit id="w.ThtHB" resname="La catégorie a bien été supprimée !">
+        <source>La catégorie a bien été supprimée !</source>
+        <target>Die Kategorie wurde erfolgreich gelöscht !</target>
+      </trans-unit>
+      <trans-unit id="t1sQmo3" resname="Ce libellé est déja utilisé">
+        <source>Ce libellé est déja utilisé</source>
+        <target>Dieses Label wird bereits verwendet</target>
+      </trans-unit>
+      <trans-unit id="7qHKNra" resname="Suppression effectuée avec succès">
+        <source>Suppression effectuée avec succès</source>
+        <target>Erfolgreich entfernt</target>
+      </trans-unit>
+      <trans-unit id="JzgbF1V" resname="Utilisateur gelé avec succès">
+        <source>Utilisateur gelé avec succès</source>
+        <target>Benutzer erfolgreich eingefroren</target>
+      </trans-unit>
+      <trans-unit id="Ysfrf.I" resname="Utilisateur dégelé avec succès">
+        <source>Utilisateur dégelé avec succès</source>
+        <target>Benutzer erfolgreich entsperrt</target>
+      </trans-unit>
+      <trans-unit id="GFpRzL0" resname="Utilisateur archivé avec succès">
+        <source>Utilisateur archivé avec succès</source>
+        <target>Benutzer erfolgreich eingecheckt</target>
+      </trans-unit>
+      <trans-unit id="mxUESOZ" resname="Utilisateur désarchivé avec succès">
+        <source>Utilisateur désarchivé avec succès</source>
+        <target>Benutzer erfolgreich dearchiviert</target>
+      </trans-unit>
+      <trans-unit id="V4vcf.a" resname="Les fonctions">
+        <source>Les fonctions</source>
+        <target>Funktionen</target>
+      </trans-unit>
+      <trans-unit id="g1E5sA8" resname="AJOUTER UNE FONCTION">
+        <source>AJOUTER UNE FONCTION</source>
+        <target>FUNKTION HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="x7Dndby" resname="Fonction non trouvée dans la base de données">
+        <source>Fonction non trouvée dans la base de données</source>
+        <target>Funktion nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="6XRO6fG" resname="Ajouter une fonction">
+        <source>Ajouter une fonction</source>
+        <target>Feature hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="QLeNDdM" resname="Retour à la liste">
+        <source>Retour à la liste</source>
+        <target>Zurück zur Liste</target>
+      </trans-unit>
+      <trans-unit id="APnFM0V" resname="Ajouter">
+        <source>Ajouter</source>
+        <target>Hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="Url.ozy" resname="Modification de la fonction">
+        <source>Modification de la fonction</source>
+        <target>Funktionsänderung</target>
+      </trans-unit>
+      <trans-unit id="fOdc_ki" resname="Comptabilité">
+        <source>Comptabilité</source>
+        <target>Buchhaltung</target>
+      </trans-unit>
+      <trans-unit id="AtB5Sfl" resname="GESTION DES VENTES">
+        <source>GESTION DES VENTES</source>
+        <target>SALES MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="qV_Jg66" resname="Liste des ventes">
+        <source>Liste des ventes</source>
+        <target>Verkaufsliste</target>
+      </trans-unit>
+      <trans-unit id="7BkZ03h" resname="Liste des catégories">
+        <source>Liste des catégories</source>
+        <target>Liste der Kategorien</target>
+      </trans-unit>
+      <trans-unit id="at8GBrx" resname="GESTION DES PRODUITS">
+        <source>GESTION DES PRODUITS</source>
+        <target>PRODUKTMANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="5bNQ7F9" resname="Liste des produits">
+        <source>Liste des produits</source>
+        <target>Produktliste</target>
+      </trans-unit>
+      <trans-unit id="aTj4j2s" resname="EXPORT">
+        <source>EXPORT</source>
+        <target>EXPORT</target>
+      </trans-unit>
+      <trans-unit id="aQ7jGHg" resname="Export des ventes">
+        <source>Export des ventes</source>
+        <target>Umsatz Export</target>
+      </trans-unit>
+      <trans-unit id="t5IJFJA" resname="Export des produits">
+        <source>Export des produits</source>
+        <target>Produktexport</target>
+      </trans-unit>
+      <trans-unit id="9ZBM96E" resname="Marketing">
+        <source>Marketing</source>
+        <target>Marketing</target>
+      </trans-unit>
+      <trans-unit id="SOMsxoo" resname="Ressources Humaines">
+        <source>Ressources Humaines</source>
+        <target>Personalabteilung</target>
+      </trans-unit>
+      <trans-unit id="PhdPETN" resname="GESTION DES EMPLOYÉS">
+        <source>GESTION DES EMPLOYÉS</source>
+        <target>MITARBEITERMANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="_9U00Cq" resname="Liste des employés">
+        <source>Liste des employés</source>
+        <target>Liste der Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="1WLqszK" resname="Export des employés">
+        <source>Export des employés</source>
+        <target>Mitarbeiterexport</target>
+      </trans-unit>
+      <trans-unit id="S0LGaQ6" resname="Administration">
+        <source>Administration</source>
+        <target>Verwaltung</target>
+      </trans-unit>
+      <trans-unit id="eLl0EsC" resname="GESTION DES UTILISATEURS">
+        <source>GESTION DES UTILISATEURS</source>
+        <target>BENUTZERVERWALTUNG</target>
+      </trans-unit>
+      <trans-unit id="NGdqgWZ" resname="Liste des utilisateurs">
+        <source>Liste des utilisateurs</source>
+        <target>Benutzerliste</target>
+      </trans-unit>
+      <trans-unit id="AGYD2zB" resname="Liste des départements">
+        <source>Liste des départements</source>
+        <target>Liste der Abteilungen</target>
+      </trans-unit>
+      <trans-unit id="I5jcz_q" resname="Liste des fonctions">
+        <source>Liste des fonctions</source>
+        <target>Liste der Funktionen</target>
+      </trans-unit>
+      <trans-unit id="kGgOfP1" resname="Gestion des champs">
+        <source>Gestion des champs</source>
+        <target>Feldmanagement</target>
+      </trans-unit>
+      <trans-unit id="xPdVfcr" resname="Export des utilisateurs">
+        <source>Export des utilisateurs</source>
+        <target>Benutzer werden exportiert</target>
+      </trans-unit>
+      <trans-unit id="LIoBpGQ" resname="Export de la Base de données">
+        <source>Export de la Base de données</source>
+        <target>Datenbankexport</target>
+      </trans-unit>
+      <trans-unit id="sOHzDLc" resname="Product Owner">
+        <source>Product Owner</source>
+        <target>Product Owner</target>
+      </trans-unit>
+      <trans-unit id="L7lEkmP" resname="Service-après vente">
+        <source>Service-après vente</source>
+        <target>Kundendienst</target>
+      </trans-unit>
+      <trans-unit id="egYAiNo" resname="GESTION DES PIÈCES DÉTACHÉES">
+        <source>GESTION DES PIÈCES DÉTACHÉES</source>
+        <target>ERSATZTEILMANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="uEljK7T" resname="Liste des pièces détachées">
+        <source>Liste des pièces détachées</source>
+        <target>Ersatzteilliste</target>
+      </trans-unit>
+      <trans-unit id="iZmNziR" resname="GESTION DES TICKETS">
+        <source>GESTION DES TICKETS</source>
+        <target>TICKET MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="NaJp2Yb" resname="Liste des tickets">
+        <source>Liste des tickets</source>
+        <target>Ticketliste</target>
+      </trans-unit>
+      <trans-unit id="VYxBqs3" resname="Export des pièces détachées">
+        <source>Export des pièces détachées</source>
+        <target>Export von Ersatzteilen</target>
+      </trans-unit>
+      <trans-unit id="W_.yEVn" resname="Export des tickets">
+        <source>Export des tickets</source>
+        <target>Ticketexport</target>
+      </trans-unit>
+      <trans-unit id="oTvCr_K" resname="Les départements">
+        <source>Les départements</source>
+        <target>Abteilungen</target>
+      </trans-unit>
+      <trans-unit id="1kTAnRg" resname="Retrouvez ici tous les départements présents au sein de l'entreprise">
+        <source>Retrouvez ici tous les départements présents au sein de l'entreprise</source>
+        <target>Hier finden Sie alle Abteilungen des Unternehmens</target>
+      </trans-unit>
+      <trans-unit id="jrcwtJD" resname="AJOUTER UN SERVICE">
+        <source>AJOUTER UN SERVICE</source>
+        <target>DIENST HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="Uyvnkv_" resname="Service non trouvé dans la base de données">
+        <source>Service non trouvé dans la base de données</source>
+        <target>Dienst nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="SRBMgAF" resname="Ajouter un service">
+        <source>Ajouter un service</source>
+        <target>Dienst hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="eLdC8bp" resname="Modification du service">
+        <source>Modification du service</source>
+        <target>Dienständerung</target>
+      </trans-unit>
+      <trans-unit id="0gc67be" resname="Les catégories">
+        <source>Les catégories</source>
+        <target>Kategorien</target>
+      </trans-unit>
+      <trans-unit id="siS1mtA" resname="Les Catégories">
+        <source>Les Catégories</source>
+        <target>Kategorien</target>
+      </trans-unit>
+      <trans-unit id="01ISUam" resname="Retrouvez ici toutes les catégories">
+        <source>Retrouvez ici toutes les catégories</source>
+        <target>Alle Kategorien finden Sie hier</target>
+      </trans-unit>
+      <trans-unit id="pkQmJvP" resname="AJOUTER UNE CATEGORIE">
+        <source>AJOUTER UNE CATEGORIE</source>
+        <target>KATEGORIE HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="OEOXHc." resname="ID">
+        <source>ID</source>
+        <target>ID</target>
+      </trans-unit>
+      <trans-unit id="CMW3t6u" resname="Catégorie non trouvé dans la base de données">
+        <source>Catégorie non trouvé dans la base de données</source>
+        <target>Kategorie nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="rlrYByI" resname="Ajouter une catégorie">
+        <source>Ajouter une catégorie</source>
+        <target>Kategorie hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="dJjU5K3" resname="Ajouter la catégorie">
+        <source>Ajouter la catégorie</source>
+        <target>Kategorie hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="Wm0jCIW" resname="Les utilisateurs">
+        <source>Les utilisateurs</source>
+        <target>Benutzer</target>
+      </trans-unit>
+      <trans-unit id="Gn.rZBf" resname="Retrouvez ici tous les utilisateurs inscrits au sein de l'entreprise">
+        <source>Retrouvez ici tous les utilisateurs inscrits au sein de l'entreprise</source>
+        <target>_Finde hier alle registrierten Nutzer im Unternehmen</target>
+      </trans-unit>
+      <trans-unit id="t8_nMCO" resname="Prenom">
+        <source>Prenom</source>
+        <target>Vorname</target>
+      </trans-unit>
+      <trans-unit id="wlM3BVR" resname="Roles">
+        <source>Roles</source>
+        <target>Rollen</target>
+      </trans-unit>
+      <trans-unit id="K4i4uyq" resname="VOIR">
+        <source>VOIR</source>
+        <target>SEE</target>
+      </trans-unit>
+      <trans-unit id="xyv61GN" resname="DEGELER">
+        <source>DEGELER</source>
+        <target>DEFROST</target>
+      </trans-unit>
+      <trans-unit id="l9LEipr" resname="GELER">
+        <source>GELER</source>
+        <target>FREEZE</target>
+      </trans-unit>
+      <trans-unit id="p_v5cMu" resname="DÉSARCHIVER">
+        <source>DÉSARCHIVER</source>
+        <target>UNARCHIVE</target>
+      </trans-unit>
+      <trans-unit id="FiMUXmK" resname="ARCHIVER">
+        <source>ARCHIVER</source>
+        <target>ARCHIVE</target>
+      </trans-unit>
+      <trans-unit id="esG7wsT" resname="Aucun utilisateur d'inscrit">
+        <source>Aucun utilisateur d'inscrit</source>
+        <target>Kein Benutzer registriert</target>
+      </trans-unit>
+      <trans-unit id="97W9axB" resname="Les produits">
+        <source>Les produits</source>
+        <target>Produkte</target>
+      </trans-unit>
+      <trans-unit id="jf1y98w" resname="Utilisateur archivé, impossible de le geler">
+        <source>Utilisateur archivé, impossible de le geler</source>
+        <target>Archivierter Benutzer, kann nicht eingefroren werden</target>
+      </trans-unit>
+      <trans-unit id="z7McS3." resname="Champs obligatoires">
+        <source>Champs obligatoires</source>
+        <target>Erforderlichen Felder</target>
+      </trans-unit>
+      <trans-unit id="iBPC6sR" resname="GESTION DES RÈGLEMENTATIONS">
+        <source>GESTION DES RÈGLEMENTATIONS</source>
+        <target>VERWALTUNG DER VORSCHRIFTEN</target>
+      </trans-unit>
+      <trans-unit id="f5rDqCV" resname="Liste des règlementation">
+        <source>Liste des règlementation</source>
+        <target>Liste der Regelungen</target>
+      </trans-unit>
+      <trans-unit id="QsNnbd5" resname="Ajouter une règlementation">
+        <source>Ajouter une règlementation</source>
+        <target>Fügen Sie eine Verordnung hinzu</target>
+      </trans-unit>
+      <trans-unit id="5n7yOWf" resname="GESTION DES MÉDIAS">
+        <source>GESTION DES MÉDIAS</source>
+        <target>MEDIENVERWALTUNG</target>
+      </trans-unit>
+      <trans-unit id="m3HzBZy" resname="Liste des types de médias">
+        <source>Liste des types de médias</source>
+        <target>Liste der Arten von Medien</target>
+      </trans-unit>
+      <trans-unit id="av5BE4M" resname="Ajouter un type">
+        <source>Ajouter un type</source>
+        <target>Einen Typ hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="amA4fkS" resname="Employé">
+        <source>Employé</source>
+        <target>Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="YE3ORF4" resname="Services">
+        <source>Services</source>
+        <target>Dienstleistungen</target>
+      </trans-unit>
+      <trans-unit id="tOkp2Lz" resname="Documents">
+        <source>Documents</source>
+        <target>Dokumenten</target>
+      </trans-unit>
+      <trans-unit id="Lc07R5s" resname="Description :">
+        <source>Description :</source>
+        <target>Beschreibung :</target>
+      </trans-unit>
+      <trans-unit id="Ir2RvMj" resname="Fonctionnalités :">
+        <source>Fonctionnalités :</source>
+        <target>Funktionen :</target>
+      </trans-unit>
+      <trans-unit id="fVWLu7p" resname="Bénéfices :">
+        <source>Bénéfices :</source>
+        <target>Gewinne :</target>
+      </trans-unit>
+      <trans-unit id="6n0LdjQ" resname="Commercial">
+        <source>Commercial</source>
+        <target>kommerziell</target>
+      </trans-unit>
+      <trans-unit id="E5fKfxA" resname="Export des&#10;                produits">
+        <source>Export des
+                produits</source>
+        <target>Export der Produkte</target>
+      </trans-unit>
+      <trans-unit id="vpLje44" resname="Modifier le picto">
+        <source>Modifier le picto</source>
+        <target>Ändern des Piktogramms</target>
+      </trans-unit>
+      <trans-unit id="xaYD7o_" resname="Ajouter un picto">
+        <source>Ajouter un picto</source>
+        <target>Fügen Sie ein Piktogramm hinzu</target>
+      </trans-unit>
+      <trans-unit id="LIdYKxR" resname="Pictogramme">
+        <source>Pictogramme</source>
+        <target>Piktogramm</target>
+      </trans-unit>
+      <trans-unit id="UxRZQAc" resname="Employé n°">
+        <source>Employé n°</source>
+        <target>Mitarbeiter Nr.</target>
+      </trans-unit>
+      <trans-unit id="CWLuk7z" resname="Consultation d'un employé">
+        <source>Consultation d'un employé</source>
+        <target>Konsultation mit einem Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="YTOhw2o" resname="NOM">
+        <source>NOM</source>
+        <target>NAME</target>
+      </trans-unit>
+      <trans-unit id="_tPO7Yn" resname="PRÉNOM">
+        <source>PRÉNOM</source>
+        <target>VORNAME</target>
+      </trans-unit>
+      <trans-unit id="YZQ3tCA" resname="MAIL">
+        <source>MAIL</source>
+        <target>Mail</target>
+      </trans-unit>
+      <trans-unit id="bzxgO4E" resname="SERVICE">
+        <source>SERVICE</source>
+        <target>SERVICE</target>
+      </trans-unit>
+      <trans-unit id="X21.s.w" resname="FONCTION">
+        <source>FONCTION</source>
+        <target>FUNKTION</target>
+      </trans-unit>
+      <trans-unit id="f6R6kEF" resname="Les employés">
+        <source>Les employés</source>
+        <target>Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="SzyfC5D" resname="Aucun employé d'inscrit">
+        <source>Aucun employé d'inscrit</source>
+        <target>Kein registrierter Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="RTRnaC_" resname="Veuillez renseigner une catégorie">
+        <source>Veuillez renseigner une catégorie</source>
+        <target>Bitte geben Sie eine Kategorie ein</target>
+      </trans-unit>
+      <trans-unit id="iKNZX7r" resname="Entrez un commentaire...">
+        <source>Entrez un commentaire...</source>
+        <target>Geben Sie einen Kommentar ein...</target>
+      </trans-unit>
+      <trans-unit id="E.mUA1T" resname="Veuillez renseigner un commentaire">
+        <source>Veuillez renseigner un commentaire</source>
+        <target>Bitte geben Sie einen Kommentar ein</target>
+      </trans-unit>
+      <trans-unit id="3B4Os9o" resname="La vente a bien été créée !">
+        <source>La vente a bien été créée !</source>
+        <target>La vente a bien été créée !</target>
+      </trans-unit>
+      <trans-unit id="iU5Z1On" resname="La vente a bien été modifiée !">
+        <source>La vente a bien été modifiée !</source>
+        <target>Der Verkauf wurde geändert!</target>
+      </trans-unit>
+      <trans-unit id="BoRuL4A" resname="La vente a bien été supprimée !">
+        <source>La vente a bien été supprimée !</source>
+        <target>Der Verkauf wurde abgebrochen!</target>
+      </trans-unit>
+      <trans-unit id="yVwzGkR" resname="[Acceptation] Metz Connect">
+        <source>[Acceptation] Metz Connect</source>
+        <target>[Annahme] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="gyb7N6L" resname="L'utilisateur a bien été accepté !">
+        <source>L'utilisateur a bien été accepté !</source>
+        <target>Der Benutzer wurde erfolgreich akzeptiert!</target>
+      </trans-unit>
+      <trans-unit id="sqQlFYK" resname="[Refus] Metz Connect">
+        <source>[Refus] Metz Connect</source>
+        <target>[Ablehnung] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="iZ37ZoV" resname="L'utilisateur a bien été supprimé !">
+        <source>L'utilisateur a bien été supprimé !</source>
+        <target>Der Benutzer wurde erfolgreich gelöscht!</target>
+      </trans-unit>
+      <trans-unit id="I9OTi17" resname="Utilisateurs">
+        <source>Utilisateurs</source>
+        <target>Benutzer</target>
+      </trans-unit>
+      <trans-unit id="BuTwUXf" resname="en attente">
+        <source>en attente</source>
+        <target>steht aus</target>
+      </trans-unit>
+      <trans-unit id="b5SCJny" resname="MODE USURPATION">
+        <source>MODE USURPATION</source>
+        <target>IMPACT-MODUS</target>
+      </trans-unit>
+      <trans-unit id="yGylDDw" resname="ACTIVÉ">
+        <source>ACTIVÉ</source>
+        <target>AKTIVIERT</target>
+      </trans-unit>
+      <trans-unit id="j5_bCOw" resname="Retour à l'accueil">
+        <source>Retour à l'accueil</source>
+        <target>Zurück nach Hause</target>
+      </trans-unit>
+      <trans-unit id="97wAdna" resname="L' administrateur a acceptré votre demande de création de compte, vous pouvez dès à présent, vous connecté.">
+        <source>L' administrateur a acceptré votre demande de création de compte, vous pouvez dès à présent, vous connecté.</source>
+        <target>Der Administrator hat Ihre Anfrage zur Kontoerstellung akzeptiert, Sie können sich jetzt anmelden.</target>
+      </trans-unit>
+      <trans-unit id="JoZrPCA" resname="Merci">
+        <source>Merci</source>
+        <target>Vielen Dank</target>
+      </trans-unit>
+      <trans-unit id=".Q9x3r1" resname="Cordialement, Metz Connect">
+        <source>Cordialement, Metz Connect</source>
+        <target>Mit freundlichen Grüßen Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="E4EX8Qh" resname="L'administrateur a refusé votre demande de création de compte, veuillez contacter l'administrateur.">
+        <source>L'administrateur a refusé votre demande de création de compte, veuillez contacter l'administrateur.</source>
+        <target>Der Administrator hat Ihre Anfrage zum Erstellen eines Kontos abgelehnt. Bitte wenden Sie sich an den Administrator.</target>
+      </trans-unit>
+      <trans-unit id="gHJev45" resname="Les ventes">
+        <source>Les ventes</source>
+        <target>Die Verkäufe</target>
+      </trans-unit>
+      <trans-unit id="Q8Mzx8i" resname="Les Ventes">
+        <source>Les Ventes</source>
+        <target>Die Verkäufe</target>
+      </trans-unit>
+      <trans-unit id="H8sj3H9" resname="Retrouvez ici toutes les ventes">
+        <source>Retrouvez ici toutes les ventes</source>
+        <target>Hier finden Sie alle Verkäufe</target>
+      </trans-unit>
+      <trans-unit id="I1zQmfM" resname="AJOUTER UNE VENTE">
+        <source>AJOUTER UNE VENTE</source>
+        <target>VERKAUF HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="SNPoFla" resname="Commentaire">
+        <source>Commentaire</source>
+        <target>Kommentar</target>
+      </trans-unit>
+      <trans-unit id="6IIoa3w" resname="Vente non trouvée dans la base de données">
+        <source>Vente non trouvée dans la base de données</source>
+        <target>Angebot nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="VWjjHlt" resname="Ajouter une vente">
+        <source>Ajouter une vente</source>
+        <target>Verkauf hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="oUAdMQ2" resname="Ajouter la vente">
+        <source>Ajouter la vente</source>
+        <target>Verkauf hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="onGsqHv" resname="USURPER">
+        <source>USURPER</source>
+        <target>USURPIEREN</target>
+      </trans-unit>
+      <trans-unit id="wXsmFyV" resname="Les utilisateurs en attente">
+        <source>Les utilisateurs en attente</source>
+        <target>Wartende Benutzer</target>
+      </trans-unit>
+      <trans-unit id="6klbLRv" resname="Retrouvez ici tous les utilisateurs inscrits mais en attente de confirmation de votre part">
+        <source>Retrouvez ici tous les utilisateurs inscrits mais en attente de confirmation de votre part</source>
+        <target>Hier finden Sie alle registrierten Benutzer, die auf Ihre Bestätigung warten</target>
+      </trans-unit>
+      <trans-unit id="LD9U_.a" resname="ACCEPTER">
+        <source>ACCEPTER</source>
+        <target>ANNEHMEN</target>
+      </trans-unit>
+      <trans-unit id="ZylU9D_" resname="REFUSER">
+        <source>REFUSER</source>
+        <target>ABLEHNEN</target>
+      </trans-unit>
+      <trans-unit id="cmHaoBk" resname="Aucun utilisateur d'inscrit en attente">
+        <source>Aucun utilisateur d'inscrit en attente</source>
+        <target>Keine registrierten Benutzer ausstehend</target>
+      </trans-unit>
+      <trans-unit id="AtQMYxV" resname="Le fichier CSV est invalide, Il manque des colonnes">
+        <source>Le fichier CSV est invalide, Il manque des colonnes</source>
+        <target>CSV-Datei ist ungültig, Spalten fehlen</target>
+      </trans-unit>
+      <trans-unit id="KIjl4G8" resname="Le fichier CSV est invalide">
+        <source>Le fichier CSV est invalide</source>
+        <target>CSV-Datei ist ungültig</target>
+      </trans-unit>
+      <trans-unit id="nAzSeCs" resname="Modification d'un employé">
+        <source>Modification d'un employé</source>
+        <target>Mitarbeiter bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="CpllV5d" resname="IMPORTER DES PRODUITS">
+        <source>IMPORTER DES PRODUITS</source>
+        <target>PRODUKTE IMPORTIEREN</target>
+      </trans-unit>
+      <trans-unit id="_sYIlzl" resname="Importation de produits">
+        <source>Importation de produits</source>
+        <target>Produktimport</target>
+      </trans-unit>
+      <trans-unit id="WIPvyf1" resname="Exemple de fichier">
+        <source>Exemple de fichier</source>
+        <target>Beispieldatei</target>
+      </trans-unit>
+      <trans-unit id="EgoYihs" resname="Le fichier doit contenir les colonnes suivantes">
+        <source>Le fichier doit contenir les colonnes suivantes</source>
+        <target>Die Datei muss die folgenden Spalten enthalten</target>
+      </trans-unit>
+      <trans-unit id="ezZiiyM" resname="Prix unitaire (PU)">
+        <source>Prix unitaire (PU)</source>
+        <target>Stückpreis (PU)</target>
+      </trans-unit>
+      <trans-unit id="ReCYira" resname="Garantie">
+        <source>Garantie</source>
+        <target>Garantie</target>
+      </trans-unit>
+      <trans-unit id="JpDHQvY" resname="Alimentation">
+        <source>Alimentation</source>
+        <target>Power</target>
+      </trans-unit>
+      <trans-unit id="BQ5bGCQ" resname="Télécharger le modèle">
+        <source>Télécharger le modèle</source>
+        <target>Vorlage herunterladen</target>
+      </trans-unit>
+      <trans-unit id="nov0xcP" resname="Présentation">
+        <source>Présentation</source>
+        <target>Präsentation</target>
+      </trans-unit>
+      <trans-unit id="iwvSnhV" resname="Disposition tarifaire">
+        <source>Disposition tarifaire</source>
+        <target>Tarifregelung</target>
+      </trans-unit>
+      <trans-unit id="LnLCjIA" resname="Règlementations">
+        <source>Règlementations</source>
+        <target>Vorschriften</target>
+      </trans-unit>
+      <trans-unit id="QwTM_j9" resname="Média">
+        <source>Média</source>
+        <target>Medien</target>
+      </trans-unit>
+      <trans-unit id="0CyAzP5" resname="Ajouter une image">
+        <source>Ajouter une image</source>
+        <target>Bild hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="Xl0CFs4" resname="Supprimer">
+        <source>Supprimer</source>
+        <target>Löschen</target>
+      </trans-unit>
+      <trans-unit id="_sXUsEG" resname="Règlementation">
+        <source>Règlementation</source>
+        <target>Vorschriften</target>
+      </trans-unit>
+      <trans-unit id="5jrbgC9" resname="Ajouter les médias">
+        <source>Ajouter les médias</source>
+        <target>Medien hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="kUGC1eJ" resname="Dimensions">
+        <source>Dimensions</source>
+        <target>Abmessungen</target>
+      </trans-unit>
+      <trans-unit id="5tDdB10" resname="GESTION DES CATÉGORIES">
+        <source>GESTION DES CATÉGORIES</source>
+        <target>KATEGORIE MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="brGS0PG" resname="Pictogramme actuel">
+        <source>Pictogramme actuel</source>
+        <target>Aktuelles Piktogramm</target>
+      </trans-unit>
+      <trans-unit id="312yQSb" resname="Prévisualisation">
+        <source>Prévisualisation</source>
+        <target>Vorschau</target>
+      </trans-unit>
+      <trans-unit id="qOOF284" resname="Quitter le mode usurpation">
+        <source>Quitter le mode usurpation</source>
+        <target>Spoof-Modus beenden</target>
+      </trans-unit>
+      <trans-unit id="k7AVCR1" resname="Veuillez uploader un fichier PNG.">
+        <source>Veuillez uploader un fichier PNG.</source>
+        <target>Bitte laden Sie eine PNG-Datei hoch.</target>
+      </trans-unit>
+      <trans-unit id="ATC31tN" resname="La pièce détachée a bien été créée !">
+        <source>La pièce détachée a bien été créée !</source>
+        <target>Das Ersatzteil ist erstellt!</target>
+      </trans-unit>
+      <trans-unit id="oj0pglC" resname="La pièce détachée a bien été modifiée !">
+        <source>La pièce détachée a bien été modifiée !</source>
+        <target>Das Ersatzteil wurde modifiziert!</target>
+      </trans-unit>
+      <trans-unit id="tZ8cdYO" resname="La pièce détachée a bien été supprimée !">
+        <source>La pièce détachée a bien été supprimée !</source>
+        <target>Das Ersatzteil wurde gelöscht!</target>
+      </trans-unit>
+      <trans-unit id="kND1GK0" resname="Votre compte est bloqué, veuillez contacter l'administrateur">
+        <source>Votre compte est bloqué, veuillez contacter l'administrateur</source>
+        <target>Ihr Konto ist gesperrt, bitte wenden Sie sich an den Administrator</target>
+      </trans-unit>
+      <trans-unit id="Flc0ZjP" resname="Votre compte est archivé, veuillez contacter l'administrateur">
+        <source>Votre compte est archivé, veuillez contacter l'administrateur</source>
+        <target>Ihr Konto ist archiviert, bitte wenden Sie sich an den Administrator</target>
+      </trans-unit>
+      <trans-unit id="cdx0hz4" resname="Enregistrer">
+        <source>Enregistrer</source>
+        <target>Speichern</target>
+      </trans-unit>
+      <trans-unit id="PiK2zHP" resname="Ajouter un picto (uniquement PNG)">
+        <source>Ajouter un picto (uniquement PNG)</source>
+        <target>Bild hinzufügen (nur PNG)</target>
+      </trans-unit>
+      <trans-unit id="iOBWP5z" resname="Les pièces détachées">
+        <source>Les pièces détachées</source>
+        <target>Abnehmbare Teile</target>
+      </trans-unit>
+      <trans-unit id="CycOY5l" resname="Les Pièces Détachées">
+        <source>Les Pièces Détachées</source>
+        <target>Abnehmbare Teile</target>
+      </trans-unit>
+      <trans-unit id="gmz6adW" resname="Retrouvez ici toutes les pièces détachées">
+        <source>Retrouvez ici toutes les pièces détachées</source>
+        <target>Hier finden Sie alle Ersatzteile</target>
+      </trans-unit>
+      <trans-unit id="Ig.hf20" resname="AJOUTER UNE PIÈCE DETACHÉE">
+        <source>AJOUTER UNE PIÈCE DETACHÉE</source>
+        <target>ERSATZTEIL HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="c0IZ3lB" resname="piece détachée non trouvée dans la base de données">
+        <source>piece détachée non trouvée dans la base de données</source>
+        <target>Ersatzteil nicht in der Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="m0xA54O" resname="Ajouter une pièce détachée">
+        <source>Ajouter une pièce détachée</source>
+        <target>Fügen Sie ein Ersatzteil hinzu</target>
+      </trans-unit>
+      <trans-unit id="PD4vVQ4" resname="Ajouter la pièce détachée">
+        <source>Ajouter la pièce détachée</source>
+        <target>Fügen Sie das Ersatzteil hinzu</target>
+      </trans-unit>
+      <trans-unit id="x4tKZir" resname="Les tickets">
+        <source>Les tickets</source>
+        <target>Die Tickets</target>
+      </trans-unit>
+      <trans-unit id="149ANMb" resname="Les Tickets">
+        <source>Les Tickets</source>
+        <target>Die Tickets</target>
+      </trans-unit>
+      <trans-unit id="NpTR3qz" resname="Retrouvez ici tous les tickets">
+        <source>Retrouvez ici tous les tickets</source>
+        <target>Hier finden Sie alle Tickets</target>
+      </trans-unit>
+      <trans-unit id="YIeskGj" resname="n° ticket">
+        <source>n° ticket</source>
+        <target>Ticketnummer</target>
+      </trans-unit>
+      <trans-unit id="ofJFwki" resname="Client concerné">
+        <source>Client concerné</source>
+        <target>Kunde betroffen</target>
+      </trans-unit>
+      <trans-unit id="Axb_W9r" resname="Produit concerné">
+        <source>Produit concerné</source>
+        <target>Betroffenes Produkt</target>
+      </trans-unit>
+      <trans-unit id="uoICtb8" resname="ticket non trouvé dans la base de données">
+        <source>ticket non trouvé dans la base de données</source>
+        <target>Ticket nicht in der Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="Z8Howwn" resname="Veuillez sélectionner au moins un produit">
+        <source>Veuillez sélectionner au moins un produit</source>
+        <target>Bitte wählen Sie mindestens ein Produkt aus</target>
+      </trans-unit>
+      <trans-unit id="XZViL8K" resname="Libellé DE">
+        <source>Libellé DE</source>
+        <target>Label (DE)</target>
+      </trans-unit>
+      <trans-unit id="T0KA4_1" resname="Libellé EN">
+        <source>Libellé EN</source>
+        <target>Label (EN)</target>
+      </trans-unit>
+      <trans-unit id="ANZ8r9W" resname="Est archivé">
+        <source>Est archivé</source>
+        <target>Ist archiviert</target>
+      </trans-unit>
+      <trans-unit id="rXizpdj" resname="Le type de produit est utilisé par un produit ! Elle ne peut pas être supprimée !">
+        <source>Le type de produit est utilisé par un produit ! Elle ne peut pas être supprimée !</source>
+        <target>Der Produkttyp wird von einem Produkt verwendet! Er kann nicht gelöscht werden !</target>
+      </trans-unit>
+      <trans-unit id="HoDT2uN" resname="Aucun utilisateur sélectionné !">
+        <source>Aucun utilisateur sélectionné !</source>
+        <target>Kein Benutzer ausgewählt !</target>
+      </trans-unit>
+      <trans-unit id="LxX3CFR" resname="Les utilisateurs ont bien été acceptés !">
+        <source>Les utilisateurs ont bien été acceptés !</source>
+        <target>Benutzer wurden erfolgreich akzeptiert!</target>
+      </trans-unit>
+      <trans-unit id="6QASJ5y" resname="Les utilisateurs ont bien été supprimées !">
+        <source>Les utilisateurs ont bien été supprimées !</source>
+        <target>Die Benutzer wurden erfolgreich gelöscht!</target>
+      </trans-unit>
+      <trans-unit id="YCBho.b" resname="Le fichier XLSX est invalide, Il manque des colonnes">
+        <source>Le fichier XLSX est invalide, Il manque des colonnes</source>
+        <target>XLSX-Datei ist ungültig, Spalten fehlen</target>
+      </trans-unit>
+      <trans-unit id="wCxVTL5" resname="Rechercher un produit">
+        <source>Rechercher un produit</source>
+        <target>Produkt suchen</target>
+      </trans-unit>
+      <trans-unit id=".IhCSgH" resname="Veuillez choisir une catégorie">
+        <source>Veuillez choisir une catégorie</source>
+        <target>Bitte wählen Sie eine Kategorie aus</target>
+      </trans-unit>
+      <trans-unit id="HmNn7z9" resname="Accepter les utilisateurs séléctionnées">
+        <source>Accepter les utilisateurs séléctionnées</source>
+        <target>Ausgewählte Benutzer akzeptieren</target>
+      </trans-unit>
+      <trans-unit id="tPijBXo" resname="Refuser les utilisateurs séléctionnées">
+        <source>Refuser les utilisateurs séléctionnées</source>
+        <target>Ausgewählte Benutzer ablehnen</target>
+      </trans-unit>
+      <trans-unit id="eoz4YgU" resname="Séléction">
+        <source>Séléction</source>
+        <target>Auswahl</target>
+      </trans-unit>
+      <trans-unit id="L7Ws5iU" resname="Filtrage">
+        <source>Filtrage</source>
+        <target>Filterung</target>
+      </trans-unit>
+      <trans-unit id="KGuQrvy" resname="RÉINITIALISER">
+        <source>RÉINITIALISER</source>
+        <target>RESET</target>
+      </trans-unit>
+      <trans-unit id="4Mf107r" resname="Tous cocher">
+        <source>Tous cocher</source>
+        <target>Alles prüfen</target>
+      </trans-unit>
+      <trans-unit id="zAIYhco" resname="Tous décocher">
+        <source>Tous décocher</source>
+        <target>Alles deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="D8jzk3S" resname="EXPORTER LES PRODUITS">
+        <source>EXPORTER LES PRODUITS</source>
+        <target>EXPORTPRODUKTE</target>
+      </trans-unit>
+      <trans-unit id="1Eh0EFb" resname="GESTION DES ALIMENTATIONS">
+        <source>GESTION DES ALIMENTATIONS</source>
+        <target>ENERGIEVERWALTUNG</target>
+      </trans-unit>
+      <trans-unit id="jbcM0sF" resname="Liste des alimentations">
+        <source>Liste des alimentations</source>
+        <target>Liste der Netzteile</target>
+      </trans-unit>
+      <trans-unit id="U0cCdTM" resname="Ajouter une alimentation">
+        <source>Ajouter une alimentation</source>
+        <target>Netzteil hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="xZEX4vR" resname="Votre compte a bien été supprimé">
+        <source>Votre compte a bien été supprimé</source>
+        <target>Ihr Konto wurde erfolgreich gelöscht</target>
+      </trans-unit>
+      <trans-unit id="sSEa_bb" resname="FILTRER">
+        <source>FILTRER</source>
+        <target>FILTER</target>
+      </trans-unit>
+      <trans-unit id="vka0tkg" resname="Afficher les produits archivés">
+        <source>Afficher les produits archivés</source>
+        <target>Archivierte Produkte anzeigen</target>
+      </trans-unit>
+      <trans-unit id="aJfVn8m" resname="Veuillez choisir un service">
+        <source>Veuillez choisir un service</source>
+        <target>Bitte wählen Sie eine Dienstleistung aus</target>
+      </trans-unit>
+      <trans-unit id="ZrXtBxs" resname="Veuillez choisir une fonction">
+        <source>Veuillez choisir une fonction</source>
+        <target>Bitte wählen Sie eine Funktion aus</target>
+      </trans-unit>
+      <trans-unit id="zoYyMwY" resname="Afficher les utilisateurs archivés">
+        <source>Afficher les utilisateurs archivés</source>
+        <target>Archivierte Benutzer anzeigen</target>
+      </trans-unit>
+      <trans-unit id="VnqLX49" resname="Ticket">
+        <source>Ticket</source>
+        <target>Fahrkarte</target>
+      </trans-unit>
+      <trans-unit id="fUwZx7T" resname="Commentaire :">
+        <source>Commentaire :</source>
+        <target>Kommentar :</target>
+      </trans-unit>
+      <trans-unit id="HNi7oSj" resname="Le ticket a bien été créé ! Le technicien va vous contacter dans les plus brefs délais.">
+        <source>Le ticket a bien été créé ! Le technicien va vous contacter dans les plus brefs délais.</source>
+        <target>Das Ticket wurde erstellt! Der Techniker wird sich so schnell wie möglich mit Ihnen in Verbindung setzen.</target>
+      </trans-unit>
+      <trans-unit id="j6Hd3VN" resname="mm">
+        <source>mm</source>
+        <target>mm</target>
+      </trans-unit>
+      <trans-unit id="zQqphWF" resname="g">
+        <source>g</source>
+        <target>g</target>
+      </trans-unit>
+      <trans-unit id="7t90k4h" resname="Libelle DE">
+        <source>Libelle DE</source>
+        <target>Wortlaut VON</target>
+      </trans-unit>
+      <trans-unit id="cb_Qk1." resname="Reference">
+        <source>Reference</source>
+        <target>Referenz</target>
+      </trans-unit>
+      <trans-unit id="RH7Fa3G" resname="Pièce concerné">
+        <source>Pièce concerné</source>
+        <target>Teil betroffen</target>
+      </trans-unit>
+      <trans-unit id="f2.0bPs" resname="Assistance - Créer un ticket">
+        <source>Assistance - Créer un ticket</source>
+        <target>Support - Erstellen Sie ein Ticket</target>
+      </trans-unit>
+      <trans-unit id="N8.F9TC" resname="2022 Metz Connect -- Tous droits réservés">
+        <source>2022 Metz Connect -- Tous droits réservés</source>
+        <target>2022 Metz Connect -- Alle Rechte vorbehalten</target>
+      </trans-unit>
+      <trans-unit id="W6t1Cs1" resname="Pièces">
+        <source>Pièces</source>
+        <target>Räume</target>
+      </trans-unit>
+      <trans-unit id="olio7wM" resname="Quantité">
+        <source>Quantité</source>
+        <target>Menge</target>
+      </trans-unit>
+      <trans-unit id="Nk4VZ.8" resname="Nouveau ticket">
+        <source>Nouveau ticket</source>
+        <target>Neues Ticket</target>
+      </trans-unit>
+      <trans-unit id="ODOjvOW" resname="Création d'un ticket">
+        <source>Création d'un ticket</source>
+        <target>Ticket erstellen</target>
+      </trans-unit>
+      <trans-unit id="RBtu19J" resname="Créer le ticket">
+        <source>Créer le ticket</source>
+        <target>Ticket erstellen</target>
+      </trans-unit>
+      <trans-unit id="Jr6qu6x" resname="Est gelé ?">
+        <source>Est gelé ?</source>
+        <target>Ist gefroren?</target>
+      </trans-unit>
+      <trans-unit id="CpBAdjn" resname="Oui">
+        <source>Oui</source>
+        <target>Ja</target>
+      </trans-unit>
+      <trans-unit id="f2JJawy" resname="Non">
+        <source>Non</source>
+        <target>Nö</target>
+      </trans-unit>
+      <trans-unit id="qik8pUE" resname="Est archivé ?">
+        <source>Est archivé ?</source>
+        <target>Ist archiviert?</target>
+      </trans-unit>
+      <trans-unit id="ZLQkmj7" resname="Importation de ventes">
+        <source>Importation de ventes</source>
+        <target>Umsatzimport</target>
+      </trans-unit>
+      <trans-unit id="4eF0iSL" resname="IMPORTER DES VENTES">
+        <source>IMPORTER DES VENTES</source>
+        <target>IMPORTVERKÄUFE</target>
+      </trans-unit>
+      <trans-unit id="fBfTC4f" resname="Vous n'avez pas les droits pour accéder à cette page.">
+        <source>Vous n'avez pas les droits pour accéder à cette page.</source>
+        <target>Sie haben keine Zugriffsrechte auf diese Seite.</target>
+      </trans-unit>
+      <trans-unit id="T7ZDHjR" resname="La page que vous recherchez n'existe pas.">
+        <source>La page que vous recherchez n'existe pas.</source>
+        <target>Die gesuchte Seite existiert nicht.</target>
+      </trans-unit>
+      <trans-unit id="RhSOJQ5" resname="Erreur">
+        <source>Erreur</source>
+        <target>Fehler</target>
+      </trans-unit>
+      <trans-unit id="6M6QQ_Y" resname="Une erreur est survenue, veuillez réessayer ultérieurement.">
+        <source>Une erreur est survenue, veuillez réessayer ultérieurement.</source>
+        <target>Ein Fehler ist aufgetreten, bitte versuchen Sie es später erneut.</target>
+      </trans-unit>
+      <trans-unit id="NTgRFLP" resname="Entrez votre commentaire ici">
+        <source>Entrez votre commentaire ici</source>
+        <target>Geben Sie hier Ihren Kommentar ein</target>
+      </trans-unit>
+      <trans-unit id="UDqrvFg" resname="Ajouter le document">
+        <source>Ajouter le document</source>
+        <target>Dokument hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="coerLqB" resname="AJOUTER UN DOCUMENT">
+        <source>AJOUTER UN DOCUMENT</source>
+        <target>DOKUMENT HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="d1y9pl0" resname="Modification d'une vente">
+        <source>Modification d'une vente</source>
+        <target>Verkauf bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="zfEEBux" resname="EXPORTER LES VENTES">
+        <source>EXPORTER LES VENTES</source>
+        <target>EXPORTVERKÄUFE</target>
+      </trans-unit>
+      <trans-unit id="v.mIEcx" resname="Vente non trouvé dans la base de données">
+        <source>Vente non trouvé dans la base de données</source>
+        <target>Angebot nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="knTJHuk" resname="Aucun document n'existe pour cette vente">
+        <source>Aucun document n'existe pour cette vente</source>
+        <target>Für diesen Verkauf ist kein Dokument vorhanden</target>
+      </trans-unit>
+      <trans-unit id="U2uYAER" resname="Modification d'une Vente">
+        <source>Modification d'une Vente</source>
+        <target>Bearbeiten eines Verkaufs</target>
+      </trans-unit>
+      <trans-unit id="7hn42P." resname="Vente">
+        <source>Vente</source>
+        <target>Verkauf</target>
+      </trans-unit>
+      <trans-unit id="uVNEgZu" resname="Veuillez sélectionner au moins une pièce détachée">
+        <source>Veuillez sélectionner au moins une pièce détachée</source>
+        <target>Bitte wählen Sie mindestens ein Ersatzteil aus</target>
+      </trans-unit>
+      <trans-unit id="xtjLvB8" resname="Veuillez sélectionner au moins un ticket">
+        <source>Veuillez sélectionner au moins un ticket</source>
+        <target>Bitte wählen Sie mindestens ein Ticket aus</target>
+      </trans-unit>
+      <trans-unit id="DHf_Cas" resname="Client">
+        <source>Client</source>
+        <target>Kunde</target>
+      </trans-unit>
+      <trans-unit id="oNPbLwg" resname="Produit">
+        <source>Produit</source>
+        <target>Produkt</target>
+      </trans-unit>
+      <trans-unit id="F52dRJJ" resname="Pièce">
+        <source>Pièce</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="3uN3z9j" resname="Statut">
+        <source>Statut</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="_CAj29m" resname="EXPORTER LES PIÈCE DÉTACHÉES">
+        <source>EXPORTER LES PIÈCE DÉTACHÉES</source>
+        <target>ERSATZTEILE EXPORTIEREN</target>
+      </trans-unit>
+      <trans-unit id="gmmXFxu" resname="Libelle">
+        <source>Libelle</source>
+        <target>Wortlaut</target>
+      </trans-unit>
+      <trans-unit id="RUiWkLV" resname="Pièce détachée non trouvé dans la base de données">
+        <source>Pièce détachée non trouvé dans la base de données</source>
+        <target>Ersatzteil nicht in der Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="3LUOQeB" resname="EXPORTER LES TICKETS">
+        <source>EXPORTER LES TICKETS</source>
+        <target>EXPORT-TICKETS</target>
+      </trans-unit>
+      <trans-unit id="cWogonL" resname="Ticket non trouvé dans la base de données">
+        <source>Ticket non trouvé dans la base de données</source>
+        <target>Ticket nicht in Datenbank gefunden</target>
+      </trans-unit>
+      <trans-unit id="6GdV03a" resname="Tableau">
+        <source>Tableau</source>
+        <target>Tisch</target>
+      </trans-unit>
+      <trans-unit id="_EHCCAd" resname="Vignette">
+        <source>Vignette</source>
+        <target>Miniaturansicht</target>
+      </trans-unit>
+      <trans-unit id="Fw9UX44" resname="Service :">
+        <source>Service :</source>
+        <target>Bedienung :</target>
+      </trans-unit>
+      <trans-unit id="JLff1s." resname="Email :">
+        <source>Email :</source>
+        <target>Email :</target>
+      </trans-unit>
+      <trans-unit id="GOs23Zi" resname="Fonction :">
+        <source>Fonction :</source>
+        <target>Funktion :</target>
+      </trans-unit>
+      <trans-unit id="B861HTo" resname="Fichier">
+        <source>Fichier</source>
+        <target>Datei</target>
+      </trans-unit>
+      <trans-unit id="78S6_9U" resname="Date d'ajout">
+        <source>Date d'ajout</source>
+        <target>Datum hinzugefügt</target>
+      </trans-unit>
+      <trans-unit id="ANypoJ9" resname="Aucun document n'existe pour cet employé">
+        <source>Aucun document n'existe pour cet employé</source>
+        <target>Für diesen Mitarbeiter sind keine Datensätze vorhanden</target>
+      </trans-unit>
+      <trans-unit id="ZM.xMZ0" resname="Action">
+        <source>Action</source>
+        <target>Aktie</target>
+      </trans-unit>
+      <trans-unit id="vSym4Dd" resname="Retrouvez ici tous les employés au sein de l'entreprise">
+        <source>Retrouvez ici tous les employés au sein de l'entreprise</source>
+        <target>Hier finden Sie alle Mitarbeiter des Unternehmens</target>
+      </trans-unit>
+      <trans-unit id="UQ5iKxv" resname="Retrouvez ici toutes les fonctions des employés">
+        <source>Retrouvez ici toutes les fonctions des employés</source>
+        <target>Hier finden Sie alle Funktionen der Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="SxUSCLz" resname="Catégories">
+        <source>Catégories</source>
+        <target>Kategorien</target>
+      </trans-unit>
+      <trans-unit id="U5GtZ9K" resname="Erreur 403">
+        <source>Erreur 403</source>
+        <target>Fehler 403</target>
+      </trans-unit>
+      <trans-unit id="cw8EcCt" resname="Erreur 404">
+        <source>Erreur 404</source>
+        <target>Fehler 404</target>
+      </trans-unit>
+      <trans-unit id="hYyEe3Q" resname="Suppression">
+        <source>Suppression</source>
+        <target>Streichung</target>
+      </trans-unit>
+      <trans-unit id="8DzEGnN" resname="Modification employé">
+        <source>Modification employé</source>
+        <target>Mitarbeiter wechseln</target>
+      </trans-unit>
+      <trans-unit id="XyDub1L" resname="Fichier (XLSX)">
+        <source>Fichier (XLSX)</source>
+        <target>Datei (XLSX)</target>
+      </trans-unit>
+      <trans-unit id="4mfTQ4I" resname="Profil">
+        <source>Profil</source>
+        <target>Profil</target>
+      </trans-unit>
+      <trans-unit id="z7GsDIB" resname="Inscription">
+        <source>Inscription</source>
+        <target>Anmeldung</target>
+      </trans-unit>
+      <trans-unit id="3mP8v90" resname="Modification vente">
+        <source>Modification vente</source>
+        <target>Verkaufsmodifikation</target>
+      </trans-unit>
+      <trans-unit id="5p_FpZq" resname="Authentification">
+        <source>Authentification</source>
+        <target>Authentifizierung</target>
+      </trans-unit>
+      <trans-unit id="BqkId9b" resname="Rechercher un utilisateur">
+        <source>Rechercher un utilisateur</source>
+        <target>Suchen Sie einen Benutzer</target>
+      </trans-unit>
+      <trans-unit id="pndMgzJ" resname="Les Fonctions">
+        <source>Les Fonctions</source>
+        <target>Die Funktionen</target>
+      </trans-unit>
+      <trans-unit id="_G3LYYo" resname="Aucun référent n'est disponible pour votre service">
+        <source>Aucun référent n'est disponible pour votre service</source>
+        <target>Für Ihren Dienst ist kein Referrer verfügbar</target>
+      </trans-unit>
+      <trans-unit id="qqSp8rO" resname="[Prise de Contact Référent] Metz Connect">
+        <source>[Prise de Contact Référent] Metz Connect</source>
+        <target>[Referenzkontakt] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="5f25Q5l" resname="Mail envoyé à votre référent !">
+        <source>Mail envoyé à votre référent !</source>
+        <target>Mail an Ihren Referrer gesendet !</target>
+      </trans-unit>
+      <trans-unit id="tZ2rSVV" resname="Référent">
+        <source>Référent</source>
+        <target>Referrer</target>
+      </trans-unit>
+      <trans-unit id="Gpn3Tna" resname="2022-2023 Metz Connect -- Tous droits réservés">
+        <source>2022-2023 Metz Connect -- Tous droits réservés</source>
+        <target>2022-2023 Metz Connect -- Alle Rechte vorbehalten</target>
+      </trans-unit>
+      <trans-unit id="RQIT44r" resname="Modification de l'employé">
+        <source>Modification de l'employé</source>
+        <target>Mitarbeiter bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="YRKYC4." resname="There is already an account with this email">
+        <source>There is already an account with this email</source>
+        <target>There is already an account with this email</target>
+      </trans-unit>
+      <trans-unit id="eiK80vo" resname="Saisir un libellé">
+        <source>Saisir un libellé</source>
+        <target>Geben Sie eine Bezeichnung ein</target>
+      </trans-unit>
+      <trans-unit id="UuWvdqy" resname="Nouveau commentaire">
+        <source>Nouveau commentaire</source>
+        <target>Neuer Kommentar</target>
+      </trans-unit>
+      <trans-unit id="V1KZJDq" resname="[Metz Connect] Un nouveau ticket a été créé">
+        <source>[Metz Connect] Un nouveau ticket a été créé</source>
+        <target>[Metz Connect] Ein neues Ticket wurde erstellt</target>
+      </trans-unit>
+      <trans-unit id="j_GzUZg" resname="Le ticket a bien été attribué !">
+        <source>Le ticket a bien été attribué !</source>
+        <target>Das Ticket ist vergeben!</target>
+      </trans-unit>
+      <trans-unit id="TI8bucu" resname="Le ticket a bien été résolu !">
+        <source>Le ticket a bien été résolu !</source>
+        <target>Das Ticket wurde gelöst!</target>
+      </trans-unit>
+      <trans-unit id="AFeDqJ0" resname="Puissance sonore">
+        <source>Puissance sonore</source>
+        <target>Schallleistung</target>
+      </trans-unit>
+      <trans-unit id="dZIYNUt" resname="Cet email est déjà utilisé">
+        <source>Cet email est déjà utilisé</source>
+        <target>Diese E-Mail-Adresse wird schon verwendet</target>
+      </trans-unit>
+      <trans-unit id="OwpnxWs" resname="Saisir le sujet">
+        <source>Saisir le sujet</source>
+        <target>Betreff eingeben</target>
+      </trans-unit>
+      <trans-unit id="TucfKfb" resname="Saisir un message">
+        <source>Saisir un message</source>
+        <target>Geben Sie eine Nachricht ein</target>
+      </trans-unit>
+      <trans-unit id="HZZotQi" resname="Veuillez renseigner une longueur">
+        <source>Veuillez renseigner une longueur</source>
+        <target>Bitte geben Sie eine Länge ein</target>
+      </trans-unit>
+      <trans-unit id="8xMifgE" resname="Veuillez renseigner une hauteur">
+        <source>Veuillez renseigner une hauteur</source>
+        <target>Bitte geben Sie eine Höhe ein</target>
+      </trans-unit>
+      <trans-unit id="E7bes.y" resname="Veuillez renseigner une profondeur">
+        <source>Veuillez renseigner une profondeur</source>
+        <target>Bitte geben Sie eine Tiefe ein</target>
+      </trans-unit>
+      <trans-unit id="68_ayRk" resname="Veuillez renseigner une largeur">
+        <source>Veuillez renseigner une largeur</source>
+        <target>Bitte geben Sie eine Breite ein</target>
+      </trans-unit>
+      <trans-unit id="S7PJ57x" resname="Veuillez renseigner un poids">
+        <source>Veuillez renseigner un poids</source>
+        <target>Bitte geben Sie ein Gewicht ein</target>
+      </trans-unit>
+      <trans-unit id="m_NpxLs" resname="Durée de vie en années">
+        <source>Durée de vie en années</source>
+        <target>Lebensdauer in Jahren</target>
+      </trans-unit>
+      <trans-unit id="IZwbfHU" resname="Saisir les compatibilités">
+        <source>Saisir les compatibilités</source>
+        <target>Geben Sie die Kompatibilitäten ein</target>
+      </trans-unit>
+      <trans-unit id="e9wl0Wl" resname="db">
+        <source>db</source>
+        <target>db</target>
+      </trans-unit>
+      <trans-unit id="KSYuuFY" resname="Saisir une quantité">
+        <source>Saisir une quantité</source>
+        <target>Geben Sie eine Menge ein</target>
+      </trans-unit>
+      <trans-unit id="KWZK4Vm" resname="Prix du produit">
+        <source>Prix du produit</source>
+        <target>Produktpreis</target>
+      </trans-unit>
+      <trans-unit id="_mg3uD." resname="Garantie en années">
+        <source>Garantie en années</source>
+        <target>Garantie in Jahren</target>
+      </trans-unit>
+      <trans-unit id="fOF_aTo" resname="Saisir un libellé (DE)">
+        <source>Saisir un libellé (DE)</source>
+        <target>Geben Sie ein Label ein (DE)</target>
+      </trans-unit>
+      <trans-unit id="8et4KJa" resname="Libelle EN">
+        <source>Libelle EN</source>
+        <target>Wortlaut EN</target>
+      </trans-unit>
+      <trans-unit id="HLz4.e7" resname="Saisir un libellé (EN)">
+        <source>Saisir un libellé (EN)</source>
+        <target>Geben Sie eine Bezeichnung ein (EN)</target>
+      </trans-unit>
+      <trans-unit id="72OzqvT" resname="Saisir la référence">
+        <source>Saisir la référence</source>
+        <target>Saisir la référence</target>
+      </trans-unit>
+      <trans-unit id="TR73Qcf" resname="la référence doit contenir au moins {{ limit }} chiffres">
+        <source>la référence doit contenir au moins {{ limit }} chiffres</source>
+        <target>die Referenz muss mindestens {{ limit }} Ziffern enthalten</target>
+      </trans-unit>
+      <trans-unit id="sx8I9WM" resname="la référence doit contenir au plus {{ limit }} chiffres">
+        <source>la référence doit contenir au plus {{ limit }} chiffres</source>
+        <target>die Referenz darf höchstens {{ limit }} Ziffern enthalten</target>
+      </trans-unit>
+      <trans-unit id="xbaLiSJ" resname="Rechercher une vente">
+        <source>Rechercher une vente</source>
+        <target>Finden Sie einen Verkauf</target>
+      </trans-unit>
+      <trans-unit id="zAQj2gS" resname="Retrouvez ici tous les employés inscrits au sein de l'entreprise">
+        <source>Retrouvez ici tous les employés inscrits au sein de l'entreprise</source>
+        <target>Hier finden Sie alle im Unternehmen registrierten Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="wmR4E4T" resname="Un nouveau ticket a été créer par">
+        <source>Un nouveau ticket a été créer par</source>
+        <target>Ein neues Ticket wurde erstellt von</target>
+      </trans-unit>
+      <trans-unit id="bEDE.da" resname="Voici le contenu du ticket">
+        <source>Voici le contenu du ticket</source>
+        <target>Hier ist der Inhalt des Tickets</target>
+      </trans-unit>
+      <trans-unit id="h8tjG4M" resname="Vous pouvez consulter votre ticket en vous connectant à votre compte">
+        <source>Vous pouvez consulter votre ticket en vous connectant à votre compte</source>
+        <target>Sie können Ihr Ticket anzeigen, indem Sie sich in Ihr Konto einloggen</target>
+      </trans-unit>
+      <trans-unit id="EY7DbD1" resname="Vous venez de créer un ticket">
+        <source>Vous venez de créer un ticket</source>
+        <target>Sie haben gerade ein Ticket erstellt</target>
+      </trans-unit>
+      <trans-unit id="PH5FxxE" resname="Il n'y a aucun utilisateurs en attente.">
+        <source>Il n'y a aucun utilisateurs en attente.</source>
+        <target>Es gibt keine ausstehenden Benutzer.</target>
+      </trans-unit>
+      <trans-unit id="cdJe2Zm" resname="Photo de profil">
+        <source>Photo de profil</source>
+        <target>Profilbild</target>
+      </trans-unit>
+      <trans-unit id="jR.mhw3" resname="Importation de piece détachée">
+        <source>Importation de piece détachée</source>
+        <target>Import von Ersatzteilen</target>
+      </trans-unit>
+      <trans-unit id="I.QetA8" resname="AJOUTER UNE PIÈCE DÉTACHÉE">
+        <source>AJOUTER UNE PIÈCE DÉTACHÉE</source>
+        <target>ERSATZTEIL HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="ySsRcWe" resname="IMPORTER DES PIÈCES DÉTACHÉES">
+        <source>IMPORTER DES PIÈCES DÉTACHÉES</source>
+        <target>ERSATZTEILE IMPORTIEREN</target>
+      </trans-unit>
+      <trans-unit id="gVK3bvK" resname="Agent concerné">
+        <source>Agent concerné</source>
+        <target>Betroffener Agent</target>
+      </trans-unit>
+      <trans-unit id="UdOq9Yw" resname="Non attribué">
+        <source>Non attribué</source>
+        <target>Nicht zugeschrieben</target>
+      </trans-unit>
+      <trans-unit id="AELOKq2" resname="En attente d'attribution">
+        <source>En attente d'attribution</source>
+        <target>Auszeichnung erwartet</target>
+      </trans-unit>
+      <trans-unit id="eX9dzQI" resname="En cours">
+        <source>En cours</source>
+        <target>In Bearbeitung</target>
+      </trans-unit>
+      <trans-unit id="xoArgjS" resname="Résolu">
+        <source>Résolu</source>
+        <target>Aufgelöst</target>
+      </trans-unit>
+      <trans-unit id="6u6jEo2" resname="S'EN OCUPPER">
+        <source>S'EN OCUPPER</source>
+        <target>PASSE DARAUF AUF</target>
+      </trans-unit>
+      <trans-unit id="Rp91GcF" resname="RÉSOLU">
+        <source>RÉSOLU</source>
+        <target>AUFGELÖST</target>
+      </trans-unit>
+      <trans-unit id="gY9iHM0" resname="AJOUTER UN COMMENTAIRE">
+        <source>AJOUTER UN COMMENTAIRE</source>
+        <target>EINEN KOMMENTAR HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="W1t.whl" resname="AJOUTER">
+        <source>AJOUTER</source>
+        <target>HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="Yoawb38" resname="ANNULER">
+        <source>ANNULER</source>
+        <target>ABBRECHEN</target>
+      </trans-unit>
+      <trans-unit id="h9XjAwM" resname="Veuillez sélectionner au moins un employé">
+        <source>Veuillez sélectionner au moins un employé</source>
+        <target>Bitte wählen Sie mindestens einen Mitarbeiter aus</target>
+      </trans-unit>
+      <trans-unit id="etYTdVM" resname="EXPORTER LES EMPLOYÉS">
+        <source>EXPORTER LES EMPLOYÉS</source>
+        <target>EXPORTMITARBEITER</target>
+      </trans-unit>
+      <trans-unit id="BR5SKmw" resname="Sélection">
+        <source>Sélection</source>
+        <target>Auswahl</target>
+      </trans-unit>
+      <trans-unit id="mDWfjmm" resname="Aucun employé inscrit">
+        <source>Aucun employé inscrit</source>
+        <target>Keine registrierten Mitarbeiter</target>
+      </trans-unit>
+      <trans-unit id="GIcISng" resname="Nom du fichier">
+        <source>Nom du fichier</source>
+        <target>Dateiname</target>
+      </trans-unit>
+      <trans-unit id="SWtMYIv" resname="Contactez-nous">
+        <source>Contactez-nous</source>
+        <target>kontaktiere uns</target>
+      </trans-unit>
+      <trans-unit id="VAH_Z9P" resname="Date de création">
+        <source>Date de création</source>
+        <target>Erstellungsdatum</target>
+      </trans-unit>
+      <trans-unit id="lwNlNFH" resname="Date de prise en charge">
+        <source>Date de prise en charge</source>
+        <target>Abholdatum</target>
+      </trans-unit>
+      <trans-unit id="Zuu7M3W" resname="Pas encore pris en charge">
+        <source>Pas encore pris en charge</source>
+        <target>Noch nicht unterstützt</target>
+      </trans-unit>
+      <trans-unit id="8ivAB8s" resname="RÉSOUDRE">
+        <source>RÉSOUDRE</source>
+        <target>LÖSEN</target>
+      </trans-unit>
+      <trans-unit id="3.bJUz6" resname="AJOUTER UNE ALIMENTATION">
+        <source>AJOUTER UNE ALIMENTATION</source>
+        <target>ESSEN HINZUFÜGEN</target>
+      </trans-unit>
+      <trans-unit id="7JEuGnK" resname="Contacter son référent">
+        <source>Contacter son référent</source>
+        <target>Wenden Sie sich an seinen Referenten</target>
+      </trans-unit>
+      <trans-unit id="yI1jfnS" resname="Activer le multilingue">
+        <source>Activer le multilingue</source>
+        <target>Mehrsprachigkeit aktivieren</target>
+      </trans-unit>
+      <trans-unit id="KF.Ezps" resname="Modifier la pièce détachée n°">
+        <source>Modifier la pièce détachée n°</source>
+        <target>Ändern Sie das Ersatzteil nein.</target>
+      </trans-unit>
+      <trans-unit id="sFhti81" resname="Formats supportés">
+        <source>Formats supportés</source>
+        <target>Unterstützte Formate</target>
+      </trans-unit>
+      <trans-unit id="T2jGtL." resname="Format supporté">
+        <source>Format supporté</source>
+        <target>Format unterstützt</target>
+      </trans-unit>
+      <trans-unit id="2zEMCRP" resname="Date de clôture">
+        <source>Date de clôture</source>
+        <target>Einsendeschluss</target>
+      </trans-unit>
+      <trans-unit id="I7xUXl_" resname="Non pris en charge">
+        <source>Non pris en charge</source>
+        <target>Nicht unterstützt</target>
+      </trans-unit>
+      <trans-unit id="OAyzmIl" resname="Non clos">
+        <source>Non clos</source>
+        <target>Nicht geschlossen</target>
+      </trans-unit>
+      <trans-unit id="TvZ5gn5" resname="Non clôturé">
+        <source>Non clôturé</source>
+        <target>Nicht geschlossen</target>
+      </trans-unit>
+      <trans-unit id="kLxGsVu" resname="Non résolu">
+        <source>Non résolu</source>
+        <target>Ungelöst</target>
+      </trans-unit>
+      <trans-unit id="ZhtY3Hf" resname="Non cloturé à ce jour">
+        <source>Non cloturé à ce jour</source>
+        <target>Bis heute nicht geschlossen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

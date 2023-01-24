@@ -1,0 +1,385 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les utilisateurs" |trans}}{% endblock %}
+
+{% block body %}
+<div>
+    <h1 class="titre-page">{{"Les utilisateurs"|trans}}</h1>
+    {% for message in app.flashes("success") %}
+    <div class="alert alert-success alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% for message in app.flashes("error") %}
+        <div class="alert alert-danger alert-dismissible m-3">{{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+    <div class="col-md-2 filtrage"
+        style="float:left; width:20%; margin-top: 20px; padding-left: 2px ; min-height: 100% ; position: absolute">
+        <div class="panel panel-default text-center">
+            <div class="panel-heading m-4">
+                <h3 class="panel-title titre-page">{{"Filtrage" |trans}}</h3>
+            </div>
+
+            {{ form_start(form) }}
+
+            <div class="d-flex justify-content-center mb-2">
+
+                {{ form_row(form.q) }}
+            </div>
+            <p style="font-family: Sen-Regular-Bold">{{"Service :" |trans}} </p>
+            <div class="d-flex justify-content-center mb-2">
+                {{ form_row(form.service) }}
+            </div>
+            <p style="font-family: Sen-Regular-Bold">{{"Fonction :" |trans}} </p>
+            <div class="d-flex justify-content-center mb-2">
+                {{ form_row(form.fonction) }}
+            </div>
+            <div class="d-flex justify-content-center mb-2">
+                {{ form_row(form.archive) }}
+            </div>
+            <div class="div_resp">
+                <div class="row">
+                    <div class="col">
+                        {{ form_row(form.Rechercher) }}
+                    </div>
+                    <div class="col">
+                        <a href="{{ path('app_user_index') }}" class="btn btn-danger"
+                            style='font-family : Sen-Regular-Bold ; color: black'>{{"RÉINITIALISER" |trans}}</a>
+                    </div>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+    <p>&nbsp</p>
+    <div id="only_mobile">
+        <div class="table-responsive">
+            <!--Table-->
+            <table class="table table_select_event text-light " id="table_select_event"
+                   style="border: 2px solid white">
+                <thead style="font-family:Sen-Regular-ExtraBold">
+                <tr>
+                    <th>{{"Nom"|trans}}</th>
+                    <th>{{"Prenom"|trans}}</th>
+                    <th>{{"Actions" |trans}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for user in users %}
+                    <tr {% if user.isfreeze %} class="table-dark" {% endif %} {% if user.isArchive %}
+                        class="table-secondary" {% endif %}>
+
+                        <td class="text-center">
+                            {{ user.nom }}
+                        </td>
+                        <td class="text-center">
+                            {{ user.prenom }}
+                        </td>
+                        <td class="text-center">
+                            <div class="d-flex justify-content-center">
+                                <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                   class="btn btn-outline-success btn-sm m-1"
+                                   href="{{ path('app_user_show', {'id': user.id}) }}">{{"VOIR"|trans}}</a>
+                                <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                   class="btn btn-outline-warning btn-sm m-1"
+                                   href="{{ path('user_edit', {'id': user.id}) }}">{{"MODIFIER"|trans}}</a>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                {% if user.isArchive %}
+
+                                <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                   class="btn btn-outline-danger  btn-sm m-1"
+                                   href="{{ path('app_user_unarchive', {'id': user.id}) }}">{{"DÉSARCHIVER"|trans}}</a>
+                                {% else %}
+                                {% if user.isFreeze %}
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                       class="btn btn-outline-secondary  btn-sm m-1"
+                                       href="{{ path('app_user_unfreeze', {'id': user.id}) }}">{{"DEGELER"|trans}}</a>
+                                {% else %}
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                       class="btn btn-outline-secondary  btn-sm m-1"
+                                       href="{{ path('app_user_freeze', {'id': user.id}) }}">{{"GELER"|trans}}</a>
+                                {% endif %}
+                                <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                   class="btn btn-outline-danger btn-sm m-1"
+                                   href="{{ path('app_user_archive', {'id': user.id}) }}">{{"ARCHIVER "|trans}}</a>
+                            </div>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="5">{{"Aucun utilisateur d'inscrit" |trans}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <!--Table-->
+        </div>
+        <div style="color : black !important" class="d-flex justify-content-center">
+            {{ knp_pagination_render(users) }}
+        </div>
+        <div class="d-flex justify-content-center m-5">
+            <a href="{{ path('app_home') }}" class="btn btn-circle btn-secondary" >
+                <i class="fas fa-home"></i> {{"Retour à l'accueil" | trans}}
+
+            </a>
+        </div>
+
+    </div>
+
+    <div style="width: 80%; float: right" id="only_desktop">
+        <div class="div_choice_display">
+            <div id="div_employe_tab">
+                <button id="button_employe_display_tab" class="btn">{{"Tableau"|trans}}</button>
+            </div>
+            <div id="div_employe_card">
+                <button id="button_employe_display_card" class="btn">{{"Vignette"|trans}}</button>
+            </div>
+        </div>
+
+        {# Section tableau #}
+        <section id="section_employe_tab">
+            <div class="introduction_accueil">
+                <p>{{"Retrouvez ici tous les utilisateurs inscrits au sein de l'entreprise" | trans}} : </p>
+                <table class="table table_select_event text-light" id="table_select_event"
+                    style="border: 2px solid white">
+                    <thead style="font-family:Sen-Regular-ExtraBold">
+                        <tr>
+                            <th>{{"Nom"|trans}}</th>
+                            <th>{{"Prenom"|trans}}</th>
+                            <th>{{"Email"|trans}}</th>
+                            <th>{{"Services"|trans}}</th>
+                            <th>{{"Fonction"|trans}}</th>
+                            <th>{{"Actions" |trans}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                        <tr {% if user.isfreeze %} class="table-dark" {% endif %} {% if user.isArchive %}
+                            class="table-secondary" {% endif %}>
+
+                            <td class="text-center">
+                                {{ user.nom }}
+                            </td>
+                            <td class="text-center">
+                                {{ user.prenom }}
+                            </td>
+                            <td class="text-center">
+                                {{ user.email }}
+                            </td>
+                            <td class="text-center">
+                                {{ user.service.libelle }}
+                            </td>
+                            <td class="text-center">
+                                {{ user.fonction.libelle }}
+                            </td>
+                            <td class="text-center">
+                                <div id="div-action">
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-success mr-1"
+                                        href="{{ path('app_user_show', {'id': user.id}) }}">{{"VOIR"|trans}}</a>
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-warning mr-1"
+                                        href="{{ path('user_edit', {'id': user.id}) }}">{{"MODIFIER"|trans}}</a>
+
+                                    {% if user.isArchive %}
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-danger mr-1"
+                                        href="{{ path('app_user_unarchive', {'id': user.id}) }}">{{"DÉSARCHIVER"|trans}}</a>
+                                    {% else %}
+                                    {% if user.isFreeze %}
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-secondary mr-1"
+                                        href="{{ path('app_user_unfreeze', {'id': user.id}) }}">{{"DEGELER"|trans}}</a>
+                                    {% else %}
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-secondary mr-1"
+                                        href="{{ path('app_user_freeze', {'id': user.id}) }}">{{"GELER"|trans}}</a>
+                                    {% endif %}
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-danger mr-1"
+                                        href="{{ path('app_user_archive', {'id': user.id}) }}">{{"ARCHIVER "|trans}}</a>
+                                    {% endif %}
+                                </div>
+                            </td>
+                        </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="5">{{"Aucun utilisateur d'inscrit" |trans}}</td>
+                    </tr>
+                  {% endfor %}
+                 </tbody>
+            </table>
+            </div>
+    </section>
+    {# Section card #}
+    <section id="section_employe_card">
+        <header style="margin-bottom: 20px;">{{"Retrouvez ici tous les utilisateurs inscrits au sein de l'entreprise" |
+            trans}} :</header>
+
+        <div class="row">
+            {% for user in users %}
+                {% set user_color = "white" %}
+                {% set user_statement = "transparent" %}
+
+            {% if user.isfreeze %}
+                {% set user_statement = "#212529" %}
+            {% endif %}
+
+            {% if user.isArchive %}
+                {% set user_statement = "#e2e3e5" %}
+                {% set user_color = "black" %}
+            {% endif %}
+
+            <div class="col-sm-4">
+                <div class="card" style="background-color: transparent; border: none; margin-bottom: 15px">
+                    <div style="border: 2px solid white; border-radius: 20px; background-color: {{ user_statement }}; color: {{ user_color }}" class="card-body">
+                        <h5 style="text-align: center; margin-bottom: 15px;"
+                            class="card-title">{{
+                            user.nom|upper }} {{ user.prenom }}</h5>
+                        <span style="display: flex; justify-content: center;">
+                            {% if user.getImage != null %}
+                            <img style="margin-bottom: 20px; width: 200px; height: 200px" class="card-img-top"
+                                src="{{ asset('uploads/picture_directory/' ~ user.getImage) }}" alt="Card image cap">
+                            {% else %}
+                            <img style="margin-bottom: 20px; height: 200px; width: 200px" class="card-img-top"
+                                src="{{ asset('img/user.png') }}" alt="Card image cap">
+                            {% endif %}
+                        </span>
+                        <p class="card-text" style="margin-bottom: 15px;">
+                            <strong>{{"Service :"|trans}}</strong> {{ user.service.libelle }}<br />
+                            <strong>{{"Email :"|trans}}</strong> {{ user.email }}<br />
+                            <strong>{{"Fonction :"|trans}}</strong> {{ user.fonction.libelle }} <br />
+                        </p>
+
+                        <div class="text-center">
+                            <div id="div-action">
+                                <div style="display: grid; grid-template-columns: auto auto; justify-content: center; margin-bottom: 10px">
+                                    <div>
+                                        <a style="color : {{ user_color }} ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-success mr-1"
+                                        href="{{ path('app_user_show', {'id': user.id}) }}">{{"VOIR"|trans}}</a>
+                                    </div>
+
+                                    <div>
+                                        <a style="color : {{ user_color }} ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                        class="btn btn-outline-warning mr-1"
+                                        href="{{ path('user_edit', {'id': user.id}) }}">{{"MODIFIER"|trans}}</a>
+                                    </div>
+                                </div>
+
+                                <div style="display: grid; grid-template-columns: auto auto; justify-content: center; margin-top: 10px">
+                                    {% if user.isArchive %}
+
+                                        <div>
+                                            <a style="color : {{ user_color }} ; font-weight: bold ; font-family : Sen-Regular-Bold;"
+                                            class="btn btn-outline-danger mr-1"
+                                            href="{{ path('app_user_unarchive', {'id': user.id}) }}">{{"DÉSARCHIVER"|trans}}</a>
+                                        </div>
+                                    {% else %}
+                                    {% if user.isFreeze %}
+                                        <div>
+                                            <a style="color : {{ user_color }} ; font-weight: bold ; font-family : Sen-Regular-Bold;"
+                                            class="btn btn-outline-secondary mr-1"
+                                            href="{{ path('app_user_unfreeze', {'id': user.id}) }}">{{"DEGELER"|trans}}</a>
+                                        </div>
+                                    {% else %}
+                                        <div>
+                                            <a style="color : {{ user_color }} ; font-weight: bold ; font-family : Sen-Regular-Bold ;"
+                                            class="btn btn-outline-secondary mr-1"
+                                            href="{{ path('app_user_freeze', {'id': user.id}) }}">{{"GELER"|trans}}</a>
+                                        </div>
+                                    {% endif %}
+                                        <div>
+                                            <a style="color : {{ user_color }} ; font-weight: bold ; font-family : Sen-Regular-Bold;"
+                                            class="btn btn-outline-danger mr-1"
+                                            href="{{ path('app_user_archive', {'id': user.id}) }}">{{"ARCHIVER "|trans}}</a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <p>{{"Aucun utilisateur d'inscrit"|trans}}</p>
+            {% endfor %}
+        </div>
+    </section>
+    <div style="color : black !important" class="d-flex justify-content-center">
+        {{ knp_pagination_render(users) }}
+    </div>
+
+
+
+    <style>
+        @media (max-width: 1000px) {
+            #only_desktop {
+                display: none;
+            }
+            #only_mobile {
+                display: block;
+            }
+        }
+    </style>
+    {% block javascripts %}
+    <script type="text/javascript">
+        /* Je veut afficher le tableau par défaut mais lorsque le boutton Vignette est cliqué alors je ne veut plus afficher le tableau*/
+
+        $(document).ready(function () {
+            const button_tab = document.getElementById("button_employe_display_tab");
+            const button_card = document.getElementById("button_employe_display_card");
+
+            /* Affichage par défaut */
+            $("#section_employe_tab").show();
+            button_tab.classList.add("btn-primary");
+
+            $("#section_employe_card").hide();
+            button_card.classList.add("btn-secondary");
+
+            /* Affichage du tableau */
+            $("#button_employe_display_tab").click(function () {
+                /* On affiche le tableau et on  cache les cards */
+                $("#section_employe_tab").show();
+                $("#section_employe_card").hide();
+
+                /* On modifie la classe des boutons */
+                if (button_card.classList.contains("btn-primary")) {
+                    button_card.classList.remove("btn-primary");
+                    button_card.classList.add("btn-secondary");
+                }
+                if (button_tab.classList.contains("btn-secondary")) {
+                    button_tab.classList.remove("btn-secondary");
+                    button_tab.classList.add("btn-primary");
+                }
+            });
+
+            $("#button_employe_display_card").click(function () {
+                /* On affiche les cards et on  cache le tableau */
+                $("#section_employe_tab").hide();
+                $("#section_employe_card").show();
+
+                /* On modifie la classe des boutons */
+                if (button_tab.classList.contains("btn-primary")) {
+                    button_tab.classList.remove("btn-primary");
+                    button_tab.classList.add("btn-secondary");
+                }
+                if (button_card.classList.contains("btn-secondary")) {
+                    button_card.classList.remove("btn-secondary");
+                    button_card.classList.add("btn-primary");
+                }
+            });
+        });
+    </script>
+
+
+
+    {% endblock %}
+    {% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les Types d'Alimentations" |trans}}{% endblock %}
+
+{% block body %}
+<style>
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #020D24 !important;
+     font-family : "Sen-Regular-Bold";
+}
+
+.pagination > .active > a
+{
+    color: #020D24 !important;
+    background-color: #BE8B24 !Important;
+    border: solid 1px #BE8B24 !Important;
+}
+
+
+</style>
+
+<div class="container">
+    <h1 class="titre-page">{{"Les Types d'Alimentations"|trans}}</h1>
+
+        {% for message in app.flashes("success") %}
+            <div class="alert alert-success alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+        <p>&nbsp</p>
+        <div class="container">
+    <div class="introduction_accueil">
+    <p>{{"Retrouvez ici tous les types d'alimentations" | trans}} : </p>
+    <div class="d-flex flex-row-reverse mb-2">
+        <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold "href="{{ path('admin_add_type_alim') }}" class="btn btn-outline-success ml-2 ">{{"AJOUTER UNE ALIMENTATION"|trans}}</a> 
+        </div> 
+        <table class="table table_select_event text-light" id="table_select_event">
+                <thead style="font-family:Sen-Regular-ExtraBold">    
+                    <th class="text-center">{{"Libellé"|trans}}</th>
+                    <th style="text-align:center">{{"Actions"|trans}}</th>
+        </thead>
+    <tbody class="center">
+            {% for type_alim in types_alim %}
+                <tr>
+                    <td class="text-center">
+                        {{ type_alim.libelle }}
+                    </td> 
+                    <td class="text-center">
+                        <div id = "div-action">
+                            <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-info mr-1" href="{{ path('admin_edit_type_alim', {'id': type_alim.id })}}">{{"MODIFIER"|trans}}</a> 
+                            <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold" class="btn btn-outline-danger ml-1" href="{{ path('admin_delete_type_alim', {'id': type_alim.id })}}">{{"SUPPRIMER" |trans}}</a> 
+                        </div>
+                    </td>
+                </tr>
+            {% else %}
+                <tr><td class="center"colspan='4'> {{"Type d'alimentation non trouvé dans la base de données" |trans }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <div style="color : black !important" class="d-flex justify-content-center">
+            {{ knp_pagination_render(types_alim) }}
+    </div>
+            
+
+</div>
+{% endblock %}

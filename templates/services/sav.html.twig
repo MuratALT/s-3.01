@@ -1,0 +1,62 @@
+<link rel="icon" type="image/png" href="{{ asset('img/SAV.png') }}" />
+
+<h1 class="text-center m-3">{{'Service-après vente'|trans}}</h1>
+<hr style="margin:auto ; height:30px"  width="50%" >
+<div class="row" id="only_desktop">
+    <div  id="service_fonctions" class="col" style="margin-right: 5px ; margin-left: 5px">
+        <h2 class="text-center">{{'GESTION DES PIÈCES DÉTACHÉES' | trans}} </h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('app_piece_index')}}"><span style="font-size: 25px;">{{'Liste des pièces détachées'|trans}}</span></a>
+        </div>
+    </div>
+    <div  id="service_fonctions" class="col" style="margin-right: 5px ; margin-left: 5px">
+        <h2 class="text-center ">{{'GESTION DES TICKETS'|trans}}</h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('app_ticket_index')}}" ><span style="font-size: 25px;">{{'Liste des tickets'|trans}}</span></a>
+        </div>
+    </div>
+    <div id="service_fonctions"  >
+        <h2 class="text-center ">{{'EXPORT'|trans}}</h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action m-2" href="{{ path('app_export_piece') }}"><span style="font-size: 25px;">{{'Export des pièces détachées'|trans}}</span></a>
+            <a class="btn btn-info btn-lg action m-2" href="{{ path('app_export_produit') }}"><span style="font-size: 25px;">{{'Export des produits'|trans}}</span></a>
+            <a class="btn btn-info btn-lg action m-2" href="{{ path('app_export_ticket') }}"><span style="font-size: 25px;">{{'Export des tickets'|trans}}</span></a>
+        </div>
+    </div>
+
+
+
+</div>
+<div id="only_mobile">
+    <div id="service_fonctions">
+        <h2 class="text-center">{{'GESTION DES PIÈCES DÉTACHÉES' | trans}} </h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('app_piece_index')}}"><span style="font-size: 25px;">{{'Liste des pièces détachées'|trans}}</span></a>
+        </div>
+    </div>
+    <div  id="service_fonctions" class="col" style="margin-right: 5px ; margin-left: 5px">
+        <h2 class="text-center ">{{'GESTION DES TICKETS'|trans}}</h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('app_ticket_index')}}" ><span style="font-size: 25px;">{{'Liste des tickets'|trans}}</span></a>
+        </div>
+    </div>
+    <div id="service_fonctions"  >
+        <h2 class="text-center ">{{'EXPORT'|trans}}</h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action m-2" href="{{ path('app_export_piece') }}"><span style="font-size: 25px;">{{'Export des pièces détachées'|trans}}</span></a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action m-2" href="{{ path('app_export_ticket') }}"><span style="font-size: 25px;">{{'Export des tickets'|trans}}</span></a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action m-2" href="{{ path('app_export_produit') }}"><span style="font-size: 25px;">{{'Export des produits'|trans}}</span></a>
+        </div>
+    </div>
+</div>
+

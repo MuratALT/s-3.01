@@ -1,0 +1,55 @@
+<link rel="icon" type="image/png" href="{{ asset('img/marketing.png') }}" />
+
+<h1 class="text-center m-3">{{"Marketing"|trans}}</h1>
+<hr style="margin:auto ; height:30px"  width="50%" >
+<div class="row div_resp" id="only_desktop">
+    <div id="service_fonctions" class="col">
+        <h2 class="text-center ">{{"GESTION DES PRODUITS"|trans}}</h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('app_produit_index')}}" ><span style="font-size: 25px;">{{"Liste des produits" | trans}}</span></a>
+        </div>
+    </div>
+</div>
+<style>
+    @media (max-width: 1000px) {
+        #only_desktop {
+            display: none;
+        }
+        #only_mobile {
+            display: block;
+        }
+    }
+</style>
+<div id="only_mobile" >
+    <div id="service_fonctions" >
+        <h2 class="text-center ">{{"GESTION DES PRODUITS"|trans}}</h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('app_produit_index')}}" ><span style="font-size: 25px;">{{"Liste des produits" | trans}}</span></a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #only_desktop{
+        display: none;
+    }
+    @media only screen and (min-width: 1000px) {
+        #only_desktop{
+            display: block;
+        }
+        #only_mobile{
+            display: none;
+        }
+    }
+</style>
+
+
+<div id="service_fonctions" >
+    <h2 class="text-center ">{{"EXPORT"|trans}}</h2>
+    <hr style="margin:auto ; height:30px"  width="50%" >
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-info btn-lg action m-2" href="{{ path('app_export_produit') }}"><span style="font-size: 25px;">{{"Export des produits"|trans}}</span></a>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{{ form_start(form) }}
+
+
+    <div id="produit_presentation">
+        <header class="header_produit">{{"Présentation" |trans}}</header>
+
+        <div id="div_prod_pres_horizontale">
+            <div>
+                {{ form_row(form.reference, {
+                    label: 'Référence'|trans,
+                    attr: {
+                        readonly: true
+                    }
+                }) }}
+            </div>
+
+            <div>
+                {{ form_row(form.libelle, {
+                    label: 'Libellé'|trans,
+                    attr: {
+                        readonly: true
+                    }
+                }) }}
+            </div>
+        </div>
+
+        <div id="div_produit_carousel" style="margin-top: 35px;">
+            <div id="produit_media">
+        
+                {% set arr = [] %}
+        
+                {% for image in produit.images %}
+                {% set arr = arr|merge([image.name]) %}
+                {% endfor %}
+        
+                <div id="react_component_display_media" data-imgname="{{ arr|json_encode }}"
+                    data-url="../../uploads/product_directory/"></div>
+            </div>
+        </div>
+
+        <div id="produit_media">
+        
+            <header class="header_produit">{{"Média" |trans}}</header>
+            {{ form_row(form.images, {
+                label: 'Images'|trans
+            }) }}
+
+            <div class="d-flex justify-content-center mt-4">
+                <button type="button" class="btn btn-primary" id="add_image">{{ "Ajouter une image"|trans }}</button>
+            </div>
+        
+        
+            {# Bouton d'ajout d'image #}
+        
+            {# Si la route est "produit_edit" on affiche les images #}
+            {% if app.request.attributes.get('_route') == 'produit_edit' %}
+            
+            <table id="table_employe_doc_show" class="mt-5">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    {% for image in produit.images %}
+                        <tr>
+                            <td>
+                                <img src="{{ asset('/uploads/product_directory/'~image.name) }}" alt="" width="150">
+                            </td>
+                            
+                            <td>
+                                <a class="btn btn-danger" href="{{ path('produit_delete_image', {id: image.id})}}" data-delete
+                                    data-token="{{ csrf_token('delete' ~ image.id )}}">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+        
+        
+            {% endif %}
+        </div>
+    </div>
+
+    {# Élement en display none #}
+
+    <div class="d-none">
+        {{ form_row(form.documentsProduit) }}
+        {{ form_row(form.labelDE) }}
+        {{ form_row(form.labelEN) }}
+        {{ form_row(form.pu) }}
+        {{ form_row(form.garantie) }}
+        {{ form_row(form.typeprod) }}
+        {{ form_row(form.inforegle) }}
+
+    </div>
+
+
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary submit m-5">{{ "Enregistrer"|trans }}</button>
+        <a href="{{ path('app_produit_index') }}" class="btn btn-secondary m-5">{{ "Retour à la liste"|trans }}</a>
+    </div>
+{{ form_end(form) }}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}

@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ajouter une vente" |trans}}{% endblock %}
+
+{% block body %}
+
+    <div style="max-width: 90% ;" class="container">
+
+     {% for message in app.flashes("error") %}
+            <div class="alert alert-danger alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+
+
+            <h1 class='titre-page'>{% trans %}Ajouter une vente{% endtrans %}</h1>
+
+            {{ form_start(form)}}
+            
+            {{ form_row(form.categorie)}}
+            {{ form_row(form.libelle)}}
+            {{ form_row(form.commentaire)}}
+
+            <header class="header_produit">{{ "Documents"|trans }}</header>
+
+            <div>
+                <div id="div_ajout_docuser">
+                    <button style="color : white ; font-weight: bold ; float: right ; display: block; font-family : Sen-Regular-Bold " type="button" id="btn_ajout_docuser" 
+                        class="btn btn-outline-success m-2 ">{{"AJOUTER UN DOCUMENT"|trans}}</button>
+                </div>
+                
+                <table id="table_employe_doc_show">
+                    <thead>
+                        <tr>
+                            <th>Fichier</th>
+                            <th>Libellé</th>
+                            <th>Commentaire</th>
+                            <th>Date d'ajout</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        {% for document in vente.documentVentes %}
+                        <tr>
+                            <td style="text-align: center;">
+                                <li style="list-style-type: circle ; ">
+                                    <a style="color: white; font-size: 18px"
+                                        href="{{ asset('uploads/sale_documents_directory/' ~ document.name) }}" target="_blank">
+                                        <i class="fa fa-file-pdf"></i>
+                                    </a>
+                                </li>
+                            </td>
+                            <td>{{ document.libelle }}</td>
+                            <td>{{ document.commentaire|raw }}</td>
+                            <td>{{ document.dateAjout|date('d/m/Y \\à G:i') }}</td>
+                            <td>
+                                <a class="btn btn-danger" href="{{ path('app_vente_delete_document', {id: document.id})}}" data-delete
+                                    data-token="{{ csrf_token('delete' ~ document.id )}}">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {# Afficher un message lorsqu'il n'existe aucun document #}
+                        {% else %}
+                        <tr>
+                            <td colspan="5">{{"Aucun document n'existe pour cette vente" | trans}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            
+            <section id="section_ajout_docuser">
+
+                <div>
+                    {{ form_row(form2.libelle, {
+                        label: 'Libellé'|trans,
+                        required : false
+                    }) }}
+                </div>
+
+                <div>
+                    {{ form_row(form.documentsVente, {
+                        label: 'Documents'|trans,
+                        required : false
+                    }) }}
+                    <p> {{'Format supporté'|trans}} : pdf</p>
+                </div>
+
+                <div>
+                    {{ form_row(form2.commentaire, {
+                        label: 'Commentaire'|trans,
+                        required : false
+                    }) }}
+                </div>
+            </section>
+
+            <div style="text-align: center; margin: 35px 0">
+                <button type="submit" class="btn btn-success m-2">{{'Enregistrer' |trans}}</button>
+                <a class="btn btn-secondary m-2" href="{{ path('app_vente_index') }}">{{'Retour' |trans}}</a>
+            </div>
+
+        {{ form_end(form) }}
+    </div>
+
+{% block javascript %}
+     <script>
+         /* Par défaut cacher le formulaire d'ajout de document section_ajout_docuser */
+         $(document).ready(function () {
+             /* Comportement par défaut */
+             $("#section_ajout_docuser").hide();
+ 
+             /* Afficher le formulaire d'ajout de document lorsque le bouton btn_ajout_docuser est clické */
+             $("#btn_ajout_docuser").click(function () {
+                 if($("#section_ajout_docuser").is(":hidden")) {
+                     $("#section_ajout_docuser").show();
+                 } else {
+                     $("#section_ajout_docuser").hide();
+                 }
+             });
+         });
+     </script>
+{% endblock %}
+{% endblock %}

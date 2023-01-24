@@ -1,0 +1,49 @@
+.carousel {
+    position: relative;
+}
+
+.carousel .thumbs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    padding: 0.5rem 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .overlay {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    padding: 0.4rem 1.5rem;
+    text-align: left;
+    /* background: rgba(0, 0, 0, 0.6); */
+    color: #FFF;
+}
+
+.carousel .overlay_title {
+    margin: 0.8rem 0 1rem 0;
+}
+
+.carousel div{
+    height: 40vh;
+    overflow-y: hidden;
+}
+
+.carousel .slide img {
+    height: 100%;
+        width: 100%;
+        display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel .slide img {
+        width: 100px !important;
+        height: 40px;
+    }
+}

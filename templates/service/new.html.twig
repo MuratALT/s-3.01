@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ajouter un service" |trans}}{% endblock %}
+
+{% block body %}
+<div style="max-width: 90% ;" class="container">
+    {% for message in app.flashes("error") %}
+    <div class="alert alert-danger alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+{% endfor %}
+
+<h1 class='titre-page'>{% trans %}Ajouter un service{% endtrans %}</h1>
+   
+{{ include('service/_form.html.twig') }}
+
+<a href="{{ path('app_service_index') }}">{{"Retour à la liste"|trans}}</a>
+{% endblock %}

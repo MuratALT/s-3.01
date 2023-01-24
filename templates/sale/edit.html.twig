@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Modification vente"|trans}}{% endblock %}
+
+{% block body %}
+
+    {% for message in app.flashes("success") %}
+    <div class="alert alert-success alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
+    </div>
+    {% endfor %}
+    {% for message in app.flashes("error") %}
+    <div class="alert alert-danger alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    
+    </div>
+    {% endfor %}
+
+
+    <div style="max-width: 90% ;" class="container">
+        <h1 class='titre-page'>{% trans %}Modification d'une vente{% endtrans %}</h1>
+
+        {{ include('sale/_form.html.twig', {'button_label': 'Modifier'}) }}
+    </div>
+
+{% endblock %}

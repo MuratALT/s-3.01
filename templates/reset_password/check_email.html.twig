@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Réinitialisation du mot de passe{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <h1 class="titre-page">{% trans %}Vérifiez vos mail{% endtrans %}</h1>
+
+    <p style="font-family: Sen-Regular-Bold ;">
+        {% trans %}Si un compte correspondant à votre adresse e-mail existe, un e-mail vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe.{% endtrans %}
+        {% trans %}Ce lien expire dans {% endtrans %} {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+    </p>
+    <p style="font-family: Sen-Regular-Bold ;">{% trans %}Si vous ne recevez pas d'e-mail, veuillez vérifier votre dossier spam ou {% endtrans %} <a style="font-family : Sen-Regular-Bold ; color : #AF929D" href="{{ path('app_forgot_password_request') }}">{% trans %}réessayer{% endtrans %}</a>.</p>
+
+    
+</div>
+{% endblock %}

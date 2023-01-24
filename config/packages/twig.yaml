@@ -1,0 +1,9 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        locales: '%app.locales%'
+        UR: '@App\Repository\UserRepository'
+
+when@test:
+    twig:
+        strict_variables: true

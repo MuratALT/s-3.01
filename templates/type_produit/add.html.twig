@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ajout d'une catégorie de produit" |trans }}{% endblock %}
+{% block body %}
+  <div class="container">
+   {% for message in app.flashes("error") %}
+        <div class="alert alert-danger m-5 alert-dismissible">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+    <h1 style="font-family : Sen-Regular-Bold" class="text-center titre-page">{{"Ajout d'une catégorie de produit" |trans}}</h1>
+
+    {{ form_start(form )}}
+    {{ form_row(form.libelle )}}
+
+<br>
+    
+    <div class="d-flex justify-content-center">
+        <button id="btn-submit" type="submit" class="btn btn-success center m-2 submit">
+        {% if editMode %}
+            {{"Enregistrer les modifications" |trans}}
+        {% else %}
+            {{"Ajouter le type de produit" |trans}}
+        {% endif %}
+        </button>
+   
+        <a class="btn btn-secondary m-2" href="{{ path('admin_list_type_produit') }}">{{"Retour"|trans}}</a> 
+    </div>
+    {{ form_end(form )}}
+
+    </div>
+
+
+    {# Ajout d'un script affichant le bouton valider seulement si la valeur de libellé change #}
+
+
+    <script>
+        var input = document.getElementById("form_libelle");
+
+        var value_base = input.value;
+
+        var btn = document.getElementById("btn-submit");
+        btn.disabled = true;
+        input.addEventListener("change", function(){
+            btn.disabled = false;
+        });
+        
+       
+
+    </script>
+
+{% endblock %}

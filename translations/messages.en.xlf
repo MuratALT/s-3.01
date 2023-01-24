@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="YdaVBBA" resname="Connexion">
+        <source>Connexion</source>
+        <target>Sign In</target>
+      </trans-unit>
+      <trans-unit id="brS4EVB" resname="AUTHENTICATION">
+        <source>AUTHENTICATION</source>
+        <target>AUTHENTICATION</target>
+      </trans-unit>
+      <trans-unit id="dS_ohLO" resname="AUTHENTIFICATION">
+        <source>AUTHENTIFICATION</source>
+        <target>AUTHENTICATION</target>
+      </trans-unit>
+      <trans-unit id="B_1sz2v" resname="Mail">
+        <source>Mail</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id=".5yLjAZ" resname="Mot de passe">
+        <source>Mot de passe</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="ssEkU20" resname="Nom">
+        <source>Nom</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="z7GsDIB" resname="Inscription">
+        <source>Inscription</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="4yW.j5A" resname="Prénom">
+        <source>Prénom</source>
+        <target>Firstname</target>
+      </trans-unit>
+      <trans-unit id="Rkn0tV4" resname="Date de naissance">
+        <source>Date de naissance</source>
+        <target>Birthdate</target>
+      </trans-unit>
+      <trans-unit id="1ncZDgq" resname="Service">
+        <source>Service</source>
+        <target>Department</target>
+      </trans-unit>
+      <trans-unit id="6eWsxA4" resname="Sélectionner un département">
+        <source>Sélectionner un département</source>
+        <target>Select a department</target>
+      </trans-unit>
+      <trans-unit id="_1_eksG" resname="Déconnexion">
+        <source>Déconnexion</source>
+        <target>Log out</target>
+      </trans-unit>
+      <trans-unit id="i0lTg3x" resname="INSCRIPTION">
+        <source>INSCRIPTION</source>
+        <target>REGISTER</target>
+      </trans-unit>
+      <trans-unit id="Ems6dlJ" resname="jj-mm-aaaa">
+        <source>jj-mm-aaaa</source>
+        <target>mm-dd-yyyy</target>
+      </trans-unit>
+      <trans-unit id="Ii_d6ee" resname="Fonction">
+        <source>Fonction</source>
+        <target>Function</target>
+      </trans-unit>
+      <trans-unit id="IECnipr" resname="Sélectionner une fonction">
+        <source>Sélectionner une fonction</source>
+        <target>Select a function</target>
+      </trans-unit>
+      <trans-unit id="PCX0_17" resname="S'inscrire">
+        <source>S'inscrire</source>
+        <target>Sign up</target>
+      </trans-unit>
+      <trans-unit id="nP8SJ6B" resname="Besoin d'un compte ?">
+        <source>Besoin d'un compte ?</source>
+        <target>Need an account ?</target>
+      </trans-unit>
+      <trans-unit id="8BaKkQV" resname="INSCRIVEZ-VOUS">
+        <source>INSCRIVEZ-VOUS</source>
+        <target>SIGN UP</target>
+      </trans-unit>
+      <trans-unit id="UTHJPFA" resname="Répétez le mot de passe">
+        <source>Répétez le mot de passe</source>
+        <target>Repeat password</target>
+      </trans-unit>
+      <trans-unit id="UNBlBwg" resname="Modifier ses informations">
+        <source>Modifier ses informations</source>
+        <target>Modify your information</target>
+      </trans-unit>
+      <trans-unit id="V73ywaC" resname="Modifier son mot de passe">
+        <source>Modifier son mot de passe</source>
+        <target>Change your password</target>
+      </trans-unit>
+      <trans-unit id="im1OF09" resname="Votre email doit contenir au moins {{ limit }} caractères">
+        <source>Votre email doit contenir au moins {{ limit }} caractères</source>
+        <target>Your email must contain at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id="9F.OHy8" resname="Votre nom doit contenir au moins {{ limit }} caractères">
+        <source>Votre nom doit contenir au moins {{ limit }} caractères</source>
+        <target>Your name must contain at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id="N3CY.B3" resname="Votre prénom doit contenir au moins {{ limit }} caractères">
+        <source>Votre prénom doit contenir au moins {{ limit }} caractères</source>
+        <target>Your first name must contain at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id="KN9EErm" resname="Veuillez renseigner une date de naissance">
+        <source>Veuillez renseigner une date de naissance</source>
+        <target>Please enter a date of birth</target>
+      </trans-unit>
+      <trans-unit id="h8bnOV4" resname="Veuillez renseigner une date de naissance valide">
+        <source>Veuillez renseigner une date de naissance valide</source>
+        <target>Please enter a valid date of birth</target>
+      </trans-unit>
+      <trans-unit id="dn8SVHS" resname="Veuillez renseigner un département">
+        <source>Veuillez renseigner un département</source>
+        <target>Please enter your department</target>
+      </trans-unit>
+      <trans-unit id="u9KJ5az" resname="Veuillez renseigner votre fonction">
+        <source>Veuillez renseigner votre fonction</source>
+        <target>Please enter your function</target>
+      </trans-unit>
+      <trans-unit id="RULWH19" resname="Mot de passe oublié">
+        <source>Mot de passe oublié</source>
+        <target>Forgotten password</target>
+      </trans-unit>
+      <trans-unit id="J04T_C3" resname="Réinitialisez votre mot de passe">
+        <source>Réinitialisez votre mot de passe</source>
+        <target>Reset your password</target>
+      </trans-unit>
+      <trans-unit id="WzXg41W" resname="Réinitialiser">
+        <source>Réinitialiser</source>
+        <target>Reset</target>
+      </trans-unit>
+      <trans-unit id="yRWwY3b" resname="Entrez votre adresse e-mail et nous vous enverrons un&#10;                    lien pour réinitialiser votre mot de passe.">
+        <source>Entrez votre adresse e-mail et nous vous enverrons un
+                    lien pour réinitialiser votre mot de passe.</source>
+        <target>Enter your email address and we'll send you a
+                     link to reset your password.</target>
+      </trans-unit>
+      <trans-unit id="ZCWD868" resname="Envoyer la demande">
+        <source>Envoyer la demande</source>
+        <target>Send request</target>
+      </trans-unit>
+      <trans-unit id="kJgi9GH" resname="Réinitialisation du mot de passe">
+        <source>Réinitialisation du mot de passe</source>
+        <target>Reset password</target>
+      </trans-unit>
+      <trans-unit id="_310hF_" resname="Si un compte correspondant à votre adresse e-mail existe, un e-mail vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe.">
+        <source>Si un compte correspondant à votre adresse e-mail existe, un e-mail vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe.</source>
+        <target>If an account matching your email address exists, an email has just been sent containing a link you can use to reset your password.</target>
+      </trans-unit>
+      <trans-unit id="WvYM7DZ" resname="Ce lien expire dans">
+        <source>Ce lien expire dans</source>
+        <target>This link expires in</target>
+      </trans-unit>
+      <trans-unit id="gikaCS0" resname="Si vous ne recevez pas d'e-mail, veuillez vérifier votre dossier spam ou">
+        <source>Si vous ne recevez pas d'e-mail, veuillez vérifier votre dossier spam ou</source>
+        <target>If you do not receive an email, please check your spam folder or</target>
+      </trans-unit>
+      <trans-unit id="OTgLvK0" resname="réessayer">
+        <source>réessayer</source>
+        <target>try again</target>
+      </trans-unit>
+      <trans-unit id="1mRfSz4" resname="Vérifiez vos mail">
+        <source>Vérifiez vos mail</source>
+        <target>Check your emails</target>
+      </trans-unit>
+      <trans-unit id="kXLo7sm" resname="Bonjour">
+        <source>Bonjour</source>
+        <target>Hi</target>
+      </trans-unit>
+      <trans-unit id="NiNa.XU" resname="Pour réinitialiser votre mot de passe, veuillez visiter le lien suivant">
+        <source>Pour réinitialiser votre mot de passe, veuillez visiter le lien suivant</source>
+        <target>To reset your password, please visit the following link</target>
+      </trans-unit>
+      <trans-unit id="A0khFX6" resname="Merci !">
+        <source>Merci !</source>
+        <target>Cheer !</target>
+      </trans-unit>
+      <trans-unit id="gbnGRZK" resname="Veuillez renseigner votre email">
+        <source>Veuillez renseigner votre email</source>
+        <target>Please enter your email</target>
+      </trans-unit>
+      <trans-unit id="Sh4FLqS" resname="Votre demande de réinitialisation de mot de passe">
+        <source>Votre demande de réinitialisation de mot de passe</source>
+        <target>Your password reset request</target>
+      </trans-unit>
+      <trans-unit id="o9ZcpWl" resname="Nouveau mot de passe">
+        <source>Nouveau mot de passe</source>
+        <target>New password</target>
+      </trans-unit>
+      <trans-unit id="VPf3JPL" resname="Votre mot de passe doit comporter au moins {{ limit }} caractères">
+        <source>Votre mot de passe doit comporter au moins {{ limit }} caractères</source>
+        <target>Your password must be at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id="X4sYKvU" resname="Répéter le mot de passe">
+        <source>Répéter le mot de passe</source>
+        <target>Repeat password</target>
+      </trans-unit>
+      <trans-unit id="kKfYdPb" resname="Les mot de passe doivent correspondre.">
+        <source>Les mot de passe doivent correspondre.</source>
+        <target>The passwords must match.</target>
+      </trans-unit>
+      <trans-unit id="MtNetes" resname="Votre mot de passe a été changé avec succès">
+        <source>Votre mot de passe a été changé avec succès</source>
+        <target>Your password has been changed successfully</target>
+      </trans-unit>
+      <trans-unit id="e9IkeM7" resname="Vous ne pouvez pas utiliser le même mot de passe que les 3 précédents">
+        <source>Vous ne pouvez pas utiliser le même mot de passe que les 3 précédents</source>
+        <target>You cannot use the same password as the previous 3</target>
+      </trans-unit>
+      <trans-unit id="ayl78Z_" resname="PROFIL">
+        <source>PROFIL</source>
+        <target>PROFILE</target>
+      </trans-unit>
+      <trans-unit id="lpzL089" resname="Email">
+        <source>Email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="QuN2BLY" resname="Modifier">
+        <source>Modifier</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="zaqrRC0" resname="Télécharger">
+        <source>Télécharger</source>
+        <target>Download</target>
+      </trans-unit>
+      <trans-unit id="JLfofvg" resname="Votre profil a été mis à jour avec succès !">
+        <source>Votre profil a été mis à jour avec succès !</source>
+        <target>Your profile has been successfully updated!</target>
+      </trans-unit>
+      <trans-unit id="ZBUyEez" resname="Télécharger mes données">
+        <source>Télécharger mes données</source>
+        <target>Download my data</target>
+      </trans-unit>
+      <trans-unit id="oehMN.Z" resname="profil">
+        <source>profil</source>
+        <target>profile</target>
+      </trans-unit>
+      <trans-unit id="XFVRV7B" resname="Ancien mot de passe">
+        <source>Ancien mot de passe</source>
+        <target>Old password</target>
+      </trans-unit>
+      <trans-unit id="XR0DyC4" resname="Modifiez votre mot de passe">
+        <source>Modifiez votre mot de passe</source>
+        <target>Modify your password</target>
+      </trans-unit>
+      <trans-unit id="ro0bXMz" resname="Tableau de Bord">
+        <source>Tableau de Bord</source>
+        <target>Dashboard</target>
+      </trans-unit>
+      <trans-unit id="zmfSLqV" resname="À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. &#10;                Si vous avez des questions, n'hésitez pas à &lt;a&gt;contacter l'administrateur&lt;/a&gt;">
+        <source>À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. 
+                Si vous avez des questions, n'hésitez pas à &lt;a&gt;contacter l'administrateur&lt;/a&gt;</source>
+        <target><![CDATA[To date, you do not belong to any department of the company. <br> The administrator will accept you soon. Don't worry, a notification will be sent to you upon acceptance.
+                 If you have any questions, do not hesitate to <a>contact the administrator</a>]]></target>
+      </trans-unit>
+      <trans-unit id="Hw7EWPb" resname="Vous êtes en attente">
+        <source>Vous êtes en attente</source>
+        <target>You are waiting</target>
+      </trans-unit>
+      <trans-unit id=".hHQnh9" resname="À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. &#10;                Si vous avez des questions, n'hésitez pas à &lt;a style=&quot;font-family : Sen-Regular-Bold ; color : #AF929D&quot; href=&quot;#&quot;&gt;contacter l'administrateur&lt;/a&gt;">
+        <source>À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. 
+                Si vous avez des questions, n'hésitez pas à &lt;a style="font-family : Sen-Regular-Bold ; color : #AF929D" href="#"&gt;contacter l'administrateur&lt;/a&gt;</source>
+        <target><![CDATA[To date, you do not belong to any department of the company. <br> The administrator will accept you soon. Don't worry, a notification will be sent to you upon acceptance.
+                 If you have any questions, do not hesitate to <a style="font-family : Sen-Regular-Bold ; color : #AF929D" href="#">contact the administrator</a>]]></target>
+      </trans-unit>
+      <trans-unit id="uyAqtQC" resname="Votre mot de passe a été mis à jour avec succès !">
+        <source>Votre mot de passe a été mis à jour avec succès !</source>
+        <target>Your password has been successfully updated!</target>
+      </trans-unit>
+      <trans-unit id="Ivfzt38" resname="Votre mot de passe actuel est incorrect !">
+        <source>Votre mot de passe actuel est incorrect !</source>
+        <target>Your current password is incorrect !</target>
+      </trans-unit>
+      <trans-unit id="21nrsnI" resname="Sujet">
+        <source>Sujet</source>
+        <target>Topic</target>
+      </trans-unit>
+      <trans-unit id="L3dmip3" resname="Message">
+        <source>Message</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="RZUfasG" resname="Enregistrer les modifications">
+        <source>Enregistrer les modifications</source>
+        <target>Save Changes</target>
+      </trans-unit>
+      <trans-unit id="IDLg31f" resname="Ajouter le type de média">
+        <source>Ajouter le type de média</source>
+        <target>Add media type</target>
+      </trans-unit>
+      <trans-unit id="7yOllAJ" resname="Retour">
+        <source>Retour</source>
+        <target>Go Back</target>
+      </trans-unit>
+      <trans-unit id="qmSSw43" resname="À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. &#10;                Si vous avez des questions, n'hésitez pas à &lt;a style=&quot;font-family : Sen-Regular-Bold ; color : #AF929D&quot; onclick=&quot;open_form()&quot; href=&quot;#&quot; id=&quot;btn-form&quot; &gt;contacter l'administrateur&lt;/a&gt;">
+        <source>À ce jour, vous n'appartenez à aucun départment de l'entreprise. &lt;br&gt; L'administrateur vous acceptera bientôt. Ne vous inquiétez pas, une notification vous sera envoyée  dès acceptation. 
+                Si vous avez des questions, n'hésitez pas à &lt;a style="font-family : Sen-Regular-Bold ; color : #AF929D" onclick="open_form()" href="#" id="btn-form" &gt;contacter l'administrateur&lt;/a&gt;</source>
+        <target><![CDATA[To date, you do not belong to any department of the company. <br> The administrator will accept you soon. Don't worry, a notification will be sent to you upon acceptance.
+                 If you have any questions, do not hesitate to <a style="font-family : Sen-Regular-Bold ; color : #AF929D" onclick="open_form()" href="#" id="btn-form" >contact the administrator</a>]]></target>
+      </trans-unit>
+      <trans-unit id="Rq05Fva" resname="Annuler">
+        <source>Annuler</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="eQdSCfK" resname="Envoyer">
+        <source>Envoyer</source>
+        <target>Send</target>
+      </trans-unit>
+      <trans-unit id="lZT7Tly" resname="Ajout type de média">
+        <source>Ajout type de média</source>
+        <target>Add media type</target>
+      </trans-unit>
+      <trans-unit id="f1YP.V9" resname="Création d'un type de média">
+        <source>Création d'un type de média</source>
+        <target>Creating a media type</target>
+      </trans-unit>
+      <trans-unit id="XHopKnZ" resname="Les Types de Médias">
+        <source>Les Types de Médias</source>
+        <target>Media Types</target>
+      </trans-unit>
+      <trans-unit id="QFoGcy6" resname="Retrouvez ici tous les type de médias">
+        <source>Retrouvez ici tous les type de médias</source>
+        <target>Find here all types of media</target>
+      </trans-unit>
+      <trans-unit id="DS.kYns" resname="AJOUTER UN TYPE DE MÉDIA">
+        <source>AJOUTER UN TYPE DE MÉDIA</source>
+        <target>ADD MEDIA TYPE</target>
+      </trans-unit>
+      <trans-unit id="zVuDKsX" resname="Libellé">
+        <source>Libellé</source>
+        <target>Label</target>
+      </trans-unit>
+      <trans-unit id=".4BZ3Gd" resname="Actions">
+        <source>Actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="jF37atP" resname="MODIFIER">
+        <source>MODIFIER</source>
+        <target>EDIT</target>
+      </trans-unit>
+      <trans-unit id="gLKza9r" resname="SUPPRIMER">
+        <source>SUPPRIMER</source>
+        <target>DELETE</target>
+      </trans-unit>
+      <trans-unit id="D.N2Qe0" resname="Type de média non trouvé dans la base de données">
+        <source>Type de média non trouvé dans la base de données</source>
+        <target>Media type not found in database</target>
+      </trans-unit>
+      <trans-unit id="Lq0Hg8k" resname="Ajout d'une catégorie de produit">
+        <source>Ajout d'une catégorie de produit</source>
+        <target>Adding a product category</target>
+      </trans-unit>
+      <trans-unit id="8mCE5T5" resname="Les Catégories de produit">
+        <source>Les Catégories de produit</source>
+        <target>Product Categories</target>
+      </trans-unit>
+      <trans-unit id="e_js6lu" resname="Retrouvez ici toutes les catégories de produit">
+        <source>Retrouvez ici toutes les catégories de produit</source>
+        <target>Find all product categories here</target>
+      </trans-unit>
+      <trans-unit id="6LsotaJ" resname="AJOUTER UNE CATÉGORIE">
+        <source>AJOUTER UNE CATÉGORIE</source>
+        <target>ADD A CATEGORY</target>
+      </trans-unit>
+      <trans-unit id="MNShTz9" resname="Catégorie non trouvée dans la base de données">
+        <source>Catégorie non trouvée dans la base de données</source>
+        <target>Category not found in database</target>
+      </trans-unit>
+      <trans-unit id="mRD866G" resname="Libéllé">
+        <source>Libéllé</source>
+        <target>Label</target>
+      </trans-unit>
+      <trans-unit id="wtl99kZ" resname="Le libellé existe déjà !">
+        <source>Le libellé existe déjà !</source>
+        <target>Label already exists !</target>
+      </trans-unit>
+      <trans-unit id="pnrykDI" resname="Le type de média a bien été créé !">
+        <source>Le type de média a bien été créé !</source>
+        <target>Media type successfully created !</target>
+      </trans-unit>
+      <trans-unit id="H0.EwFT" resname="Le type de média a bien été modifié !">
+        <source>Le type de média a bien été modifié !</source>
+        <target>Media type changed successfully !</target>
+      </trans-unit>
+      <trans-unit id="LRQamIQ" resname="Le type de média a bien été supprimé !">
+        <source>Le type de média a bien été supprimé !</source>
+        <target>Media type deleted successfully !</target>
+      </trans-unit>
+      <trans-unit id="ULSXHqq" resname="Le type de produit a bien été créé !">
+        <source>Le type de produit a bien été créé !</source>
+        <target>Product type successfully created !</target>
+      </trans-unit>
+      <trans-unit id="NaCZRr1" resname="Le type de produit a bien été modifié !">
+        <source>Le type de produit a bien été modifié !</source>
+        <target>Product type changed successfully !</target>
+      </trans-unit>
+      <trans-unit id="XhD61Ih" resname="La catégorie de produit a bien été supprimée !">
+        <source>La catégorie de produit a bien été supprimée !</source>
+        <target>The product category has been successfully deleted !</target>
+      </trans-unit>
+      <trans-unit id="ARVRoDF" resname="[Prise de Contact] Metz Connect">
+        <source>[Prise de Contact] Metz Connect</source>
+        <target>[Contact] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="T.8GQfu" resname="Mail envoyé !">
+        <source>Mail envoyé !</source>
+        <target>E-mail sent !</target>
+      </trans-unit>
+      <trans-unit id="hA1jruK" resname="Prise de Contact">
+        <source>Prise de Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="h4EJ9UG" resname="Je vous recontacterais dans les plus brefs délais.">
+        <source>Je vous recontacterais dans les plus brefs délais.</source>
+        <target>I will contact you as soon as possible.</target>
+      </trans-unit>
+      <trans-unit id="MLWuCQo" resname="Voici le contenu de votre prise de contact">
+        <source>Voici le contenu de votre prise de contact</source>
+        <target>Here is the content of your contact</target>
+      </trans-unit>
+      <trans-unit id="ynfrI9V" resname="Je vous souhaite une bonne journée">
+        <source>Je vous souhaite une bonne journée</source>
+        <target>I wish you a good day</target>
+      </trans-unit>
+      <trans-unit id="7.KcDXj" resname="Cordialement">
+        <source>Cordialement</source>
+        <target>Cordially</target>
+      </trans-unit>
+      <trans-unit id="7FfevUO" resname="L' administration de MetzConnect">
+        <source>L' administration de MetzConnect</source>
+        <target>The administration of Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="Ty4qhts" resname="Le type d'alimentation a bien été créé !">
+        <source>Le type d'alimentation a bien été créé !</source>
+        <target>Power supply type has been successfully created</target>
+      </trans-unit>
+      <trans-unit id="sWiX7HC" resname="Le type d'alimentation a bien été modifié !">
+        <source>Le type d'alimentation a bien été modifié !</source>
+        <target>Power supply type has been successfully modified !</target>
+      </trans-unit>
+      <trans-unit id="akG2AnY" resname="La catégorie d'alimentation a bien été supprimée !">
+        <source>La catégorie d'alimentation a bien été supprimée !</source>
+        <target>Power supply category has been successfully removed !</target>
+      </trans-unit>
+      <trans-unit id="izOIrsS" resname="La réglementation a bien été créé !">
+        <source>La réglementation a bien été créé !</source>
+        <target>Regulation has been successfully created</target>
+      </trans-unit>
+      <trans-unit id="eufcLcR" resname="La réglementation a bien été modifié !">
+        <source>La réglementation a bien été modifié !</source>
+        <target>Regulation has been successfully changed !</target>
+      </trans-unit>
+      <trans-unit id="3iIiN8M" resname="La catégorie de réglementation a bien été supprimée !">
+        <source>La catégorie de réglementation a bien été supprimée !</source>
+        <target>Regulation category has been successfully removed !</target>
+      </trans-unit>
+      <trans-unit id="AS56r4w" resname="Ajout reglementation">
+        <source>Ajout reglementation</source>
+        <target>Regulation addition</target>
+      </trans-unit>
+      <trans-unit id="og581mf" resname="Création d'une réglementation">
+        <source>Création d'une réglementation</source>
+        <target>Regulation creation</target>
+      </trans-unit>
+      <trans-unit id="4QaI7P3" resname="Ajouter la réglementation">
+        <source>Ajouter la réglementation</source>
+        <target>Add regulation</target>
+      </trans-unit>
+      <trans-unit id="3MJkZ4l" resname="Les Réglementations">
+        <source>Les Réglementations</source>
+        <target>Regulations</target>
+      </trans-unit>
+      <trans-unit id="0ts1Hcy" resname="Retrouvez ici toutes les réglementations">
+        <source>Retrouvez ici toutes les réglementations</source>
+        <target>Find here all the regulations</target>
+      </trans-unit>
+      <trans-unit id="B6BLR4W" resname="Réglementation non trouvé dans la base de données">
+        <source>Réglementation non trouvé dans la base de données</source>
+        <target>Reglementation not found in database</target>
+      </trans-unit>
+      <trans-unit id="E8KiE2P" resname="Ajout type d'alimentation">
+        <source>Ajout type d'alimentation</source>
+        <target>Power supply addition</target>
+      </trans-unit>
+      <trans-unit id="FR7ombS" resname="Création d'un type d'alimentation">
+        <source>Création d'un type d'alimentation</source>
+        <target>Power supply Creation</target>
+      </trans-unit>
+      <trans-unit id="dabcJt7" resname="Ajouter le type d'alimentation">
+        <source>Ajouter le type d'alimentation</source>
+        <target>Add power supply</target>
+      </trans-unit>
+      <trans-unit id="zhweaQ9" resname="Les Types d'Alimentations">
+        <source>Les Types d'Alimentations</source>
+        <target>Power Supplies Types</target>
+      </trans-unit>
+      <trans-unit id="_AYdUN." resname="Retrouvez ici tous les types d'alimentations">
+        <source>Retrouvez ici tous les types d'alimentations</source>
+        <target>Find here all the power supplies</target>
+      </trans-unit>
+      <trans-unit id="l9QG79y" resname="Type d'alimentation non trouvé dans la base de données">
+        <source>Type d'alimentation non trouvé dans la base de données</source>
+        <target>Power supply type not found in database</target>
+      </trans-unit>
+      <trans-unit id="wXqIPlX" resname="Ajouter le type de produit">
+        <source>Ajouter le type de produit</source>
+        <target>Add product type</target>
+      </trans-unit>
+      <trans-unit id="8oT9h4_" resname="Le produit a bien été créé !">
+        <source>Le produit a bien été créé !</source>
+        <target>Product has been successfully created !</target>
+      </trans-unit>
+      <trans-unit id="i89XX_p" resname="Le produit a bien été modifié !">
+        <source>Le produit a bien été modifié !</source>
+        <target>Product has been changed successfully</target>
+      </trans-unit>
+      <trans-unit id="vzwv_r2" resname="Le produit ">
+        <source>Le produit </source>
+        <target>Product</target>
+      </trans-unit>
+      <trans-unit id="v8Gbq3O" resname="Le libellé doit contenir au moins {{ limit }} caractères">
+        <source>Le libellé doit contenir au moins {{ limit }} caractères</source>
+        <target>Label should contain at least {{ limit }} characters</target>
+      </trans-unit>
+      <trans-unit id="OTyiarE" resname="Référence">
+        <source>Référence</source>
+        <target>Reference</target>
+      </trans-unit>
+      <trans-unit id="sXWxX2Z" resname="Veuillez renseigner la référence">
+        <source>Veuillez renseigner la référence</source>
+        <target>Please fill the reference field</target>
+      </trans-unit>
+      <trans-unit id="YMHjSz2" resname="Prix unitaire">
+        <source>Prix unitaire</source>
+        <target>Unit price</target>
+      </trans-unit>
+      <trans-unit id="jSwpeVY" resname="Veuillez renseigner le prix unitaire">
+        <source>Veuillez renseigner le prix unitaire</source>
+        <target>Please fill the price field</target>
+      </trans-unit>
+      <trans-unit id="Um4Ah8w" resname="Description">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="dgQbHXG" resname="Veuillez renseigner une fonctionnalité valide">
+        <source>Veuillez renseigner une fonctionnalité valide</source>
+        <target>Please fill a valid feature</target>
+      </trans-unit>
+      <trans-unit id="vSFYwT3" resname="Fonctionnalités">
+        <source>Fonctionnalités</source>
+        <target>Features</target>
+      </trans-unit>
+      <trans-unit id="6RJJPOU" resname="Longueur">
+        <source>Longueur</source>
+        <target>Length</target>
+      </trans-unit>
+      <trans-unit id="9juU_5H" resname="Veuillez renseigner une longueur valide">
+        <source>Veuillez renseigner une longueur valide</source>
+        <target>Please fill a valid length</target>
+      </trans-unit>
+      <trans-unit id="7gw9nbV" resname="Hauteur">
+        <source>Hauteur</source>
+        <target>Heigth</target>
+      </trans-unit>
+      <trans-unit id="Td.Bj6T" resname="Veuillez renseigner une hauteur valide">
+        <source>Veuillez renseigner une hauteur valide</source>
+        <target>Please fill a valid heigth</target>
+      </trans-unit>
+      <trans-unit id="1Vs6IZG" resname="Profondeur">
+        <source>Profondeur</source>
+        <target>Depth</target>
+      </trans-unit>
+      <trans-unit id="avQvtdO" resname="Veuillez renseigner une profondeur valide">
+        <source>Veuillez renseigner une profondeur valide</source>
+        <target>Please fill a valid depth</target>
+      </trans-unit>
+      <trans-unit id="7Ypc0tq" resname="Largeur">
+        <source>Largeur</source>
+        <target>Width</target>
+      </trans-unit>
+      <trans-unit id="2BJZYt7" resname="Veuillez renseigner une largeur valide">
+        <source>Veuillez renseigner une largeur valide</source>
+        <target>Please fill a valid width</target>
+      </trans-unit>
+      <trans-unit id="r3UMoX_" resname="Poids">
+        <source>Poids</source>
+        <target>weight</target>
+      </trans-unit>
+      <trans-unit id="vMU4irW" resname="Veuillez renseigner un poids valide">
+        <source>Veuillez renseigner un poids valide</source>
+        <target>Please fill a valid weight</target>
+      </trans-unit>
+      <trans-unit id="rtrbj8l" resname="Veuillez renseigner un type d'alimentation">
+        <source>Veuillez renseigner un type d'alimentation</source>
+        <target>Please fill a power supply</target>
+      </trans-unit>
+      <trans-unit id="zwzZlH7" resname="Durée de vie">
+        <source>Durée de vie</source>
+        <target>Lifetime</target>
+      </trans-unit>
+      <trans-unit id="sJGNmlj" resname="Veuillez renseigner la durée de vie du produit">
+        <source>Veuillez renseigner la durée de vie du produit</source>
+        <target>Please fill the product lifetime</target>
+      </trans-unit>
+      <trans-unit id="wbDe5fW" resname="Compatibilité">
+        <source>Compatibilité</source>
+        <target>Compatibility</target>
+      </trans-unit>
+      <trans-unit id="WqhIPvN" resname="Veuillez renseigner compatibilité destinée au produit">
+        <source>Veuillez renseigner compatibilité destinée au produit</source>
+        <target>Please fill the product accounting</target>
+      </trans-unit>
+      <trans-unit id="zTNOCE." resname="Ajouter un produit">
+        <source>Ajouter un produit</source>
+        <target>Add product</target>
+      </trans-unit>
+      <trans-unit id="VMMk9sE" resname="Prix">
+        <source>Prix</source>
+        <target>Price</target>
+      </trans-unit>
+      <trans-unit id="AkauXy9" resname="Type de produit">
+        <source>Type de produit</source>
+        <target>Product type</target>
+      </trans-unit>
+      <trans-unit id="uq3fcPt" resname="Type">
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="mv3sYB0" resname="Durée de garantie">
+        <source>Durée de garantie</source>
+        <target>Warranty period</target>
+      </trans-unit>
+      <trans-unit id="PMyeNqe" resname="Bénéfices">
+        <source>Bénéfices</source>
+        <target>Benefits</target>
+      </trans-unit>
+      <trans-unit id="48ijocw" resname="Modifier un produit">
+        <source>Modifier un produit</source>
+        <target>Modify product</target>
+      </trans-unit>
+      <trans-unit id="8dVyVow" resname="Modification du produit">
+        <source>Modification du produit</source>
+        <target>Product modification</target>
+      </trans-unit>
+      <trans-unit id="fIfysRk" resname="Les Produits">
+        <source>Les Produits</source>
+        <target>Products</target>
+      </trans-unit>
+      <trans-unit id="3YpKvMv" resname="Retrouvez ici tous les produits">
+        <source>Retrouvez ici tous les produits</source>
+        <target>Find here all products</target>
+      </trans-unit>
+      <trans-unit id="QjptYP8" resname="AJOUTER UN PRODUIT">
+        <source>AJOUTER UN PRODUIT</source>
+        <target>ADD PRODUCT</target>
+      </trans-unit>
+      <trans-unit id="aKU0H8a" resname="Catégorie">
+        <source>Catégorie</source>
+        <target>Category</target>
+      </trans-unit>
+      <trans-unit id="NYBGnQb" resname="ACTION">
+        <source>ACTION</source>
+        <target>ACTION</target>
+      </trans-unit>
+      <trans-unit id="zPJpnTn" resname="CONSULTER">
+        <source>CONSULTER</source>
+        <target>CONSULT</target>
+      </trans-unit>
+      <trans-unit id="ocMBmsk" resname="Produit non trouvé dans la base de données">
+        <source>Produit non trouvé dans la base de données</source>
+        <target>Product not found in database</target>
+      </trans-unit>
+      <trans-unit id="ZVeOT3L" resname="Consulter un produit">
+        <source>Consulter un produit</source>
+        <target>Consult product</target>
+      </trans-unit>
+      <trans-unit id="frwi4BB" resname="Consultation du produit">
+        <source>Consultation du produit</source>
+        <target>Product consultation</target>
+      </trans-unit>
+      <trans-unit id="UYedb6Y" resname="AJOUTER UNE RÈGLEMENTATION">
+        <source>AJOUTER UNE RÈGLEMENTATION</source>
+        <target>ADD REGULATION</target>
+      </trans-unit>
+      <trans-unit id="o6z2URW" resname="Retrouvez ici tous les types de médias">
+        <source>Retrouvez ici tous les types de médias</source>
+        <target>Find here all media types</target>
+      </trans-unit>
+      <trans-unit id="j4pnP8B" resname="Produit modifié avec succès !">
+        <source>Produit modifié avec succès !</source>
+        <target>Product changed successfully</target>
+      </trans-unit>
+      <trans-unit id="4ABeAV0" resname="Votre profil a bien été supprimé !">
+        <source>Votre profil a bien été supprimé !</source>
+        <target>Your account has been successfully removed</target>
+      </trans-unit>
+      <trans-unit id="i7DPbrm" resname="1234567">
+        <source>1234567</source>
+        <target>1234567</target>
+      </trans-unit>
+      <trans-unit id="1MD5rKM" resname="40,00">
+        <source>40,00</source>
+        <target>40,00</target>
+      </trans-unit>
+      <trans-unit id="VfaFoj7" resname="Mot de passe actuel">
+        <source>Mot de passe actuel</source>
+        <target>Current password</target>
+      </trans-unit>
+      <trans-unit id="kgvnG0A" resname="Entrez une description...">
+        <source>Entrez une description...</source>
+        <target>Enter description...</target>
+      </trans-unit>
+      <trans-unit id="Sl1Bs_n" resname="Entrez une brève étendue des fonctionnalités...">
+        <source>Entrez une brève étendue des fonctionnalités...</source>
+        <target>Enter a brief features stretch...</target>
+      </trans-unit>
+      <trans-unit id="RE4igt_" resname="Entrez une brève étendue des bénéfices...">
+        <source>Entrez une brève étendue des bénéfices...</source>
+        <target>Enter a brief benefits stretch......</target>
+      </trans-unit>
+      <trans-unit id="rVc2aGU" resname="100">
+        <source>100</source>
+        <target>100</target>
+      </trans-unit>
+      <trans-unit id="mDvWFLt" resname="300">
+        <source>300</source>
+        <target>300</target>
+      </trans-unit>
+      <trans-unit id="eQJpm_Q" resname="7">
+        <source>7</source>
+        <target>7</target>
+      </trans-unit>
+      <trans-unit id="bsEGBwK" resname="Supprimer son compte">
+        <source>Supprimer son compte</source>
+        <target>Delete account</target>
+      </trans-unit>
+      <trans-unit id="GOp0yrR" resname="SUPPRESSION DU COMPTE">
+        <source>SUPPRESSION DU COMPTE</source>
+        <target>DELETING ACCOUNT</target>
+      </trans-unit>
+      <trans-unit id="Gnl7mA0" resname="Supprimer définitivement">
+        <source>Supprimer définitivement</source>
+        <target>Delete definitely</target>
+      </trans-unit>
+      <trans-unit id="vn4vIBK" resname="Images">
+        <source>Images</source>
+        <target>Pictures</target>
+      </trans-unit>
+      <trans-unit id="OF2HlzJ" resname="La catégorie a bien été créée !">
+        <source>La catégorie a bien été créée !</source>
+        <target>Category successfully created !</target>
+      </trans-unit>
+      <trans-unit id="uNGVSfp" resname="La catégorie a bien été modifiée !">
+        <source>La catégorie a bien été modifiée !</source>
+        <target>The category has been modified!</target>
+      </trans-unit>
+      <trans-unit id="w.ThtHB" resname="La catégorie a bien été supprimée !">
+        <source>La catégorie a bien été supprimée !</source>
+        <target>The category has been successfully deleted !</target>
+      </trans-unit>
+      <trans-unit id="t1sQmo3" resname="Ce libellé est déja utilisé">
+        <source>Ce libellé est déja utilisé</source>
+        <target>This label is already in use</target>
+      </trans-unit>
+      <trans-unit id="7qHKNra" resname="Suppression effectuée avec succès">
+        <source>Suppression effectuée avec succès</source>
+        <target>Removed successfully</target>
+      </trans-unit>
+      <trans-unit id="JzgbF1V" resname="Utilisateur gelé avec succès">
+        <source>Utilisateur gelé avec succès</source>
+        <target>User frozen successfully</target>
+      </trans-unit>
+      <trans-unit id="Ysfrf.I" resname="Utilisateur dégelé avec succès">
+        <source>Utilisateur dégelé avec succès</source>
+        <target>User unfrozen successfully</target>
+      </trans-unit>
+      <trans-unit id="GFpRzL0" resname="Utilisateur archivé avec succès">
+        <source>Utilisateur archivé avec succès</source>
+        <target>User archived successfully</target>
+      </trans-unit>
+      <trans-unit id="mxUESOZ" resname="Utilisateur désarchivé avec succès">
+        <source>Utilisateur désarchivé avec succès</source>
+        <target>User unarchived successfully</target>
+      </trans-unit>
+      <trans-unit id="V4vcf.a" resname="Les fonctions">
+        <source>Les fonctions</source>
+        <target>Functions</target>
+      </trans-unit>
+      <trans-unit id="UQ5iKxv" resname="Retrouvez ici toutes les fonctions des employés">
+        <source>Retrouvez ici toutes les fonctions des employés</source>
+        <target>Find here all employees functions</target>
+      </trans-unit>
+      <trans-unit id="g1E5sA8" resname="AJOUTER UNE FONCTION">
+        <source>AJOUTER UNE FONCTION</source>
+        <target>ADD A FUNCTION</target>
+      </trans-unit>
+      <trans-unit id="x7Dndby" resname="Fonction non trouvée dans la base de données">
+        <source>Fonction non trouvée dans la base de données</source>
+        <target>Function not found in database</target>
+      </trans-unit>
+      <trans-unit id="6XRO6fG" resname="Ajouter une fonction">
+        <source>Ajouter une fonction</source>
+        <target>Add function</target>
+      </trans-unit>
+      <trans-unit id="QLeNDdM" resname="Retour à la liste">
+        <source>Retour à la liste</source>
+        <target>Return to list</target>
+      </trans-unit>
+      <trans-unit id="APnFM0V" resname="Ajouter">
+        <source>Ajouter</source>
+        <target>Add</target>
+      </trans-unit>
+      <trans-unit id="Url.ozy" resname="Modification de la fonction">
+        <source>Modification de la fonction</source>
+        <target>Function modification</target>
+      </trans-unit>
+      <trans-unit id="fOdc_ki" resname="Comptabilité">
+        <source>Comptabilité</source>
+        <target>Accounting</target>
+      </trans-unit>
+      <trans-unit id="AtB5Sfl" resname="GESTION DES VENTES">
+        <source>GESTION DES VENTES</source>
+        <target>SALES MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="qV_Jg66" resname="Liste des ventes">
+        <source>Liste des ventes</source>
+        <target>Sales List</target>
+      </trans-unit>
+      <trans-unit id="7BkZ03h" resname="Liste des catégories">
+        <source>Liste des catégories</source>
+        <target>List of categories</target>
+      </trans-unit>
+      <trans-unit id="at8GBrx" resname="GESTION DES PRODUITS">
+        <source>GESTION DES PRODUITS</source>
+        <target>PRODUCT MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="5bNQ7F9" resname="Liste des produits">
+        <source>Liste des produits</source>
+        <target>List of products</target>
+      </trans-unit>
+      <trans-unit id="aTj4j2s" resname="EXPORT">
+        <source>EXPORT</source>
+        <target>EXPORT</target>
+      </trans-unit>
+      <trans-unit id="aQ7jGHg" resname="Export des ventes">
+        <source>Export des ventes</source>
+        <target>Sales export</target>
+      </trans-unit>
+      <trans-unit id="t5IJFJA" resname="Export des produits">
+        <source>Export des produits</source>
+        <target>Product export</target>
+      </trans-unit>
+      <trans-unit id="9ZBM96E" resname="Marketing">
+        <source>Marketing</source>
+        <target>Marketing</target>
+      </trans-unit>
+      <trans-unit id="SOMsxoo" resname="Ressources Humaines">
+        <source>Ressources Humaines</source>
+        <target>Human Resources</target>
+      </trans-unit>
+      <trans-unit id="PhdPETN" resname="GESTION DES EMPLOYÉS">
+        <source>GESTION DES EMPLOYÉS</source>
+        <target>EMPLOYEE MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="_9U00Cq" resname="Liste des employés">
+        <source>Liste des employés</source>
+        <target>List of employees</target>
+      </trans-unit>
+      <trans-unit id="1WLqszK" resname="Export des employés">
+        <source>Export des employés</source>
+        <target>Employee export</target>
+      </trans-unit>
+      <trans-unit id="S0LGaQ6" resname="Administration">
+        <source>Administration</source>
+        <target>Administration</target>
+      </trans-unit>
+      <trans-unit id="eLl0EsC" resname="GESTION DES UTILISATEURS">
+        <source>GESTION DES UTILISATEURS</source>
+        <target>USER MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="NGdqgWZ" resname="Liste des utilisateurs">
+        <source>Liste des utilisateurs</source>
+        <target>User List</target>
+      </trans-unit>
+      <trans-unit id="AGYD2zB" resname="Liste des départements">
+        <source>Liste des départements</source>
+        <target>List of departments</target>
+      </trans-unit>
+      <trans-unit id="I5jcz_q" resname="Liste des fonctions">
+        <source>Liste des fonctions</source>
+        <target>List of functions</target>
+      </trans-unit>
+      <trans-unit id="kGgOfP1" resname="Gestion des champs">
+        <source>Gestion des champs</source>
+        <target>Field Management</target>
+      </trans-unit>
+      <trans-unit id="xPdVfcr" resname="Export des utilisateurs">
+        <source>Export des utilisateurs</source>
+        <target>Exporting users</target>
+      </trans-unit>
+      <trans-unit id="LIoBpGQ" resname="Export de la Base de données">
+        <source>Export de la Base de données</source>
+        <target>Database Export</target>
+      </trans-unit>
+      <trans-unit id="sOHzDLc" resname="Product Owner">
+        <source>Product Owner</source>
+        <target>Product Owner</target>
+      </trans-unit>
+      <trans-unit id="L7lEkmP" resname="Service-après vente">
+        <source>Service-après vente</source>
+        <target>After-sales-service</target>
+      </trans-unit>
+      <trans-unit id="egYAiNo" resname="GESTION DES PIÈCES DÉTACHÉES">
+        <source>GESTION DES PIÈCES DÉTACHÉES</source>
+        <target>SPARE PARTS MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="uEljK7T" resname="Liste des pièces détachées">
+        <source>Liste des pièces détachées</source>
+        <target>List of spare parts</target>
+      </trans-unit>
+      <trans-unit id="iZmNziR" resname="GESTION DES TICKETS">
+        <source>GESTION DES TICKETS</source>
+        <target>TICKET MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="NaJp2Yb" resname="Liste des tickets">
+        <source>Liste des tickets</source>
+        <target>List of tickets</target>
+      </trans-unit>
+      <trans-unit id="VYxBqs3" resname="Export des pièces détachées">
+        <source>Export des pièces détachées</source>
+        <target>Export of spare parts</target>
+      </trans-unit>
+      <trans-unit id="W_.yEVn" resname="Export des tickets">
+        <source>Export des tickets</source>
+        <target>Ticket export</target>
+      </trans-unit>
+      <trans-unit id="oTvCr_K" resname="Les départements">
+        <source>Les départements</source>
+        <target>Departments</target>
+      </trans-unit>
+      <trans-unit id="1kTAnRg" resname="Retrouvez ici tous les départements présents au sein de l'entreprise">
+        <source>Retrouvez ici tous les départements présents au sein de l'entreprise</source>
+        <target>Find here all the departments present within the company</target>
+      </trans-unit>
+      <trans-unit id="jrcwtJD" resname="AJOUTER UN SERVICE">
+        <source>AJOUTER UN SERVICE</source>
+        <target>ADD A SERVICE</target>
+      </trans-unit>
+      <trans-unit id="Uyvnkv_" resname="Service non trouvé dans la base de données">
+        <source>Service non trouvé dans la base de données</source>
+        <target>Service not found in database</target>
+      </trans-unit>
+      <trans-unit id="SRBMgAF" resname="Ajouter un service">
+        <source>Ajouter un service</source>
+        <target>Add a service</target>
+      </trans-unit>
+      <trans-unit id="eLdC8bp" resname="Modification du service">
+        <source>Modification du service</source>
+        <target>_Modify service</target>
+      </trans-unit>
+      <trans-unit id="0gc67be" resname="Les catégories">
+        <source>Les catégories</source>
+        <target>Categories</target>
+      </trans-unit>
+      <trans-unit id="siS1mtA" resname="Les Catégories">
+        <source>Les Catégories</source>
+        <target>Categories</target>
+      </trans-unit>
+      <trans-unit id="01ISUam" resname="Retrouvez ici toutes les catégories">
+        <source>Retrouvez ici toutes les catégories</source>
+        <target>Find all categories here</target>
+      </trans-unit>
+      <trans-unit id="pkQmJvP" resname="AJOUTER UNE CATEGORIE">
+        <source>AJOUTER UNE CATEGORIE</source>
+        <target>ADD A CATEGORY</target>
+      </trans-unit>
+      <trans-unit id="OEOXHc." resname="ID">
+        <source>ID</source>
+        <target>ID</target>
+      </trans-unit>
+      <trans-unit id="CMW3t6u" resname="Catégorie non trouvé dans la base de données">
+        <source>Catégorie non trouvé dans la base de données</source>
+        <target>Category not found in database</target>
+      </trans-unit>
+      <trans-unit id="rlrYByI" resname="Ajouter une catégorie">
+        <source>Ajouter une catégorie</source>
+        <target>Add Category</target>
+      </trans-unit>
+      <trans-unit id="dJjU5K3" resname="Ajouter la catégorie">
+        <source>Ajouter la catégorie</source>
+        <target>Add Category</target>
+      </trans-unit>
+      <trans-unit id="Wm0jCIW" resname="Les utilisateurs">
+        <source>Les utilisateurs</source>
+        <target>Users</target>
+      </trans-unit>
+      <trans-unit id="Gn.rZBf" resname="Retrouvez ici tous les utilisateurs inscrits au sein de l'entreprise">
+        <source>Retrouvez ici tous les utilisateurs inscrits au sein de l'entreprise</source>
+        <target>Find here all registered users within the company</target>
+      </trans-unit>
+      <trans-unit id="t8_nMCO" resname="Prenom">
+        <source>Prenom</source>
+        <target>First name</target>
+      </trans-unit>
+      <trans-unit id="wlM3BVR" resname="Roles">
+        <source>Roles</source>
+        <target>Roles</target>
+      </trans-unit>
+      <trans-unit id="K4i4uyq" resname="VOIR">
+        <source>VOIR</source>
+        <target>SHOW</target>
+      </trans-unit>
+      <trans-unit id="xyv61GN" resname="DEGELER">
+        <source>DEGELER</source>
+        <target>UNFREEZE</target>
+      </trans-unit>
+      <trans-unit id="l9LEipr" resname="GELER">
+        <source>GELER</source>
+        <target>FREEZE</target>
+      </trans-unit>
+      <trans-unit id="p_v5cMu" resname="DÉSARCHIVER">
+        <source>DÉSARCHIVER</source>
+        <target>UNARCHIVE</target>
+      </trans-unit>
+      <trans-unit id="FiMUXmK" resname="ARCHIVER">
+        <source>ARCHIVER</source>
+        <target>ARCHIVE</target>
+      </trans-unit>
+      <trans-unit id="esG7wsT" resname="Aucun utilisateur d'inscrit">
+        <source>Aucun utilisateur d'inscrit</source>
+        <target>No user registered</target>
+      </trans-unit>
+      <trans-unit id="97W9axB" resname="Les produits">
+        <source>Les produits</source>
+        <target>Products</target>
+      </trans-unit>
+      <trans-unit id="jf1y98w" resname="Utilisateur archivé, impossible de le geler">
+        <source>Utilisateur archivé, impossible de le geler</source>
+        <target>User archived, cannot freeze</target>
+      </trans-unit>
+      <trans-unit id="z7McS3." resname="Champs obligatoires">
+        <source>Champs obligatoires</source>
+        <target>Required fields</target>
+      </trans-unit>
+      <trans-unit id="6n0LdjQ" resname="Commercial">
+        <source>Commercial</source>
+        <target>Commercial</target>
+      </trans-unit>
+      <trans-unit id="E5fKfxA" resname="Export des&#10;                produits">
+        <source>Export des
+                produits</source>
+        <target>Export of products</target>
+      </trans-unit>
+      <trans-unit id="YE3ORF4" resname="Services">
+        <source>Services</source>
+        <target>Service</target>
+      </trans-unit>
+      <trans-unit id="amA4fkS" resname="Employé">
+        <source>Employé</source>
+        <target>Employee</target>
+      </trans-unit>
+      <trans-unit id="vpLje44" resname="Modifier le picto">
+        <source>Modifier le picto</source>
+        <target>Change the pictogram</target>
+      </trans-unit>
+      <trans-unit id="xaYD7o_" resname="Ajouter un picto">
+        <source>Ajouter un picto</source>
+        <target>Add a pictogram</target>
+      </trans-unit>
+      <trans-unit id="LIdYKxR" resname="Pictogramme">
+        <source>Pictogramme</source>
+        <target>Pictogram</target>
+      </trans-unit>
+      <trans-unit id="iBPC6sR" resname="GESTION DES RÈGLEMENTATIONS">
+        <source>GESTION DES RÈGLEMENTATIONS</source>
+        <target>REGULATORY MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="f5rDqCV" resname="Liste des règlementation">
+        <source>Liste des règlementation</source>
+        <target>List of regulations</target>
+      </trans-unit>
+      <trans-unit id="QsNnbd5" resname="Ajouter une règlementation">
+        <source>Ajouter une règlementation</source>
+        <target>Add a regulation</target>
+      </trans-unit>
+      <trans-unit id="5n7yOWf" resname="GESTION DES MÉDIAS">
+        <source>GESTION DES MÉDIAS</source>
+        <target>MEDIA MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="m3HzBZy" resname="Liste des types de médias">
+        <source>Liste des types de médias</source>
+        <target>List of media types</target>
+      </trans-unit>
+      <trans-unit id="av5BE4M" resname="Ajouter un type">
+        <source>Ajouter un type</source>
+        <target>Add a type</target>
+      </trans-unit>
+      <trans-unit id="tOkp2Lz" resname="Documents">
+        <source>Documents</source>
+        <target>Documents</target>
+      </trans-unit>
+      <trans-unit id="Lc07R5s" resname="Description :">
+        <source>Description :</source>
+        <target>Description :</target>
+      </trans-unit>
+      <trans-unit id="Ir2RvMj" resname="Fonctionnalités :">
+        <source>Fonctionnalités :</source>
+        <target>Features :</target>
+      </trans-unit>
+      <trans-unit id="fVWLu7p" resname="Bénéfices :">
+        <source>Bénéfices :</source>
+        <target>Benefits :</target>
+      </trans-unit>
+      <trans-unit id="UxRZQAc" resname="Employé n°">
+        <source>Employé n°</source>
+        <target>Employee no.</target>
+      </trans-unit>
+      <trans-unit id="CWLuk7z" resname="Consultation d'un employé">
+        <source>Consultation d'un employé</source>
+        <target>Employee consultation</target>
+      </trans-unit>
+      <trans-unit id="YTOhw2o" resname="NOM">
+        <source>NOM</source>
+        <target>NAME</target>
+      </trans-unit>
+      <trans-unit id="_tPO7Yn" resname="PRÉNOM">
+        <source>PRÉNOM</source>
+        <target>FIRSTNAME</target>
+      </trans-unit>
+      <trans-unit id="YZQ3tCA" resname="MAIL">
+        <source>MAIL</source>
+        <target>EMAIL</target>
+      </trans-unit>
+      <trans-unit id="bzxgO4E" resname="SERVICE">
+        <source>SERVICE</source>
+        <target>DEPARTMENT</target>
+      </trans-unit>
+      <trans-unit id="X21.s.w" resname="FONCTION">
+        <source>FONCTION</source>
+        <target>FUNCTION</target>
+      </trans-unit>
+      <trans-unit id="f6R6kEF" resname="Les employés">
+        <source>Les employés</source>
+        <target>Employees</target>
+      </trans-unit>
+      <trans-unit id="SzyfC5D" resname="Aucun employé d'inscrit">
+        <source>Aucun employé d'inscrit</source>
+        <target>No registrant employees</target>
+      </trans-unit>
+      <trans-unit id="RTRnaC_" resname="Veuillez renseigner une catégorie">
+        <source>Veuillez renseigner une catégorie</source>
+        <target>Please fill the category field</target>
+      </trans-unit>
+      <trans-unit id="iKNZX7r" resname="Entrez un commentaire...">
+        <source>Entrez un commentaire...</source>
+        <target>Enter comment...</target>
+      </trans-unit>
+      <trans-unit id="E.mUA1T" resname="Veuillez renseigner un commentaire">
+        <source>Veuillez renseigner un commentaire</source>
+        <target>Please fill the comment field</target>
+      </trans-unit>
+      <trans-unit id="3B4Os9o" resname="La vente a bien été créée !">
+        <source>La vente a bien été créée !</source>
+        <target>Sale has been successfully created !</target>
+      </trans-unit>
+      <trans-unit id="iU5Z1On" resname="La vente a bien été modifiée !">
+        <source>La vente a bien été modifiée !</source>
+        <target>Sale has been changed successfully !</target>
+      </trans-unit>
+      <trans-unit id="BoRuL4A" resname="La vente a bien été supprimée !">
+        <source>La vente a bien été supprimée !</source>
+        <target>Sale has been successfully removed !</target>
+      </trans-unit>
+      <trans-unit id="yVwzGkR" resname="[Acceptation] Metz Connect">
+        <source>[Acceptation] Metz Connect</source>
+        <target>[Acceptance] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="gyb7N6L" resname="L'utilisateur a bien été accepté !">
+        <source>L'utilisateur a bien été accepté !</source>
+        <target>User has been successfully accepted !</target>
+      </trans-unit>
+      <trans-unit id="sqQlFYK" resname="[Refus] Metz Connect">
+        <source>[Refus] Metz Connect</source>
+        <target>[Refusal] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="iZ37ZoV" resname="L'utilisateur a bien été supprimé !">
+        <source>L'utilisateur a bien été supprimé !</source>
+        <target>User has been successfully removed !</target>
+      </trans-unit>
+      <trans-unit id="I9OTi17" resname="Utilisateurs">
+        <source>Utilisateurs</source>
+        <target>Users</target>
+      </trans-unit>
+      <trans-unit id="BuTwUXf" resname="en attente">
+        <source>en attente</source>
+        <target>pending</target>
+      </trans-unit>
+      <trans-unit id="b5SCJny" resname="MODE USURPATION">
+        <source>MODE USURPATION</source>
+        <target>USURPATION MODE</target>
+      </trans-unit>
+      <trans-unit id="yGylDDw" resname="ACTIVÉ">
+        <source>ACTIVÉ</source>
+        <target>ACTIVATED</target>
+      </trans-unit>
+      <trans-unit id="j5_bCOw" resname="Retour à l'accueil">
+        <source>Retour à l'accueil</source>
+        <target>Back to home</target>
+      </trans-unit>
+      <trans-unit id="97wAdna" resname="L' administrateur a acceptré votre demande de création de compte, vous pouvez dès à présent, vous connecté.">
+        <source>L' administrateur a acceptré votre demande de création de compte, vous pouvez dès à présent, vous connecté.</source>
+        <target>The administrator accepted your account creation request, you can now log in.</target>
+      </trans-unit>
+      <trans-unit id="JoZrPCA" resname="Merci">
+        <source>Merci</source>
+        <target>Thanks</target>
+      </trans-unit>
+      <trans-unit id=".Q9x3r1" resname="Cordialement, Metz Connect">
+        <source>Cordialement, Metz Connect</source>
+        <target>Best regards, Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="E4EX8Qh" resname="L'administrateur a refusé votre demande de création de compte, veuillez contacter l'administrateur.">
+        <source>L'administrateur a refusé votre demande de création de compte, veuillez contacter l'administrateur.</source>
+        <target>The administrator refused your account creation request, please contact the admin.</target>
+      </trans-unit>
+      <trans-unit id="gHJev45" resname="Les ventes">
+        <source>Les ventes</source>
+        <target>Sales</target>
+      </trans-unit>
+      <trans-unit id="Q8Mzx8i" resname="Les Ventes">
+        <source>Les Ventes</source>
+        <target>Sales</target>
+      </trans-unit>
+      <trans-unit id="H8sj3H9" resname="Retrouvez ici toutes les ventes">
+        <source>Retrouvez ici toutes les ventes</source>
+        <target>Find here all sales</target>
+      </trans-unit>
+      <trans-unit id="I1zQmfM" resname="AJOUTER UNE VENTE">
+        <source>AJOUTER UNE VENTE</source>
+        <target>ADD SALE</target>
+      </trans-unit>
+      <trans-unit id="SNPoFla" resname="Commentaire">
+        <source>Commentaire</source>
+        <target>Comment</target>
+      </trans-unit>
+      <trans-unit id="6IIoa3w" resname="Vente non trouvée dans la base de données">
+        <source>Vente non trouvée dans la base de données</source>
+        <target>Sale not found in database</target>
+      </trans-unit>
+      <trans-unit id="VWjjHlt" resname="Ajouter une vente">
+        <source>Ajouter une vente</source>
+        <target>Add sale</target>
+      </trans-unit>
+      <trans-unit id="oUAdMQ2" resname="Ajouter la vente">
+        <source>Ajouter la vente</source>
+        <target>Add sale</target>
+      </trans-unit>
+      <trans-unit id="onGsqHv" resname="USURPER">
+        <source>USURPER</source>
+        <target>USURPATE</target>
+      </trans-unit>
+      <trans-unit id="wXsmFyV" resname="Les utilisateurs en attente">
+        <source>Les utilisateurs en attente</source>
+        <target>Pending users</target>
+      </trans-unit>
+      <trans-unit id="6klbLRv" resname="Retrouvez ici tous les utilisateurs inscrits mais en attente de confirmation de votre part">
+        <source>Retrouvez ici tous les utilisateurs inscrits mais en attente de confirmation de votre part</source>
+        <target>Find here all registered users, pending with confirmation from you </target>
+      </trans-unit>
+      <trans-unit id="LD9U_.a" resname="ACCEPTER">
+        <source>ACCEPTER</source>
+        <target>ACCEPT</target>
+      </trans-unit>
+      <trans-unit id="ZylU9D_" resname="REFUSER">
+        <source>REFUSER</source>
+        <target>REFUSE</target>
+      </trans-unit>
+      <trans-unit id="cmHaoBk" resname="Aucun utilisateur d'inscrit en attente">
+        <source>Aucun utilisateur d'inscrit en attente</source>
+        <target>No pending registered users</target>
+      </trans-unit>
+      <trans-unit id="AtQMYxV" resname="Le fichier CSV est invalide, Il manque des colonnes">
+        <source>Le fichier CSV est invalide, Il manque des colonnes</source>
+        <target>The CSV file is invalid, columns are missing</target>
+      </trans-unit>
+      <trans-unit id="KIjl4G8" resname="Le fichier CSV est invalide">
+        <source>Le fichier CSV est invalide</source>
+        <target>CSV file is invalid</target>
+      </trans-unit>
+      <trans-unit id="nAzSeCs" resname="Modification d'un employé">
+        <source>Modification d'un employé</source>
+        <target>Editing an employee</target>
+      </trans-unit>
+      <trans-unit id="CpllV5d" resname="IMPORTER DES PRODUITS">
+        <source>IMPORTER DES PRODUITS</source>
+        <target>IMPORT PRODUCTS</target>
+      </trans-unit>
+      <trans-unit id="_sYIlzl" resname="Importation de produits">
+        <source>Importation de produits</source>
+        <target>Product import</target>
+      </trans-unit>
+      <trans-unit id="WIPvyf1" resname="Exemple de fichier">
+        <source>Exemple de fichier</source>
+        <target>Sample File</target>
+      </trans-unit>
+      <trans-unit id="EgoYihs" resname="Le fichier doit contenir les colonnes suivantes">
+        <source>Le fichier doit contenir les colonnes suivantes</source>
+        <target>The file must contain the following columns</target>
+      </trans-unit>
+      <trans-unit id="ezZiiyM" resname="Prix unitaire (PU)">
+        <source>Prix unitaire (PU)</source>
+        <target>Unit Price (PU)</target>
+      </trans-unit>
+      <trans-unit id="ReCYira" resname="Garantie">
+        <source>Garantie</source>
+        <target>Warranty</target>
+      </trans-unit>
+      <trans-unit id="JpDHQvY" resname="Alimentation">
+        <source>Alimentation</source>
+        <target>Power</target>
+      </trans-unit>
+      <trans-unit id="BQ5bGCQ" resname="Télécharger le modèle">
+        <source>Télécharger le modèle</source>
+        <target>Download template</target>
+      </trans-unit>
+      <trans-unit id="nov0xcP" resname="Présentation">
+        <source>Présentation</source>
+        <target>Presentation</target>
+      </trans-unit>
+      <trans-unit id="iwvSnhV" resname="Disposition tarifaire">
+        <source>Disposition tarifaire</source>
+        <target>Tariff provision</target>
+      </trans-unit>
+      <trans-unit id="LnLCjIA" resname="Règlementations">
+        <source>Règlementations</source>
+        <target>Regulations</target>
+      </trans-unit>
+      <trans-unit id="QwTM_j9" resname="Média">
+        <source>Média</source>
+        <target>Media</target>
+      </trans-unit>
+      <trans-unit id="0CyAzP5" resname="Ajouter une image">
+        <source>Ajouter une image</source>
+        <target>Add image</target>
+      </trans-unit>
+      <trans-unit id="Xl0CFs4" resname="Supprimer">
+        <source>Supprimer</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="_sXUsEG" resname="Règlementation">
+        <source>Règlementation</source>
+        <target>Regulations</target>
+      </trans-unit>
+      <trans-unit id="5jrbgC9" resname="Ajouter les médias">
+        <source>Ajouter les médias</source>
+        <target>Add Media</target>
+      </trans-unit>
+      <trans-unit id="kUGC1eJ" resname="Dimensions">
+        <source>Dimensions</source>
+        <target>Dimensions</target>
+      </trans-unit>
+      <trans-unit id="5tDdB10" resname="GESTION DES CATÉGORIES">
+        <source>GESTION DES CATÉGORIES</source>
+        <target>CATEGORY MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="brGS0PG" resname="Pictogramme actuel">
+        <source>Pictogramme actuel</source>
+        <target>Current pictogram</target>
+      </trans-unit>
+      <trans-unit id="312yQSb" resname="Prévisualisation">
+        <source>Prévisualisation</source>
+        <target>Preview</target>
+      </trans-unit>
+      <trans-unit id="qOOF284" resname="Quitter le mode usurpation">
+        <source>Quitter le mode usurpation</source>
+        <target>Exit spoof mode</target>
+      </trans-unit>
+      <trans-unit id="k7AVCR1" resname="Veuillez uploader un fichier PNG.">
+        <source>Veuillez uploader un fichier PNG.</source>
+        <target>Please upload PNG file only.</target>
+      </trans-unit>
+      <trans-unit id="ATC31tN" resname="La pièce détachée a bien été créée !">
+        <source>La pièce détachée a bien été créée !</source>
+        <target>Spare part has been successfully created !</target>
+      </trans-unit>
+      <trans-unit id="oj0pglC" resname="La pièce détachée a bien été modifiée !">
+        <source>La pièce détachée a bien été modifiée !</source>
+        <target>Spare part has been successfully changed !</target>
+      </trans-unit>
+      <trans-unit id="tZ8cdYO" resname="La pièce détachée a bien été supprimée !">
+        <source>La pièce détachée a bien été supprimée !</source>
+        <target>Spare part has been successfully removed !</target>
+      </trans-unit>
+      <trans-unit id="kND1GK0" resname="Votre compte est bloqué, veuillez contacter l'administrateur">
+        <source>Votre compte est bloqué, veuillez contacter l'administrateur</source>
+        <target>Your account is blocked, please contact the administrator</target>
+      </trans-unit>
+      <trans-unit id="Flc0ZjP" resname="Votre compte est archivé, veuillez contacter l'administrateur">
+        <source>Votre compte est archivé, veuillez contacter l'administrateur</source>
+        <target>Your account is archived, please contact the administrator</target>
+      </trans-unit>
+      <trans-unit id="cdx0hz4" resname="Enregistrer">
+        <source>Enregistrer</source>
+        <target>Save</target>
+      </trans-unit>
+      <trans-unit id="PiK2zHP" resname="Ajouter un picto (uniquement PNG)">
+        <source>Ajouter un picto (uniquement PNG)</source>
+        <target>Add pictogram (PNG only)</target>
+      </trans-unit>
+      <trans-unit id="iOBWP5z" resname="Les pièces détachées">
+        <source>Les pièces détachées</source>
+        <target>Spare parts</target>
+      </trans-unit>
+      <trans-unit id="CycOY5l" resname="Les Pièces Détachées">
+        <source>Les Pièces Détachées</source>
+        <target>Spare parts</target>
+      </trans-unit>
+      <trans-unit id="gmz6adW" resname="Retrouvez ici toutes les pièces détachées">
+        <source>Retrouvez ici toutes les pièces détachées</source>
+        <target>Find here all spare parts</target>
+      </trans-unit>
+      <trans-unit id="Ig.hf20" resname="AJOUTER UNE PIÈCE DETACHÉE">
+        <source>AJOUTER UNE PIÈCE DETACHÉE</source>
+        <target>ADD SPARE PART</target>
+      </trans-unit>
+      <trans-unit id="c0IZ3lB" resname="piece détachée non trouvée dans la base de données">
+        <source>piece détachée non trouvée dans la base de données</source>
+        <target>Spare part not found in database</target>
+      </trans-unit>
+      <trans-unit id="m0xA54O" resname="Ajouter une pièce détachée">
+        <source>Ajouter une pièce détachée</source>
+        <target>Add spare part</target>
+      </trans-unit>
+      <trans-unit id="PD4vVQ4" resname="Ajouter la pièce détachée">
+        <source>Ajouter la pièce détachée</source>
+        <target>Add spare part</target>
+      </trans-unit>
+      <trans-unit id="x4tKZir" resname="Les tickets">
+        <source>Les tickets</source>
+        <target>Tickets</target>
+      </trans-unit>
+      <trans-unit id="149ANMb" resname="Les Tickets">
+        <source>Les Tickets</source>
+        <target>Tickets</target>
+      </trans-unit>
+      <trans-unit id="NpTR3qz" resname="Retrouvez ici tous les tickets">
+        <source>Retrouvez ici tous les tickets</source>
+        <target>Find here all tickets</target>
+      </trans-unit>
+      <trans-unit id="YIeskGj" resname="n° ticket">
+        <source>n° ticket</source>
+        <target>Ticket no.</target>
+      </trans-unit>
+      <trans-unit id="ofJFwki" resname="Client concerné">
+        <source>Client concerné</source>
+        <target>Concerned customer</target>
+      </trans-unit>
+      <trans-unit id="Axb_W9r" resname="Produit concerné">
+        <source>Produit concerné</source>
+        <target>Concerned product</target>
+      </trans-unit>
+      <trans-unit id="uoICtb8" resname="ticket non trouvé dans la base de données">
+        <source>ticket non trouvé dans la base de données</source>
+        <target>Ticket not found in database</target>
+      </trans-unit>
+      <trans-unit id="Z8Howwn" resname="Veuillez sélectionner au moins un produit">
+        <source>Veuillez sélectionner au moins un produit</source>
+        <target>Please select at least one product</target>
+      </trans-unit>
+      <trans-unit id="XZViL8K" resname="Libellé DE">
+        <source>Libellé DE</source>
+        <target>Label (DE)</target>
+      </trans-unit>
+      <trans-unit id="T0KA4_1" resname="Libellé EN">
+        <source>Libellé EN</source>
+        <target>Label (EN)</target>
+      </trans-unit>
+      <trans-unit id="ANZ8r9W" resname="Est archivé">
+        <source>Est archivé</source>
+        <target>Is Archived</target>
+      </trans-unit>
+      <trans-unit id="rXizpdj" resname="Le type de produit est utilisé par un produit ! Elle ne peut pas être supprimée !">
+        <source>Le type de produit est utilisé par un produit ! Elle ne peut pas être supprimée !</source>
+        <target>The product type is used by a product! It cannot be deleted!</target>
+      </trans-unit>
+      <trans-unit id="HoDT2uN" resname="Aucun utilisateur sélectionné !">
+        <source>Aucun utilisateur sélectionné !</source>
+        <target>No user selected!</target>
+      </trans-unit>
+      <trans-unit id="LxX3CFR" resname="Les utilisateurs ont bien été acceptés !">
+        <source>Les utilisateurs ont bien été acceptés !</source>
+        <target>Users have been successfully accepted !</target>
+      </trans-unit>
+      <trans-unit id="6QASJ5y" resname="Les utilisateurs ont bien été supprimées !">
+        <source>Les utilisateurs ont bien été supprimées !</source>
+        <target>Users have been successfully deleted !</target>
+      </trans-unit>
+      <trans-unit id="YCBho.b" resname="Le fichier XLSX est invalide, Il manque des colonnes">
+        <source>Le fichier XLSX est invalide, Il manque des colonnes</source>
+        <target>The XLSX file is invalid, columns are missing</target>
+      </trans-unit>
+      <trans-unit id="wCxVTL5" resname="Rechercher un produit">
+        <source>Rechercher un produit</source>
+        <target>Find a product</target>
+      </trans-unit>
+      <trans-unit id=".IhCSgH" resname="Veuillez choisir une catégorie">
+        <source>Veuillez choisir une catégorie</source>
+        <target>Please choose a category</target>
+      </trans-unit>
+      <trans-unit id="HmNn7z9" resname="Accepter les utilisateurs séléctionnées">
+        <source>Accepter les utilisateurs séléctionnées</source>
+        <target>Accept selected users</target>
+      </trans-unit>
+      <trans-unit id="tPijBXo" resname="Refuser les utilisateurs séléctionnées">
+        <source>Refuser les utilisateurs séléctionnées</source>
+        <target>Deny selected users</target>
+      </trans-unit>
+      <trans-unit id="eoz4YgU" resname="Séléction">
+        <source>Séléction</source>
+        <target>Selection</target>
+      </trans-unit>
+      <trans-unit id="L7Ws5iU" resname="Filtrage">
+        <source>Filtrage</source>
+        <target>Filtering</target>
+      </trans-unit>
+      <trans-unit id="KGuQrvy" resname="RÉINITIALISER">
+        <source>RÉINITIALISER</source>
+        <target>RESET</target>
+      </trans-unit>
+      <trans-unit id="4Mf107r" resname="Tous cocher">
+        <source>Tous cocher</source>
+        <target>Check all</target>
+      </trans-unit>
+      <trans-unit id="zAIYhco" resname="Tous décocher">
+        <source>Tous décocher</source>
+        <target>Uncheck all</target>
+      </trans-unit>
+      <trans-unit id="D8jzk3S" resname="EXPORTER LES PRODUITS">
+        <source>EXPORTER LES PRODUITS</source>
+        <target>EXPORT PRODUCTS</target>
+      </trans-unit>
+      <trans-unit id="1Eh0EFb" resname="GESTION DES ALIMENTATIONS">
+        <source>GESTION DES ALIMENTATIONS</source>
+        <target>POWER MANAGEMENT</target>
+      </trans-unit>
+      <trans-unit id="jbcM0sF" resname="Liste des alimentations">
+        <source>Liste des alimentations</source>
+        <target>List of power supplies</target>
+      </trans-unit>
+      <trans-unit id="U0cCdTM" resname="Ajouter une alimentation">
+        <source>Ajouter une alimentation</source>
+        <target>Add a power supply</target>
+      </trans-unit>
+      <trans-unit id="xZEX4vR" resname="Votre compte a bien été supprimé">
+        <source>Votre compte a bien été supprimé</source>
+        <target>Your account has been successfully deleted</target>
+      </trans-unit>
+      <trans-unit id="sSEa_bb" resname="FILTRER">
+        <source>FILTRER</source>
+        <target>FILTER</target>
+      </trans-unit>
+      <trans-unit id="vka0tkg" resname="Afficher les produits archivés">
+        <source>Afficher les produits archivés</source>
+        <target>Show archived products</target>
+      </trans-unit>
+      <trans-unit id="aJfVn8m" resname="Veuillez choisir un service">
+        <source>Veuillez choisir un service</source>
+        <target>Please choose a service</target>
+      </trans-unit>
+      <trans-unit id="ZrXtBxs" resname="Veuillez choisir une fonction">
+        <source>Veuillez choisir une fonction</source>
+        <target>Please choose a function</target>
+      </trans-unit>
+      <trans-unit id="zoYyMwY" resname="Afficher les utilisateurs archivés">
+        <source>Afficher les utilisateurs archivés</source>
+        <target>Show archived users</target>
+      </trans-unit>
+      <trans-unit id="VnqLX49" resname="Ticket">
+        <source>Ticket</source>
+        <target>Ticket</target>
+      </trans-unit>
+      <trans-unit id="fUwZx7T" resname="Commentaire :">
+        <source>Commentaire :</source>
+        <target>Comment :</target>
+      </trans-unit>
+      <trans-unit id="HNi7oSj" resname="Le ticket a bien été créé ! Le technicien va vous contacter dans les plus brefs délais.">
+        <source>Le ticket a bien été créé ! Le technicien va vous contacter dans les plus brefs délais.</source>
+        <target>Ticket has been successfully created ! The technician will contact you as soon as possible.</target>
+      </trans-unit>
+      <trans-unit id="j6Hd3VN" resname="mm">
+        <source>mm</source>
+        <target>mm</target>
+      </trans-unit>
+      <trans-unit id="zQqphWF" resname="g">
+        <source>g</source>
+        <target>g</target>
+      </trans-unit>
+      <trans-unit id="7t90k4h" resname="Libelle DE">
+        <source>Libelle DE</source>
+        <target>Label DE</target>
+      </trans-unit>
+      <trans-unit id="cb_Qk1." resname="Reference">
+        <source>Reference</source>
+        <target>Reference</target>
+      </trans-unit>
+      <trans-unit id="RH7Fa3G" resname="Pièce concerné">
+        <source>Pièce concerné</source>
+        <target>Concerned part</target>
+      </trans-unit>
+      <trans-unit id="f2.0bPs" resname="Assistance - Créer un ticket">
+        <source>Assistance - Créer un ticket</source>
+        <target>Assistance - Create ticket</target>
+      </trans-unit>
+      <trans-unit id="N8.F9TC" resname="2022 Metz Connect -- Tous droits réservés">
+        <source>2022 Metz Connect -- Tous droits réservés</source>
+        <target>2022 Metz Connect -- All rights reserved</target>
+      </trans-unit>
+      <trans-unit id="W6t1Cs1" resname="Pièces">
+        <source>Pièces</source>
+        <target>Spare parts</target>
+      </trans-unit>
+      <trans-unit id="olio7wM" resname="Quantité">
+        <source>Quantité</source>
+        <target>Quantity</target>
+      </trans-unit>
+      <trans-unit id="Nk4VZ.8" resname="Nouveau ticket">
+        <source>Nouveau ticket</source>
+        <target>New ticket</target>
+      </trans-unit>
+      <trans-unit id="ODOjvOW" resname="Création d'un ticket">
+        <source>Création d'un ticket</source>
+        <target>Create a ticket</target>
+      </trans-unit>
+      <trans-unit id="RBtu19J" resname="Créer le ticket">
+        <source>Créer le ticket</source>
+        <target>Create a ticket</target>
+      </trans-unit>
+      <trans-unit id="Jr6qu6x" resname="Est gelé ?">
+        <source>Est gelé ?</source>
+        <target>Is freezed ?</target>
+      </trans-unit>
+      <trans-unit id="CpBAdjn" resname="Oui">
+        <source>Oui</source>
+        <target>Yes</target>
+      </trans-unit>
+      <trans-unit id="f2JJawy" resname="Non">
+        <source>Non</source>
+        <target>No</target>
+      </trans-unit>
+      <trans-unit id="qik8pUE" resname="Est archivé ?">
+        <source>Est archivé ?</source>
+        <target>Is archived ?</target>
+      </trans-unit>
+      <trans-unit id="ZLQkmj7" resname="Importation de ventes">
+        <source>Importation de ventes</source>
+        <target>Sales importation</target>
+      </trans-unit>
+      <trans-unit id="4eF0iSL" resname="IMPORTER DES VENTES">
+        <source>IMPORTER DES VENTES</source>
+        <target>IMPORT SALES</target>
+      </trans-unit>
+      <trans-unit id="fBfTC4f" resname="Vous n'avez pas les droits pour accéder à cette page.">
+        <source>Vous n'avez pas les droits pour accéder à cette page.</source>
+        <target>You do not have the rights to access this page.</target>
+      </trans-unit>
+      <trans-unit id="T7ZDHjR" resname="La page que vous recherchez n'existe pas.">
+        <source>La page que vous recherchez n'existe pas.</source>
+        <target>The page you are looking for does not exist.</target>
+      </trans-unit>
+      <trans-unit id="RhSOJQ5" resname="Erreur">
+        <source>Erreur</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit id="6M6QQ_Y" resname="Une erreur est survenue, veuillez réessayer ultérieurement.">
+        <source>Une erreur est survenue, veuillez réessayer ultérieurement.</source>
+        <target>An error has occurred, please try again later.</target>
+      </trans-unit>
+      <trans-unit id="NTgRFLP" resname="Entrez votre commentaire ici">
+        <source>Entrez votre commentaire ici</source>
+        <target>Type a comment here</target>
+      </trans-unit>
+      <trans-unit id="UDqrvFg" resname="Ajouter le document">
+        <source>Ajouter le document</source>
+        <target>Add document</target>
+      </trans-unit>
+      <trans-unit id="coerLqB" resname="AJOUTER UN DOCUMENT">
+        <source>AJOUTER UN DOCUMENT</source>
+        <target>ADD DOCUMENT</target>
+      </trans-unit>
+      <trans-unit id="d1y9pl0" resname="Modification d'une vente">
+        <source>Modification d'une vente</source>
+        <target>Sale modification</target>
+      </trans-unit>
+      <trans-unit id="zfEEBux" resname="EXPORTER LES VENTES">
+        <source>EXPORTER LES VENTES</source>
+        <target>EXPORT SALES</target>
+      </trans-unit>
+      <trans-unit id="v.mIEcx" resname="Vente non trouvé dans la base de données">
+        <source>Vente non trouvé dans la base de données</source>
+        <target>Sale not found in database</target>
+      </trans-unit>
+      <trans-unit id="knTJHuk" resname="Aucun document n'existe pour cette vente">
+        <source>Aucun document n'existe pour cette vente</source>
+        <target>no documents exist for this sale</target>
+      </trans-unit>
+      <trans-unit id="U2uYAER" resname="Modification d'une Vente">
+        <source>Modification d'une Vente</source>
+        <target>Sale modification</target>
+      </trans-unit>
+      <trans-unit id="7hn42P." resname="Vente">
+        <source>Vente</source>
+        <target>Sale</target>
+      </trans-unit>
+      <trans-unit id="uVNEgZu" resname="Veuillez sélectionner au moins une pièce détachée">
+        <source>Veuillez sélectionner au moins une pièce détachée</source>
+        <target>Please select at least one spare part</target>
+      </trans-unit>
+      <trans-unit id="xtjLvB8" resname="Veuillez sélectionner au moins un ticket">
+        <source>Veuillez sélectionner au moins un ticket</source>
+        <target>Please select at least one ticket</target>
+      </trans-unit>
+      <trans-unit id="DHf_Cas" resname="Client">
+        <source>Client</source>
+        <target>Client</target>
+      </trans-unit>
+      <trans-unit id="oNPbLwg" resname="Produit">
+        <source>Produit</source>
+        <target>Product</target>
+      </trans-unit>
+      <trans-unit id="F52dRJJ" resname="Pièce">
+        <source>Pièce</source>
+        <target>Spare part</target>
+      </trans-unit>
+      <trans-unit id="3uN3z9j" resname="Statut">
+        <source>Statut</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="_CAj29m" resname="EXPORTER LES PIÈCE DÉTACHÉES">
+        <source>EXPORTER LES PIÈCE DÉTACHÉES</source>
+        <target>EXPORT SPARE PARTS</target>
+      </trans-unit>
+      <trans-unit id="gmmXFxu" resname="Libelle">
+        <source>Libelle</source>
+        <target>Label</target>
+      </trans-unit>
+      <trans-unit id="RUiWkLV" resname="Pièce détachée non trouvé dans la base de données">
+        <source>Pièce détachée non trouvé dans la base de données</source>
+        <target>Spare part not found in database</target>
+      </trans-unit>
+      <trans-unit id="3LUOQeB" resname="EXPORTER LES TICKETS">
+        <source>EXPORTER LES TICKETS</source>
+        <target>EXPORT TICKETS</target>
+      </trans-unit>
+      <trans-unit id="cWogonL" resname="Ticket non trouvé dans la base de données">
+        <source>Ticket non trouvé dans la base de données</source>
+        <target>Ticket not found in database</target>
+      </trans-unit>
+      <trans-unit id="6GdV03a" resname="Tableau">
+        <source>Tableau</source>
+        <target>Table</target>
+      </trans-unit>
+      <trans-unit id="_EHCCAd" resname="Vignette">
+        <source>Vignette</source>
+        <target>Card</target>
+      </trans-unit>
+      <trans-unit id="vSym4Dd" resname="Retrouvez ici tous les employés au sein de l'entreprise">
+        <source>Retrouvez ici tous les employés au sein de l'entreprise</source>
+        <target>Find here all employees within the company</target>
+      </trans-unit>
+      <trans-unit id="Fw9UX44" resname="Service :">
+        <source>Service :</source>
+        <target>Service :</target>
+      </trans-unit>
+      <trans-unit id="JLff1s." resname="Email :">
+        <source>Email :</source>
+        <target>E-mail :</target>
+      </trans-unit>
+      <trans-unit id="GOs23Zi" resname="Fonction :">
+        <source>Fonction :</source>
+        <target>Function :</target>
+      </trans-unit>
+      <trans-unit id="B861HTo" resname="Fichier">
+        <source>Fichier</source>
+        <target>File</target>
+      </trans-unit>
+      <trans-unit id="78S6_9U" resname="Date d'ajout">
+        <source>Date d'ajout</source>
+        <target>Adding date</target>
+      </trans-unit>
+      <trans-unit id="ANypoJ9" resname="Aucun document n'existe pour cet employé">
+        <source>Aucun document n'existe pour cet employé</source>
+        <target>No document exist for this employee</target>
+      </trans-unit>
+      <trans-unit id="ZM.xMZ0" resname="Action">
+        <source>Action</source>
+        <target>Action</target>
+      </trans-unit>
+      <trans-unit id="SxUSCLz" resname="Catégories">
+        <source>Catégories</source>
+        <target>Categories</target>
+      </trans-unit>
+      <trans-unit id="U5GtZ9K" resname="Erreur 403">
+        <source>Erreur 403</source>
+        <target>Error 403</target>
+      </trans-unit>
+      <trans-unit id="cw8EcCt" resname="Erreur 404">
+        <source>Erreur 404</source>
+        <target>Error 404</target>
+      </trans-unit>
+      <trans-unit id="hYyEe3Q" resname="Suppression">
+        <source>Suppression</source>
+        <target>Deletion</target>
+      </trans-unit>
+      <trans-unit id="8DzEGnN" resname="Modification employé">
+        <source>Modification employé</source>
+        <target>Employee modification</target>
+      </trans-unit>
+      <trans-unit id="XyDub1L" resname="Fichier (XLSX)">
+        <source>Fichier (XLSX)</source>
+        <target>File (XLSX)</target>
+      </trans-unit>
+      <trans-unit id="4mfTQ4I" resname="Profil">
+        <source>Profil</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="3mP8v90" resname="Modification vente">
+        <source>Modification vente</source>
+        <target>Sale modification</target>
+      </trans-unit>
+      <trans-unit id="5p_FpZq" resname="Authentification">
+        <source>Authentification</source>
+        <target>Authentication</target>
+      </trans-unit>
+      <trans-unit id="BqkId9b" resname="Rechercher un utilisateur">
+        <source>Rechercher un utilisateur</source>
+        <target>Search user</target>
+      </trans-unit>
+      <trans-unit id="pndMgzJ" resname="Les Fonctions">
+        <source>Les Fonctions</source>
+        <target>Functions</target>
+      </trans-unit>
+      <trans-unit id="_G3LYYo" resname="Aucun référent n'est disponible pour votre service">
+        <source>Aucun référent n'est disponible pour votre service</source>
+        <target>Aucun référent n'est disponible pour votre service</target>
+      </trans-unit>
+      <trans-unit id="qqSp8rO" resname="[Prise de Contact Référent] Metz Connect">
+        <source>[Prise de Contact Référent] Metz Connect</source>
+        <target>[Referent Contact] Metz Connect</target>
+      </trans-unit>
+      <trans-unit id="5f25Q5l" resname="Mail envoyé à votre référent !">
+        <source>Mail envoyé à votre référent !</source>
+        <target>Mail sent to your referrer !</target>
+      </trans-unit>
+      <trans-unit id="tZ2rSVV" resname="Référent">
+        <source>Référent</source>
+        <target>Referrer</target>
+      </trans-unit>
+      <trans-unit id="7JEuGnK" resname="Contacter son référent">
+        <source>Contacter son référent</source>
+        <target>Contact your referrer</target>
+      </trans-unit>
+      <trans-unit id="Gpn3Tna" resname="2022-2023 Metz Connect -- Tous droits réservés">
+        <source>2022-2023 Metz Connect -- Tous droits réservés</source>
+        <target>2022-2023 Metz Connect -- All rights reserved</target>
+      </trans-unit>
+      <trans-unit id="RQIT44r" resname="Modification de l'employé">
+        <source>Modification de l'employé</source>
+        <target>Edit User</target>
+      </trans-unit>
+      <trans-unit id="YRKYC4." resname="There is already an account with this email">
+        <source>There is already an account with this email</source>
+        <target>There is already an account with this email</target>
+      </trans-unit>
+      <trans-unit id="eiK80vo" resname="Saisir un libellé">
+        <source>Saisir un libellé</source>
+        <target>Enter label</target>
+      </trans-unit>
+      <trans-unit id="UuWvdqy" resname="Nouveau commentaire">
+        <source>Nouveau commentaire</source>
+        <target>New comment</target>
+      </trans-unit>
+      <trans-unit id="V1KZJDq" resname="[Metz Connect] Un nouveau ticket a été créé">
+        <source>[Metz Connect] Un nouveau ticket a été créé</source>
+        <target>[Metz Connect] A new ticket has been created</target>
+      </trans-unit>
+      <trans-unit id="j_GzUZg" resname="Le ticket a bien été attribué !">
+        <source>Le ticket a bien été attribué !</source>
+        <target>Ticket has been successfully assigned !</target>
+      </trans-unit>
+      <trans-unit id="TI8bucu" resname="Le ticket a bien été résolu !">
+        <source>Le ticket a bien été résolu !</source>
+        <target>Ticket has been successfully resolved</target>
+      </trans-unit>
+      <trans-unit id="AFeDqJ0" resname="Puissance sonore">
+        <source>Puissance sonore</source>
+        <target>Sound power</target>
+      </trans-unit>
+      <trans-unit id="dZIYNUt" resname="Cet email est déjà utilisé">
+        <source>Cet email est déjà utilisé</source>
+        <target>This e-main is already in use</target>
+      </trans-unit>
+      <trans-unit id="OwpnxWs" resname="Saisir le sujet">
+        <source>Saisir le sujet</source>
+        <target>Enter subject</target>
+      </trans-unit>
+      <trans-unit id="TucfKfb" resname="Saisir un message">
+        <source>Saisir un message</source>
+        <target>Enter message</target>
+      </trans-unit>
+      <trans-unit id="HZZotQi" resname="Veuillez renseigner une longueur">
+        <source>Veuillez renseigner une longueur</source>
+        <target>Please enter a length</target>
+      </trans-unit>
+      <trans-unit id="8xMifgE" resname="Veuillez renseigner une hauteur">
+        <source>Veuillez renseigner une hauteur</source>
+        <target>Please enter a height</target>
+      </trans-unit>
+      <trans-unit id="E7bes.y" resname="Veuillez renseigner une profondeur">
+        <source>Veuillez renseigner une profondeur</source>
+        <target>Please enter a depth</target>
+      </trans-unit>
+      <trans-unit id="68_ayRk" resname="Veuillez renseigner une largeur">
+        <source>Veuillez renseigner une largeur</source>
+        <target>Please enter a width</target>
+      </trans-unit>
+      <trans-unit id="S7PJ57x" resname="Veuillez renseigner un poids">
+        <source>Veuillez renseigner un poids</source>
+        <target>Please enter a weight</target>
+      </trans-unit>
+      <trans-unit id="m_NpxLs" resname="Durée de vie en années">
+        <source>Durée de vie en années</source>
+        <target>Product lifetime</target>
+      </trans-unit>
+      <trans-unit id="IZwbfHU" resname="Saisir les compatibilités">
+        <source>Saisir les compatibilités</source>
+        <target>Enter compatibilites</target>
+      </trans-unit>
+      <trans-unit id="e9wl0Wl" resname="db">
+        <source>db</source>
+        <target>db</target>
+      </trans-unit>
+      <trans-unit id="KSYuuFY" resname="Saisir une quantité">
+        <source>Saisir une quantité</source>
+        <target>Enter a quantity</target>
+      </trans-unit>
+      <trans-unit id="KWZK4Vm" resname="Prix du produit">
+        <source>Prix du produit</source>
+        <target>Product price</target>
+      </trans-unit>
+      <trans-unit id="_mg3uD." resname="Garantie en années">
+        <source>Garantie en années</source>
+        <target>Warranty in years</target>
+      </trans-unit>
+      <trans-unit id="fOF_aTo" resname="Saisir un libellé (DE)">
+        <source>Saisir un libellé (DE)</source>
+        <target>Enter a label (DE)</target>
+      </trans-unit>
+      <trans-unit id="8et4KJa" resname="Libelle EN">
+        <source>Libelle EN</source>
+        <target>Label EN</target>
+      </trans-unit>
+      <trans-unit id="HLz4.e7" resname="Saisir un libellé (EN)">
+        <source>Saisir un libellé (EN)</source>
+        <target>Enter a label (EN)</target>
+      </trans-unit>
+      <trans-unit id="72OzqvT" resname="Saisir la référence">
+        <source>Saisir la référence</source>
+        <target>Enter reference</target>
+      </trans-unit>
+      <trans-unit id="TR73Qcf" resname="la référence doit contenir au moins {{ limit }} chiffres">
+        <source>la référence doit contenir au moins {{ limit }} chiffres</source>
+        <target>Reference must contain at least {{ limit }} digits</target>
+      </trans-unit>
+      <trans-unit id="sx8I9WM" resname="la référence doit contenir au plus {{ limit }} chiffres">
+        <source>la référence doit contenir au plus {{ limit }} chiffres</source>
+        <target>Reference must contain at most {{ limit }} digits</target>
+      </trans-unit>
+      <trans-unit id="xbaLiSJ" resname="Rechercher une vente">
+        <source>Rechercher une vente</source>
+        <target>Search sale</target>
+      </trans-unit>
+      <trans-unit id="zAQj2gS" resname="Retrouvez ici tous les employés inscrits au sein de l'entreprise">
+        <source>Retrouvez ici tous les employés inscrits au sein de l'entreprise</source>
+        <target>Find here all registered employees within the company</target>
+      </trans-unit>
+      <trans-unit id="wmR4E4T" resname="Un nouveau ticket a été créer par">
+        <source>Un nouveau ticket a été créer par</source>
+        <target>A new ticket has been created by</target>
+      </trans-unit>
+      <trans-unit id="bEDE.da" resname="Voici le contenu du ticket">
+        <source>Voici le contenu du ticket</source>
+        <target>Here the ticket content</target>
+      </trans-unit>
+      <trans-unit id="h8tjG4M" resname="Vous pouvez consulter votre ticket en vous connectant à votre compte">
+        <source>Vous pouvez consulter votre ticket en vous connectant à votre compte</source>
+        <target>You can consult you ticket by logging into your account</target>
+      </trans-unit>
+      <trans-unit id="EY7DbD1" resname="Vous venez de créer un ticket">
+        <source>Vous venez de créer un ticket</source>
+        <target>You have just created a ticket</target>
+      </trans-unit>
+      <trans-unit id="PH5FxxE" resname="Il n'y a aucun utilisateurs en attente.">
+        <source>Il n'y a aucun utilisateurs en attente.</source>
+        <target>No pending users.</target>
+      </trans-unit>
+      <trans-unit id="cdJe2Zm" resname="Photo de profil">
+        <source>Photo de profil</source>
+        <target>Profil picture</target>
+      </trans-unit>
+      <trans-unit id="jR.mhw3" resname="Importation de piece détachée">
+        <source>Importation de piece détachée</source>
+        <target>Spare part importation</target>
+      </trans-unit>
+      <trans-unit id="I.QetA8" resname="AJOUTER UNE PIÈCE DÉTACHÉE">
+        <source>AJOUTER UNE PIÈCE DÉTACHÉE</source>
+        <target>ADD SPARE PART</target>
+      </trans-unit>
+      <trans-unit id="ySsRcWe" resname="IMPORTER DES PIÈCES DÉTACHÉES">
+        <source>IMPORTER DES PIÈCES DÉTACHÉES</source>
+        <target>IMPORT SPARE PART</target>
+      </trans-unit>
+      <trans-unit id="gVK3bvK" resname="Agent concerné">
+        <source>Agent concerné</source>
+        <target>Concerned agent</target>
+      </trans-unit>
+      <trans-unit id="UdOq9Yw" resname="Non attribué">
+        <source>Non attribué</source>
+        <target>Not assigned</target>
+      </trans-unit>
+      <trans-unit id="AELOKq2" resname="En attente d'attribution">
+        <source>En attente d'attribution</source>
+        <target>Awaiting assignment</target>
+      </trans-unit>
+      <trans-unit id="eX9dzQI" resname="En cours">
+        <source>En cours</source>
+        <target>In process</target>
+      </trans-unit>
+      <trans-unit id="xoArgjS" resname="Résolu">
+        <source>Résolu</source>
+        <target>Resolved</target>
+      </trans-unit>
+      <trans-unit id="6u6jEo2" resname="S'EN OCUPPER">
+        <source>S'EN OCUPPER</source>
+        <target>TAKE IN CHARGE</target>
+      </trans-unit>
+      <trans-unit id="Rp91GcF" resname="RÉSOLU">
+        <source>RÉSOLU</source>
+        <target>RESOLVED</target>
+      </trans-unit>
+      <trans-unit id="gY9iHM0" resname="AJOUTER UN COMMENTAIRE">
+        <source>AJOUTER UN COMMENTAIRE</source>
+        <target>ADD COMMENT</target>
+      </trans-unit>
+      <trans-unit id="W1t.whl" resname="AJOUTER">
+        <source>AJOUTER</source>
+        <target>ADD</target>
+      </trans-unit>
+      <trans-unit id="Yoawb38" resname="ANNULER">
+        <source>ANNULER</source>
+        <target>CANCEL</target>
+      </trans-unit>
+      <trans-unit id="h9XjAwM" resname="Veuillez sélectionner au moins un employé">
+        <source>Veuillez sélectionner au moins un employé</source>
+        <target>Please select at least an employee</target>
+      </trans-unit>
+      <trans-unit id="etYTdVM" resname="EXPORTER LES EMPLOYÉS">
+        <source>EXPORTER LES EMPLOYÉS</source>
+        <target>EXPORT EMPLOYEES</target>
+      </trans-unit>
+      <trans-unit id="BR5SKmw" resname="Sélection">
+        <source>Sélection</source>
+        <target>Selection</target>
+      </trans-unit>
+      <trans-unit id="mDWfjmm" resname="Aucun employé inscrit">
+        <source>Aucun employé inscrit</source>
+        <target>No registered employee</target>
+      </trans-unit>
+      <trans-unit id="GIcISng" resname="Nom du fichier">
+        <source>Nom du fichier</source>
+        <target>File name</target>
+      </trans-unit>
+      <trans-unit id="SWtMYIv" resname="Contactez-nous">
+        <source>Contactez-nous</source>
+        <target>Contact us</target>
+      </trans-unit>
+      <trans-unit id="VAH_Z9P" resname="Date de création">
+        <source>Date de création</source>
+        <target>Creation date</target>
+      </trans-unit>
+      <trans-unit id="lwNlNFH" resname="Date de prise en charge">
+        <source>Date de prise en charge</source>
+        <target>Handling date</target>
+      </trans-unit>
+      <trans-unit id="Zuu7M3W" resname="Pas encore pris en charge">
+        <source>Pas encore pris en charge</source>
+        <target>Not yet taken in charge</target>
+      </trans-unit>
+      <trans-unit id="8ivAB8s" resname="RÉSOUDRE">
+        <source>RÉSOUDRE</source>
+        <target>RESOLVE</target>
+      </trans-unit>
+      <trans-unit id="3.bJUz6" resname="AJOUTER UNE ALIMENTATION">
+        <source>AJOUTER UNE ALIMENTATION</source>
+        <target>ADD POWER SUPPLY</target>
+      </trans-unit>
+      <trans-unit id="yI1jfnS" resname="Activer le multilingue">
+        <source>Activer le multilingue</source>
+        <target>Activate multilingual</target>
+      </trans-unit>
+      <trans-unit id="KF.Ezps" resname="Modifier la pièce détachée n°">
+        <source>Modifier la pièce détachée n°</source>
+        <target>Edit spare part no.</target>
+      </trans-unit>
+      <trans-unit id="sFhti81" resname="Formats supportés">
+        <source>Formats supportés</source>
+        <target>Supported format</target>
+      </trans-unit>
+      <trans-unit id="T2jGtL." resname="Format supporté">
+        <source>Format supporté</source>
+        <target>Supported format</target>
+      </trans-unit>
+      <trans-unit id="I7xUXl_" resname="Non pris en charge">
+        <source>Non pris en charge</source>
+        <target>Not taken in charge</target>
+      </trans-unit>
+      <trans-unit id="OAyzmIl" resname="Non clos">
+        <source>Non clos</source>
+        <target>Not closed</target>
+      </trans-unit>
+      <trans-unit id="TvZ5gn5" resname="Non clôturé">
+        <source>Non clôturé</source>
+        <target>Not closed</target>
+      </trans-unit>
+      <trans-unit id="2zEMCRP" resname="Date de clôture">
+        <source>Date de clôture</source>
+        <target>Closing date</target>
+      </trans-unit>
+      <trans-unit id="kLxGsVu" resname="Non résolu">
+        <source>Non résolu</source>
+        <target>Not resolved</target>
+      </trans-unit>
+      <trans-unit id="ZhtY3Hf" resname="Non cloturé à ce jour">
+        <source>Non cloturé à ce jour</source>
+        <target>Not closed to date</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

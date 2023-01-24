@@ -1,0 +1,85 @@
+{{ form_start(form) }}
+
+
+    <div id="produit_presentation">
+        <header class="header_produit">{{"Présentation" | trans}}</header>
+    
+        <div id="div_prod_pres_horizontale">
+            <div>
+                {{ form_row(form.reference, {
+                label: 'Référence'|trans,
+                attr: {
+                readonly: true
+                }
+                }) }}
+            </div>
+    
+            <div>
+                {{ form_row(form.libelle, {
+                label: 'Libellé'|trans,
+                attr: {
+                readonly: true
+                }
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <div id="div_produit_carousel">
+        <div id="produit_media">
+    
+            {% set arr = [] %}
+    
+            {% for image in produit.images %}
+            {% set arr = arr|merge([image.name]) %}
+            {% endfor %}
+    
+            <div id="react_component_display_media" data-imgname="{{ arr|json_encode }}"
+                data-url="../../uploads/product_directory/"></div>
+        </div>
+    </div>
+    
+    
+    <div id="produit_comptabilité">
+        <header class="header_produit">{{ "Disposition tarifaire"|trans }}</header>
+
+        <div>
+            {{ form_row(form.pu, {
+            label: 'Prix'|trans
+            }) }}
+        </div>
+    </div>
+
+    <div id="produit_comptabilité">
+        <header class="header_produit">{{"Règlementations" |trans}}</header>
+
+        <div>
+            {{ form_row(form.inforegle, {
+
+            }) }}
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary submit m-5">{{ "Enregistrer"|trans }}</button>
+        <a href="{{ path('app_produit_index') }}" class="btn btn-secondary m-5">{{ "Retour à la liste"|trans }}</a>
+    </div>
+
+
+
+
+
+    {# Élement en display none #}
+    
+    <div class="d-none">
+        {{ form_row(form.garantie) }}
+        {{ form_row(form.typeprod) }}
+        {{ form_row(form.images)}}
+        {{ form_row(form.documentsProduit)}}
+    </div>
+
+{{ form_end(form) }}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}

@@ -1,0 +1,319 @@
+{{ form_start(form) }}
+   
+
+    <div id="produit_presentation">
+        <header class="header_produit">{{"Présentation"|trans}}</header>
+
+        <div id="div_prod_pres_horizontale">
+            <div>
+                {{ form_row(form.reference, {
+                    label: 'Référence'|trans
+                }) }}
+            </div>
+
+            <div>
+                {{ form_row(form.libelle, {
+                    label: 'Libellé'|trans
+                }) }}
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="checkmulti">
+                    <label class="form-check-label" for="checkmulti">{{ 'Activer le multilingue'|trans }}</label>
+                </div>
+
+
+                <div id="div_multilingue">
+                    {{ form_row(form.labelDE, {
+                        label: 'Libellé DE'|trans
+                    }) }}
+                    {{ form_row(form.labelEN, {
+                        label: 'Libellé EN'|trans
+                    }) }}
+                </div>
+
+
+            </div>
+        </div>
+
+        <div style="max-width: 30%; margin: auto;">
+            {{ form_row(form.pu, {
+                label: 'Prix'|trans
+            }) }}
+        </div>
+    </div>
+    <div id="div_prod_cat_media">
+        <div id="produit_categorie">
+            <header class="header_produit">{{"Catégorie"|trans}}</header>
+
+            <div style="max-width: 80%">
+                {{ form_row(form.typeprod, {
+                    label: 'Type de produit'|trans
+                }) }}
+            </div>
+        </div>
+        <div id="produit_categorie">
+            <header class="header_produit">{{"Règlementation"|trans}}</header>
+
+            <div style="max-width: 80%">
+                {{ form_row(form.inforegle) }}
+            </div>
+        </div>
+        <div id="produit_categorie">
+            <header class="header_produit">{{"Pièces"|trans}}</header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        {{ form_row(form4.pieces, {
+                            label: 'Pièces'|trans
+                        }) }}
+                    </div>
+                    <div class="col-sm">
+                        {{ form_row(form4.quantite, {
+                            label: 'Quantité'|trans
+                        }) }}
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                {{ form_row(form4.submit, {
+                    label: 'Ajouter'|trans
+                }) }}
+            </div>
+
+
+        </div>
+        <div id="produit_categorie">
+
+            <table class="table table-striped bg-light">
+                <thead>
+                    <tr>
+                        <th scope="col">Pièces</th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for piece in pieces %}
+                    <tr>
+                        <td>{{ piece.piece.libelle }}</td>
+                        <td>{{ piece.quantite }}</td>
+                        <td><a class="btn btn-danger" href="{{ path('produit_delete_pieces', {id: piece.id})}}"
+                            onclick="return confirm('Voulez-vous supprimer cette pièce ?');">{{ "Supprimer"|trans }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <div id="produit_media">
+           
+            <header class="header_produit">{{"Média"|trans}}</header>
+            {{ form_row(form.images, {
+                label: 'Images'|trans
+            }) }}
+
+            
+         
+            {# Bouton d'ajout d'image #}
+            
+            {# Si la route est "produit_edit" on affiche les images #}
+            {% if app.request.attributes.get('_route') == 'produit_edit' %}
+                <h2>Images</h2>
+            
+                {% for image in produit.images %}
+                    <div>
+                        <img src="{{ asset('/uploads/product_directory/'~image.name) }}" alt="" width="150">
+
+                        {# On ajoute un lien permettant de supprimer une image (sera géré en Ajax) #}
+                        <a class="btn btn-danger" href="{{ path('produit_delete_image', {id: image.id})}}" data-delete data-token="{{ csrf_token('delete' ~ image.id )}}">Supprimer</a>
+                    </div>
+                {% endfor %}
+            
+            
+            {% endif %}
+            <p> {{ "Formats supportés"|trans}} : webp, jpeg, png, jpg </p>
+        </div>
+        <div id="produit_media">
+            <header class="header_produit">{{ "Documents"|trans }}</header>
+
+            {{ form_row(form.documentsProduit, {
+                label: 'Documents'|trans
+            }) }}
+            {% if app.request.attributes.get('_route') == 'produit_edit' %}
+            <ul>
+                {% for documents in produit.documentProduits %}
+                    <li>
+                        <a href="">{{ documents.name }}</a>
+                        <a class="btn btn-danger" href="{{ path('produit_delete_doc', {id: documents.id})}}" data-delete data-token="{{ csrf_token('delete' ~ documents.id )}}">Supprimer</a>
+                    </li>
+                        {# On ajoute un lien permettant de supprimer une image (sera géré en Ajax) #}
+
+
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <p> {{ "Format supporté"|trans}} : pdf </p>
+        </div>
+        
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" id="add_image">{{'Ajouter les médias'|trans}}</button>
+
+    </div>
+
+    <div id="produit_dimensions">
+        <header class="header_produit">{{ "Dimensions"|trans }}</header>
+
+        <section id="section_prod_dim">
+            <div id="div_prod_dim1">
+                <div>
+                    {{ form_row(form2.longueur, {
+                        label: 'Longueur'|trans
+                    }) }}
+                </div>
+                
+                <div>
+                    {{ form_row(form2.largeur, {
+                        label: 'Largeur'|trans
+                    }) }}
+                </div>
+                
+                <div>
+                    {{ form_row(form2.hauteur, {
+                        label: 'Hauteur'|trans
+                    }) }}
+                </div>
+            </div>
+            <div id="div_prod_dim2">
+                <div>
+                    {{ form_row(form2.profondeur, {
+                        label: 'Profondeur'|trans
+                    }) }}
+                </div>
+                
+                <div>
+                    {{ form_row(form2.poids, {
+                        label: 'Poids'|trans
+                    }) }}
+                </div>
+            </div>
+        </section>
+
+        <section id="section_prod_alim_compat">
+            <div>
+                <header class="header_produit">{{ "Alimentation"|trans }}</header>
+
+                <div id="produit_alimentation">
+                    <div id="div_prod_alim_horizontale">
+                        <div>
+                            {{ form_row(form2.infoalim, {
+                                label: 'Type'|trans
+                            }) }}
+                        </div>
+
+                        <div>
+                            {{ form_row(form.garantie, {
+                                label: 'Durée de garantie'|trans
+                            }) }}
+                        </div>
+                    </div>
+
+                    <div id="div_prod_alim_horizontale">
+                        <div style="max-width: 60%; margin: auto;">
+                            {{ form_row(form2.duree_vie, {
+                                label: 'Durée de vie'|trans
+                            }) }}
+                        </div>
+
+                        <div style="max-width: 60%; margin: auto;">
+                            {{ form_row(form2.puissSon, {
+                            label: 'Puissance sonore'|trans,
+                            }) }}
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="produit_compatibilite">
+                <header class="header_produit">{{"Compatibilité"|trans}}</header>
+
+                <div style="max-width: 80%">
+                    {{ form_row(form2.compatibilite, {
+                        label: 'Compatibilité'|trans
+                    }) }}
+                </div>
+            </div>
+        </section>
+        <div id="produit_marketing">
+            <header class="header_produit">{{ "Marketing"|trans }}</header>
+
+            <div>
+                {{ form_row(form3.description, {
+                    label: 'Description'|trans
+                }) }}
+            </div>
+            
+            <div style="margin-top : 20px ; margin-bottom : 20px">
+                {{ form_row(form3.fonctionnalites, {
+                    label: 'Fonctionnalités'|trans
+                }) }}
+            </div>
+            
+            <div>
+                {{ form_row(form3.benefices, {
+                    label: 'Bénéfices'|trans
+                }) }}
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+
+
+            <button type="submit" class="btn btn-primary btn-lg submit m-5">
+
+                {% if app.request.attributes.get('_route') == 'produit_edit' %}
+                    {{ 'Modifier'|trans }}
+                {% else %}
+                    {{ 'Ajouter'|trans }}
+                {% endif %}
+
+            </button>
+            <a href="{{ path('app_produit_index') }}" class="btn btn-secondary m-5" style = "font-size: 20px">{{"Retour à la liste" | trans}}</a>
+        </div>
+
+        {{ form_end(form) }}
+
+        <script>
+            // Lorsque checkmultiple est coché, on affiche la div 'div_multilingue'
+
+            $check = document.getElementById('checkmulti');
+            $div = document.getElementById('div_multilingue');
+            $div.style.display = 'none';
+
+            // On vérifie que les champs labelDE ou labelEN sont vides sinon on affiche la div 'div_multilingue'
+            $labelDE = document.getElementById('produit_labelDE');
+            $labelEN = document.getElementById('produit_labelEN');
+            if ($labelDE.value != '' || $labelEN.value != '') {
+                $div.style.display = 'block';
+            }
+
+            $check.addEventListener('change', function() {
+                if ($check.checked) {
+                    $div.style.display = 'block';
+                } else {
+                    $div.style.display = 'none';
+                }
+            });
+
+        </script>
+
+
+    </div>
+    
+
+{{ form_end(form) }}
+
+

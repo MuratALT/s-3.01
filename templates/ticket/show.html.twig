@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ticket"|trans}}{% endblock %}
+
+{% block body %}
+<div style="max-width: 90% ;" class="container">
+
+    {% for message in app.flashes("error") %}
+    <div class="alert alert-danger alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+    {% endfor %}
+
+    <h1 class='titre-page'>{% trans %}Ticket{% endtrans %} n° {{ticket.id}} <a style = "color:lightgreen;">{{ticket.status}}</a></h1>
+
+            <div>
+                <div>
+                    {{ form_row(UserForm.nom, {
+                        label: 'Client concerné'|trans,
+                        disabled: true
+                    }) }}
+                </div>
+        
+                <div>
+                    {{ form_row(TicketForm.produit, {
+                    label: 'Produit concerné'|trans,
+                    disabled: true
+                    }) }}
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <label for="ticketForm_description">{{"Date de création"|trans}}</label>
+                            <input type="text" class="form-control"  disabled value=" {{ ticket.dateCreation|date("d/m/Y") }}"/>
+                        </div>
+                        <div class="col-sm">
+                            <label for="ticketForm_description">{{"Date de prise en charge"|trans}}</label>
+                            <input type="text" class="form-control"  disabled value="{% if ticket.datePrise is not null %}{{ ticket.datePrise|date("d/m/Y") }}{% else %}{{ "Pas encore pris en charge"|trans }}{% endif %}"/>
+
+                    </div>
+                        <div class="col-sm">
+                            <label for="ticketForm_description">{{"Date de clôture"|trans}}</label>
+                            <input type="text" class="form-control"  disabled value="{% if ticket.dateResolution is not null %}{{ ticket.dateResolution|date("d/m/Y") }}{% else %}{{ "Non cloturé à ce jour   "|trans }}{% endif %}"/>
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+
+            {% if ticket.staff == null %}
+                <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-warning float-end m-2" href="{{ path('app_ticket_choose', {'id': ticket.id}) }}">{{"S'EN OCUPPER"|trans}}</a>
+            {% else %}
+                {%  if ticket.status != 'Résolu' %}
+                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-success  float-end m-2" href="{{ path('app_ticket_close', {'id': ticket.id}) }}">{{"RÉSOUDRE"|trans}}</a>
+                {% endif %}
+            {% endif %}
+
+           {% if ticket.status != 'Résolu' %}
+               <a class="btn btn-success float-end m-2">{{ "AJOUTER UN COMMENTAIRE"|trans }}</a>
+            {% endif %}
+
+            <div style="margin-top : 20px ; margin-bottom : 20px; clear: both" class="product_show_marketing" >
+                <h2>{% trans %}Commentaire :{% endtrans %}</h2>
+                {{ ticket.commentaire | raw }}
+            </div>
+
+            <div id="add_comment">
+                {{ form_start(form3) }}
+                {{ form_row(form3.new_comment) }}
+                <div class="d-flex justify-content-center m-2">
+                    <button class="btn btn-success m-2">{{ "AJOUTER"|trans }}</button>
+                    <a class="btn btn-danger m-2" id="btn_annuler">{{ "ANNULER"|trans }}</a>
+                </div>
+
+                {{ form_end(form3) }}
+            </div>
+
+        </div>
+        
+    <div class="d-flex justify-content-center">
+        <a href="{{ path('app_ticket_index') }}" class="btn btn-secondary" style = "font-size: 20px">{{"Retour à la liste" |trans}}</a>
+    </div>
+</div>
+
+    <script>
+        var add_comment = document.getElementById("add_comment");
+        var btn = document.querySelector(".btn-success");
+
+        add_comment.style.display = "none";
+        btn.addEventListener("click", function(){
+            add_comment.style.display = "block";
+            btn.style.display = "none";
+        })
+
+        var btn_annuler = document.getElementById("btn_annuler");
+        btn_annuler.addEventListener("click", function(){
+            add_comment.style.display = "none";
+            btn.style.display = "block";
+        })
+        </script>
+
+
+{% endblock %}
+

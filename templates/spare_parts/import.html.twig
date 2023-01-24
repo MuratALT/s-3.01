@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les pièces détachées" |trans}}{% endblock %}
+
+{% block body %}
+
+     <div class="container">
+
+        <h1 class="titre-page">{{"Importation de piece détachée"|trans}}</h1>
+
+        {% for message in app.flashes("error") %}
+            <div class="alert alert-danger alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+
+
+        {{ form_start(form) }}
+
+        {{ form_row(form.file, {
+            label: 'Fichier (XLSX)'|trans
+        }) }}
+
+        <div class="d-flex justify-content-center m-5">
+
+            {{ form_row(form.submit) }}
+            <a href="{{ path("app_piece_index") }}" class="btn btn-danger btn-lg m-2 ">{{"Annuler"|trans}}</a>
+        </div>
+    
+        
+        {{ form_end(form) }}
+
+
+        <h2> {{"Exemple de fichier"|trans}} :</h2>
+
+        <p>{{"Le fichier doit contenir les colonnes suivantes"|trans}} : </p>
+
+        <ul style="color:white !important ;">
+            <li>{{"Libellé"|trans}}</li>
+            <li>{{"Hauteur"|trans}}</li>
+            <li>{{"Longueur"|trans}}</li>
+            <li>{{"Profondeur"|trans}}</li>
+            <li>{{"Poids"|trans}}</li>
+        </ul>
+
+        <a href="{{ path('part_model') }}" class="btn btn-outline-success m-2 ">{{"Télécharger le modèle"|trans}}</a>
+
+
+    </div>
+
+
+{% endblock %}

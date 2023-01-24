@@ -1,0 +1,308 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Produit"|trans}}{% endblock %}
+
+{% block body %}
+<div style="max-width: 90% ;" class="container">
+
+    {% for message in app.flashes("error") %}
+    <div class="alert alert-danger alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+    {% endfor %}
+
+    <h1 class='titre-page'>{% trans %}Consultation du produit{% endtrans %} n° {{produit.reference}} </h1>
+
+    {{ form_start(showProductForm) }}
+
+        <div id="produit_presentation">
+            <header class="header_produit">{{"Présentation"|trans}}</header>
+
+            <div id="div_prod_pres_horizontale">
+                <div>
+                    {{ form_row(showProductForm.reference, {
+                        label: 'Référence'|trans,
+                        disabled: true
+                    }) }}
+                </div>
+        
+                <div>
+                    {{ form_row(showProductForm.libelle, {
+                    label: 'Libellé'|trans,
+                    disabled: true
+                    }) }}
+                    {{ form_row(showProductForm.labelDE, {
+                        disabled: true
+                    }) }}
+                    {{ form_row(showProductForm.labelEN, {
+                        disabled: true
+                    }) }}
+                </div>
+            </div>
+        
+            <div style="max-width: 30%; margin: auto;">
+                {{ form_row(showProductForm.pu, {
+                label: 'Prix'|trans,
+                disabled: true
+                }) }}
+            </div>
+        </div>
+        
+        <div id="div_prod_cat_media">
+            <div id="produit_categorie">
+                <header class="header_produit">{{"Catégorie" |trans}}</header>
+        
+                <div style="max-width: 80%">
+                    {{ form_row(showProductForm.typeprod, {
+                    label: 'Type de produit'|trans,
+                    disabled: true
+                    }) }}
+                
+                </div>
+            </div>
+            <div id="produit_categorie">
+                <header class="header_produit">{{"Règlementation"|trans}}</header>
+
+                <div style="max-width: 80%">
+                   
+
+                    {% for r in produit.inforegle %}
+                            <img src="{{ asset('uploads/picto_directory/' ~ r.picto) }}" alt="image" style="width: 100px; height: 50px; margin: 10px">
+                    {% else %}
+                        <p style="color: #af929d; font-weight: bold;">Aucune règlementation n'est associée à ce produit</p>
+                    {% endfor %}
+                
+                    {{ form_row(showProductForm.inforegle , {
+                        attr: {
+                            style: 'display: none'
+                        }
+                        }) }}
+
+
+                </div>
+            </div>
+
+            <div id="produit_media" style="width: 100%">
+                <header class="header_produit">{{"Les Pièces Détachées"|trans}}</header>
+
+                <table class="table table-striped bg-light">
+                    <thead>
+                    <tr>
+                        <th scope="col">Pièces</th>
+                        <th scope="col">Quantité</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for piece in pieces %}
+                        <tr>
+                            <td>{{ piece.piece.libelle }}</td>
+                            <td>{{ piece.quantite }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+            <div id="produit_media" style="width: 100%">
+
+            </div>
+
+
+
+
+            <div id="produit_media">
+                <header class="header_produit">{{"Média"|trans}}</header>
+
+                {% set arr = [] %}
+
+                {% for image in produit.images %}
+                    {% set arr = arr|merge([image.name]) %}
+                {% else %}
+                    <p style="color: #af929d; font-weight: bold">Aucune image n'est associée à ce produit</p>
+                {% endfor %}
+
+                <div id="react_component_display_media" data-imgname = "{{ arr|json_encode }}" data-url = "../uploads/product_directory/"></div>
+            </div>
+
+            <div id="produit_media">
+                <header class="header_produit">{{ "Documents"|trans }}</header>
+
+                <table id="table_employe_doc_show">
+                    <thead>
+                        <tr>
+                            <th>{{"Fichier"|trans}}</th>
+                            <th>{{"Nom du fichier"|trans}}</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        {% for document in produit.documentProduits %}
+                            <tr>
+                                <td style="text-align: center">
+                                    <li style="list-style-type: circle ; ">
+                                        <a style="color: white; font-size: 18px" href="{{ asset('uploads/documents_directory/' ~ document.name) }}"
+                                            target="_blank">
+                                            <i class="fa fa-file-pdf"></i>
+                                        </a>
+                                    </li>
+                                </td>
+
+                                <td>
+                                    {{document.name}}
+                                </td>
+                            </tr>
+                        {# Afficher un message lorsqu'il n'existe aucun document #}
+                        {% else %}
+                        <tr>
+                            <td colspan="2">Aucun document n'existe pour ce produit</td>
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        
+        <div id="produit_dimensions">
+            <header class="header_produit">{{ "Dimensions"|trans }}</header>
+        
+            <section id="section_prod_dim">
+                <div id="div_prod_dim1">
+                    <div>
+                        {{ form_row(form2.longueur, {
+                        label: 'Longueur'|trans,
+                        disabled: true
+                        }) }}
+                    </div>
+        
+                    <div>
+                        {{ form_row(form2.largeur, {
+                        label: 'Largeur'|trans,
+                        disabled: true
+                        }) }}
+                    </div>
+        
+                    <div>
+                        {{ form_row(form2.hauteur, {
+                        label: 'Hauteur'|trans,
+                        disabled: true
+                        }) }}
+                    </div>
+                </div>
+        
+                <div id="div_prod_dim2">
+                    <div>
+                        {{ form_row(form2.profondeur, {
+                        label: 'Profondeur'|trans,
+                        disabled: true
+                        }) }}
+                    </div>
+        
+                    <div>
+                        {{ form_row(form2.poids, {
+                        label: 'Poids'|trans,
+                        disabled: true
+                        }) }}
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <section id="section_prod_alim_compat">
+            <div>
+                <header class="header_produit">{{ "Alimentation"|trans }}</header>
+        
+                <div id="produit_alimentation">
+                    <div id="div_prod_alim_horizontale">
+                        <div>
+                            {{ form_row(form2.infoalim, {
+                            label: 'Type'|trans,
+                            disabled: true
+                            }) }}
+                        </div>
+        
+                        <div>
+                            {{ form_row(showProductForm.garantie, {
+                            label: 'Durée de garantie'|trans,
+                            disabled: true
+                            }) }}
+                        </div>
+                    </div>
+                    <div id="div_prod_alim_horizontale">
+                        <div style="max-width: 60%; margin: auto;">
+                            {{ form_row(form2.duree_vie, {
+                            label: 'Durée de vie'|trans,
+                            disabled: true
+                            }) }}
+                        </div>
+
+                        <div style="max-width: 60%; margin: auto;">
+                            {{ form_row(form2.puissSon, {
+                            label: 'Puissance sonore'|trans,
+                            disabled: true
+                            }) }}
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        
+            <div id="produit_compatibilite">
+                <header class="header_produit">{{"Compatibilité"|trans}}</header>
+        
+                <div style="max-width: 80%">
+                    {{ form_row(form2.compatibilite, {
+                        label: 'Compatibilité'|trans,  
+                        disabled: true
+                    }) }}
+                </div>
+            </div>
+        </section>
+        
+        <div id="produit_marketing">
+            <header class="header_produit">{{ "Marketing"|trans }}</header>
+        
+            <div style="margin-top : 20px ; margin-bottom : 20px" class="product_show_marketing">
+                <h2>{% trans %}Description :{% endtrans %}</h2>
+                {{ produit.infomarket.description | raw  }}
+            </div>
+        
+            <div style="margin-top : 20px ; margin-bottom : 20px" class="product_show_marketing">
+                <h2>{% trans %}Fonctionnalités :{% endtrans %}</h2>
+                {{ produit.infomarket.fonctionnalites | raw  }}
+            </div>
+        
+            <div style="margin-top : 20px ; margin-bottom : 20px" class="product_show_marketing">
+                <h2>{% trans %}Bénéfices :{% endtrans %}</h2>
+                {{ produit.infomarket.benefices | raw  }}
+        </div>
+
+        {# Cacher le valider et l'input images #}
+
+        {{ form_widget(showProductForm.images, {
+            attr: {
+                style: 'display: none'
+            }
+        }) }}
+        {{ form_widget(showProductForm.documentsProduit, {
+            attr: {
+                style: 'display: none'
+            }
+        }) }}
+
+    {{ form_end(showProductForm) }}
+
+    <div class="d-flex justify-content-center">
+        <a href="{{ path('app_produit_index') }}" class="btn btn-secondary" style = "font-size: 20px">{{"Retour à la liste" |trans}}</a>
+    </div>
+</div>
+
+
+    {% block javascripts %}
+         {{ encore_entry_script_tags('app') }} 
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Les fonctions" |trans}}{% endblock %}
+
+{% block body %}
+    <style>
+        @media (max-width: 1000px) {
+            #only_desktop {
+                display: none;
+            }
+            #only_mobile {
+                display: block;
+            }
+        }
+    </style>
+<div class="container" id="only_desktop">
+    <h1 class="titre-page">{{"Les Fonctions"|trans}}</h1>
+
+    {% for message in app.flashes("success") %}
+    <div class="alert alert-success alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+    {% endfor %}
+    <p>&nbsp</p>
+    <div class="container">
+        <div class="introduction_accueil">
+            <p>{{"Retrouvez ici toutes les fonctions des employés" | trans}} : </p>
+        </div>
+        <div id="only_desktop">
+            <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold "href="{{ path("app_fonction_new") }}" class="btn btn-outline-success ml-2 ">{{"AJOUTER UNE FONCTION"|trans}}</a>
+            </div><br />
+            <table class="table table_select_event text-light" id="table_select_event" style = "border: 2px solid white">
+            <thead style="font-family:Sen-Regular-ExtraBold">
+                <tr>
+                    <th>{{"Libellé"|trans}}</th>
+                    <th>{{"Actions"|trans}}</th>
+                </tr>
+            </thead>
+            <tbody class="center">
+
+            {% for fonction in fonctions %}
+                <tr>
+                    <td>{{ fonction.libelle }}</td>
+                    <td class="d-flex justify-content-center">
+                        <a class="btn btn-outline-info" style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"  href="{{ path('app_fonction_edit', {'id': fonction.id}) }}">{{"MODIFIER"|trans}}</a>
+                        <a class="btn btn-outline-danger" style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ; margin-left : 5px" href="{{ path('app_fonction_delete', {'id': fonction.id}) }}" onclick="return confirm('Voulez vous supprimer cette fonction ?');">{{"SUPPRIMER"|trans}}</a>
+                    </td>
+                </tr>
+            {% else %}
+            <tr><td class="center"colspan='1'> {{"Fonction non trouvée dans la base de données" |trans }}</td></tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</div>
+    <div class="container" id="only_mobile">
+        <h1 class="titre-page">{{"Les Fonctions"|trans}}</h1>
+
+        {% for message in app.flashes("success") %}
+            <div class="alert alert-success alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+        <p>&nbsp</p>
+        <div class="container">
+            <div class="introduction_accueil">
+                <p>{{"Retrouvez ici toutes les fonctions des employés" | trans}} : </p>
+            </div>
+            <div id="only_desktop">
+                <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold "href="{{ path("app_fonction_new") }}" class="btn btn-outline-success ml-2 ">{{"AJOUTER UNE FONCTION"|trans}}</a>
+            </div><br />
+            <table class="table table_select_event text-light" id="table_select_event" style = "border: 2px solid white">
+                <thead style="font-family:Sen-Regular-ExtraBold">
+                <tr>
+                    <th>{{"Libellé"|trans}}</th>
+                    <th>{{"Actions"|trans}}</th>
+                </tr>
+                </thead>
+                <tbody class="center">
+
+                {% for fonction in fonctions %}
+                    <tr>
+                        <td>{{ fonction.libelle }}</td>
+                        <td class="d-flex justify-content-center">
+                            <a class="btn btn-outline-info btn-sm" style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;"  href="{{ path('app_fonction_edit', {'id': fonction.id}) }}">{{"MODIFIER"|trans}}</a>
+                            <a class="btn btn-outline-danger btn-sm" style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ; margin-left : 5px" href="{{ path('app_fonction_delete', {'id': fonction.id}) }}" onclick="return confirm('Voulez vous supprimer cette fonction ?');">{{"SUPPRIMER"|trans}}</a>
+                        </td>
+                    </tr>
+                {% else %}
+                    <tr><td class="center"colspan='1'> {{"Fonction non trouvée dans la base de données" |trans }}</td></tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+{% endblock %}
+

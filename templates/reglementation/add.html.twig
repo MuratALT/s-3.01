@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ajout reglementation" | trans}}{% endblock %}
+{% block body %}
+  <div class="container">
+   {% for message in app.flashes("error") %}
+        <div class="alert alert-danger m-5 alert-dismissible">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+    <h1 style="font-family : Sen-Regular-Bold" class="text-center titre-page">{{"Création d'une réglementation" |trans}}</h1>
+
+    {{ form_start(form )}}
+    {{ form_row(form.libelle )}}
+    {% if editMode %}
+        {{ form_row(form.picto, {label: "Modifier le picto" |trans}) }}
+        <div class="text-center">
+            <h2 class="text-center">{{ "Pictogramme actuel"|trans }} : </h2> <br>
+            <img  src='../../../../uploads/picto_directory/{{picto}}' style="width: 20%; margin : auto" alt="">
+        </div>
+        
+    {% else %}
+        {{ form_row(form.picto, {label: "Ajouter un picto (uniquement PNG)" |trans}) }}
+
+     {% endif %}
+
+
+    <div id="div_previ" class="text-center" style="display: none">
+        <h2 class="text-center">{{"Prévisualisation"|trans}} : </h2> <br>
+        <img id="img-preview-id" style="width: 20%;" src="" alt="">
+    </div>
+    
+    
+
+<br>
+    
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-success center m-2 submit">
+        {% if editMode %}
+           {{ "Enregistrer les modifications"|trans }}
+        {% else %}
+            {{ "Ajouter la réglementation"|trans }}
+        {% endif %}
+        </button>
+   
+        <a class="btn btn-secondary m-2" href="{{ path('admin_list_reglementation') }}">{{'Retour' | trans}}</a> 
+    </div>
+    {{ form_end(form )}}
+
+    </div>
+
+<script>
+    // Récupération de l'élément input de type file
+    const inputElement = document.getElementById("form_picto");
+
+    const divPrevi = document.getElementById("div_previ");
+    // Récupération de l'élément img qui affichera la prévisualisation
+    const imgElement = document.getElementById("img-preview-id");
+
+    // Ajout d'un gestionnaire d'événements pour l'événement change de l'input de type file
+    inputElement.addEventListener("change", (event) => {
+
+      
+        divPrevi.style.display = "block";
+        const selectedFile = event.target.files[0];
+
+        // Création d'un nouvel objet FileReader
+        const reader = new FileReader();
+
+        // Ajout d'un gestionnaire d'événements pour l'événement load de FileReader
+        reader.addEventListener("load", () => {
+            // Mise à jour de la source de l'image pour afficher la prévisualisation
+            imgElement.src = reader.result;
+        });
+
+        // Chargement de l'image à partir du fichier sélectionné
+        reader.readAsDataURL(selectedFile);
+    });
+
+</script>
+
+{% endblock %}
+

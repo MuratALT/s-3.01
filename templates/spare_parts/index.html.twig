@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les pièces détachées" |trans}}{% endblock %}
+
+{% block body %}
+<style>
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #020D24 !important;
+     font-family : "Sen-Regular-Bold";
+}
+
+.pagination > .active > a
+{
+    color: #020D24 !important;
+    background-color: #BE8B24 !Important;
+    border: solid 1px #BE8B24 !Important;
+}
+
+
+</style>
+
+<div class="container">
+    <h1 class="titre-page">{{"Les Pièces Détachées"|trans}}</h1>
+
+        {% for message in app.flashes("success") %}
+            <div class="alert alert-success alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+        <p>&nbsp</p>
+        <div class="container">
+    <div class="introduction_accueil">
+    <p>{{"Retrouvez ici toutes les pièces détachées" | trans}} : </p>
+    <div class="d-flex flex-row-reverse mb-2">
+        <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold "href="{{ path("app_piece_new") }}" class="btn btn-outline-success m-2 ">{{"AJOUTER UNE PIÈCE DÉTACHÉE"|trans}}</a>
+        <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold "href="{{ path("app_piece_import") }}" class="btn btn-outline-warning m-2 ">{{"IMPORTER DES PIÈCES DÉTACHÉES"|trans}}</a>
+        </div><br /> 
+        <table class="table table_select_event text-light" id="table_select_event" style = "border: 2px solid white">
+            <thead style="font-family:Sen-Regular-ExtraBold">
+                <tr>
+                    <th rowspan="2">{{"Référence"|trans}}</th>
+                    <th rowspan="2">{{"Libellé"|trans}}</th>
+                    <th colspan="3">{{"Dimensions"|trans}}</th>
+                    <th rowspan="2">{{"Poids"|trans}}</th>
+                    <th rowspan="2">{{"Actions"|trans}}</th>
+                </tr>
+                <tr>
+                    <th>{{"Longueur"|trans}}</th>
+                    <th>{{"Profondeur"|trans}}</th>
+                    <th>{{"Hauteur"|trans}}</th>
+                </tr>
+        </thead>
+    <tbody class="center">
+            {% for piece in pieces %}
+                <tr>
+                    <td class="text-center">
+                        {{ piece.id }}
+                    </td>
+                    <td class="text-center">
+                        {{ piece.libelle }}
+                    </td>
+                    <td class="text-center">
+                        {{ piece.longueur }} mm
+                    </td> 
+                    <td class="text-center">
+                        {{ piece.profondeur }} mm
+                    </td>
+                    <td class="text-center">
+                        {{ piece.hauteur }} mm
+                    </td>
+                    <td class="text-center">
+                        {{ piece.poids }} g
+                    </td>  
+                    <td class="text-center">
+                        <div id = "div-action">
+                            <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-info mr-1" href="{{ path("app_piece_edit" , {'id': piece.id }) }}">{{"MODIFIER"|trans}}</a> 
+                            <a onclick="return confirm('Voulez-vous vraiment supprimer cette piece détachée ?');" style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold" class="btn btn-outline-danger ml-1" href="{{ path("app_piece_delete" , {'id': piece.id }) }}">{{"SUPPRIMER" |trans}}</a> 
+                        </div>
+                    </td>
+                </tr>
+            {% else %}
+                <tr><td class="center"colspan='4'> {{"piece détachée non trouvée dans la base de données" |trans }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <div style="color : black !important" class="d-flex justify-content-center">
+            {{ knp_pagination_render(pieces) }}
+    </div>
+            
+
+</div>
+{% endblock %}

@@ -1,0 +1,234 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les utilisateurs" |trans}}{% endblock %}
+
+{% block body %}
+<div>
+    <h1 class="titre-page">{{"Les utilisateurs"|trans}}</h1>
+    {% for message in app.flashes("success") %}
+    <div class="alert alert-success alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+    {% endfor %}
+    {% for message in app.flashes("error") %}
+    <div class="alert alert-danger alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+    {% endfor %}
+    <div class="col-md-2 filtrage" style="float:left; width:20%; margin-top: 20px; padding-left: 2px ; min-height: 100% ; position: absolute">
+        <div class="panel panel-default text-center">
+            <div class="panel-heading m-4">
+                <h3 class="panel-title titre-page">{{"Filtrage" |trans}}</h3>
+            </div>
+
+            {{ form_start(form) }}
+
+            <div class="d-flex justify-content-center mb-2">
+
+                {{ form_row(form.q) }}
+            </div>
+            <p style="font-family: Sen-Regular-Bold">{{"Service :" |trans}} </p>
+            <div class="d-flex justify-content-center mb-2">
+                {{ form_row(form.service) }}
+
+            </div>
+            <p style="font-family: Sen-Regular-Bold">{{"Fonction :" |trans}} </p>
+            <div class="d-flex justify-content-center mb-2">
+
+                {{ form_row(form.fonction) }}
+            </div>
+            <div class="d-flex justify-content-center mb-2">
+                {{ form_row(form.archive) }}
+
+            </div>
+
+
+            <div class="div_resp">
+                <div class="row">
+                    <div class="col">
+                        {{ form_row(form.Rechercher) }}
+                    </div>
+                    <div class="col">
+                        <a href="{{ path('app_user_index') }}" class="btn btn-danger" style='font-family : Sen-Regular-Bold ; color: black'>{{"RÉINITIALISER" |trans}}</a>
+                    </div>
+                </div>
+            </div>
+            {{ form_end(form) }}
+
+
+
+        </div>
+    </div>
+    <p>&nbsp</p>
+    <div style="width: 80%; float: right" >
+    <div class="introduction_accueil">
+    <p>{{"Retrouvez ici tous les utilisateurs inscrits au sein de l'entreprise" | trans}} : </p>
+
+        <form id="form" method="post" action="{{ path('app_user_exports') }}">
+            <button type="button" class="btn btn-outline-info float-start m-2" style="font-family : Sen-Regular-Bold" onclick="checkAll()">
+                {{ "Tous cocher"|trans }}</button>
+            <button type="button" class="btn btn-outline-info float-start m-2" style="font-family : Sen-Regular-Bold" onclick="uncheckAll()">
+                {{ "Tous décocher"|trans }}</button>
+            <button type="submit" class="btn btn-success m-2 float-end" style="font-family : Sen-Regular-Bold">{{"EXPORTER LES PRODUITS"|trans}}</button>
+            <input type="hidden" name="checked_items" id="checked_items" />
+
+        </form>
+    <table class="table table_select_event text-light" id="table_select_event" style = "border: 2px solid white">
+        <thead style="font-family:Sen-Regular-ExtraBold">    
+            <tr>
+                <th>{{"Séléction" |trans}}</th>
+                <th>{{"Nom"|trans}}</th>
+                <th>{{"Prenom"|trans}}</th>
+                <th>{{"Email"|trans}}</th>
+                <th>{{"Services"|trans}}</th>
+                <th>{{"Fonction"|trans}}</th>
+                <th>{{"Actions" |trans}}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr
+            {% if user.isfreeze %}
+            class="table-dark"
+            {% endif %}
+            {% if user.isArchive %}
+            class="table-secondary"
+            {% endif %}
+
+            
+            >
+                <td style=" text-align: center; vertical-align: middle ;">
+                    <input style="margin: auto ; width: 25px" type="checkbox" class="form-check" data-id="{{ user.id }}" />
+                </td>
+                <td>{{ user.nom }}</td>
+                <td>{{ user.prenom }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.service.libelle }}</td>
+                <td>{{ user.fonction.libelle }}</td>
+             
+                <td class="text-center">
+                    <div id = "div-action">
+                        <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-success mr-1" href="{{ path('app_user_show', {'id': user.id}) }}">{{"VOIR"|trans}}</a>
+                        <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-warning mr-1" href="{{ path('user_edit', {'id': user.id}) }}">{{"MODIFIER"|trans}}</a>
+
+                        {% if user.isArchive %}
+                        <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-danger mr-1" href="{{ path('app_user_unarchive', {'id': user.id}) }}">{{"DÉSARCHIVER"|trans}}</a> 
+                        {% else %}
+                        {% if user.isFreeze %}
+                        <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-secondary mr-1" href="{{ path('app_user_unfreeze', {'id': user.id}) }}">{{"DEGELER"|trans}}</a> 
+                        {% else %}
+                        <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-secondary mr-1" href="{{ path('app_user_freeze', {'id': user.id}) }}">{{"GELER"|trans}}</a> 
+                        {% endif %}
+                        <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-danger mr-1" href="{{ path('app_user_archive', {'id': user.id}) }}">{{"ARCHIVER   "|trans}}</a> 
+                        {% endif %}
+                    </div>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">{{"Aucun utilisateur d'inscrit" |trans}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+        <div style="color : black !important" class="d-flex justify-content-center">
+            {{ knp_pagination_render(users) }}
+        </div>
+        <div style="margin-bottom: 200px" class="d-flex justify-content-center">
+            <a href="{{ path('app_home') }}" class="btn btn-circle btn-secondary" >
+                <i class="fas fa-home"></i> {{"Retour à l'accueil" | trans}}
+
+            </a>
+        </div>
+    </div>
+</div>
+        <script>
+
+
+            var checkedItems = JSON.parse(localStorage.getItem('ExportUsers')) || [];
+            function checkAll() {
+                // Cocher uniquement les checkbox qui ont un data-id
+                var checkboxes = document.querySelectorAll('input[type=checkbox]:not([data-id=""])');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].type == 'checkbox') {
+                        checkboxes[i].checked = true;
+                        // On ajoute l'id de l'élément dans le tableau des éléments cochés
+                        checkedItems.push(checkboxes[i].dataset.id);
+
+                    }
+                }
+
+                // On enregistre le tableau des éléments cochés dans le localStorage
+                for (var i = 0; i < checkedItems.length; i++) {
+                    // On vérifie que l'élément n'est pas déjà dans le tableau
+                    if (checkedItems.indexOf(checkedItems[i]) != -1) {
+                        localStorage.setItem('ExportUsers', JSON.stringify(checkedItems));
+                    }
+
+                }
+
+                //
+            }
+
+            function uncheckAll()
+            {
+                // Décocher uniquement les checkbox qui ont un data-id
+                var checkboxes = document.querySelectorAll('input[type=checkbox]:not([data-id=""])');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].type == 'checkbox') {
+                        checkboxes[i].checked = false;
+                        // On supprime l'id de l'élément dans le tableau des éléments cochés
+                        checkedItems.splice(checkedItems.indexOf(checkboxes[i].dataset.id), 1);
+                    }
+                }
+
+
+                // On supprime le tableau des éléments cochés dans le localStorage
+                localStorage.removeItem('ExportUsers');
+
+
+            }
+
+
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                if (checkedItems.indexOf(checkbox.dataset.id) !== -1) {
+                    checkbox.checked = true;
+                }
+            });
+
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('click', event => {
+                    let checkedItems = JSON.parse(localStorage.getItem('ExportUsers')) || [];
+                    let index = checkedItems.indexOf(checkbox.dataset.id);
+                    if (event.target.checked) {
+                        if (index === -1) {
+                            checkedItems.push(checkbox.dataset.id);
+                        }
+                    } else {
+                        if (index !== -1) {
+                            checkedItems.splice(index, 1);
+                        }
+                    }
+                    localStorage.setItem('ExportUsers', JSON.stringify(checkedItems));
+                });
+            });
+
+            document.querySelector('#form').addEventListener('submit', event => {
+                event.preventDefault();
+                let checkedItems = JSON.parse(localStorage.getItem('ExportUsers')) || [];
+                document.querySelector('#checked_items').value = checkedItems.join(',');
+                event.target.submit();
+                // on vide le localStorage
+                localStorage.removeItem('ExportUsers');
+            });
+
+
+        </script>
+{% endblock %}

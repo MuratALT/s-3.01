@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Vente"|trans}}{% endblock %}
+
+{% block body %}
+<div style="max-width: 90% ;" class="container">
+
+    {% for message in app.flashes("error") %}
+    <div class="alert alert-danger alert-dismissible m-3">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+    </div>
+    {% endfor %}
+    {% for message in app.flashes("success") %}
+        <div class="alert alert-success alert-dismissible m-3">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        </div>
+    {% endfor %}
+
+    <h1 class='titre-page'>{% trans %}Vente{% endtrans %} n° {{vente.id}} </h1>
+
+        <div>
+            <div>
+                {{ form_row(VenteForm.categorie, {
+                    label: 'Catégorie'|trans,
+                    disabled: true
+                }) }}
+            </div>
+    
+            <div>
+                {{ form_row(VenteForm.libelle, {
+                label: 'Libellé'|trans,
+                disabled: true
+                }) }}
+            </div>
+
+            <div style="margin-top : 20px ; margin-bottom : 20px" class="product_show_marketing">
+                <h2>{% trans %}Commentaire :{% endtrans %}</h2>
+                {{ vente.commentaire | raw  }}
+            </div>
+
+            <div>
+                <header id="header_doc" style="font-family: Sen-Regular-Bold">{% trans %}Documents{% endtrans %}</header>
+
+                {# Affichage en mode tableau #}
+
+                <div>
+                    <table id="table_employe_doc_show">
+                        <thead>
+                            <tr>
+                                <th>{{"Fichier"|trans}}</th>
+                                <th>{{"Libellé"|trans}}</th>
+                                <th>{{"Commentaire"|trans}}</th>
+                                <th>{{"Date d'ajout"|trans}}</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for document in vente.documentVentes %}
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <li style="list-style-type: circle ; ">
+                                            <a style="color: white; font-size: 18px" href="{{ asset('uploads/sale_documents_directory/' ~ document.name) }}"
+                                                target="_blank">
+                                                <i class="fa fa-file-pdf"></i>
+                                            </a>
+                                        </li>
+                                    </td>
+                                    <td>{{ document.libelle }}</td>
+                                    <td>{{ document.commentaire|raw }}</td>
+                                    <td>{{ document.dateAjout|date('d/m/Y') }}</td>
+                                </tr>
+                                {# Afficher un message lorsqu'il n'existe aucun document #}
+                            {% else %}
+                                <tr>
+                                    <td colspan="4">{{"Aucun document n'existe pour cette vente" | trans}}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        
+    <div class="d-flex justify-content-center m-2">
+        <a href="{{ path('app_vente_index') }}" class="btn btn-secondary" style = "font-size: 20px">{{"Retour à la liste" |trans}}</a>
+    </div>
+
+    <div style="display: none;">
+        {{ form_row(VenteForm.documentsVente) }}
+    </div>
+
+</div>
+
+{% endblock %}

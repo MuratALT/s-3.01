@@ -1,0 +1,291 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les produits" |trans}}{% endblock %}
+
+{% block body %}
+<style>
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #020D24 !important;
+     font-family : "Sen-Regular-Bold";
+}
+
+.pagination > .active > a
+{
+    color: #020D24 !important;
+    background-color: #BE8B24 !Important;
+    border: solid 1px #BE8B24 !Important;
+}
+
+
+</style>
+
+
+    <div style="overflow-x: hidden">
+        <h1 class="titre-page">{{"Les Produits"|trans}}</h1>
+        {% for message in app.flashes("success") %}
+            <div class="alert alert-success alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+
+        <div class="col-md-2 filtrage" style="float:left; width:20%; margin-top: 20px; padding-left: 2px ; min-height: 100% ; position: absolute">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading m-4">
+                    <h3 class="panel-title titre-page">{{"Filtrage" |trans}}</h3>
+                </div>
+
+                {{ form_start(form) }}
+
+                    <div class="d-flex justify-content-center mb-2">
+
+                        {{ form_row(form.q) }}
+                    </div>
+                    <p style="font-family: Sen-Regular-Bold">{{"Catégories"|trans}} :</p>
+                    <div class="d-flex justify-content-center mb-2">
+
+                        {{ form_row(form.categories) }}
+                    </div>
+
+                <div class="d-flex justify-content-center mb-2">
+
+                    {{ form_row(form.archive) }}
+                </div>
+
+
+                <div class="div_resp">
+                    <div class="row">
+                        <div class="col">
+                            {{ form_row(form.Rechercher) }}
+                        </div>
+                        <div class="col">
+                            <a href="{{ path('app_produit_index') }}" class="btn btn-danger" style='font-family : Sen-Regular-Bold ; color: black'>{{"RÉINITIALISER" |trans}}</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+            <p>&nbsp</p>
+
+
+
+        
+        <div style="width: 80%; float: right" >
+            <div class="introduction_accueil" >
+                <p>{{"Retrouvez ici tous les produits" | trans}} : </p>
+               {% if app.user.service == "Product Owner" or app.user.roles[0] == "ROLE_ADMIN" %}
+                <div class="d-flex flex-row-reverse mb-2">
+                    <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold "href="{{ path("app_produit_new") }}" class="btn btn-outline-success m-2 ">{{"AJOUTER UN PRODUIT"|trans}}</a>
+                    <a  style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold "href="{{ path("app_produit_import") }}" class="btn btn-outline-warning m-2 ">{{"IMPORTER DES PRODUITS"|trans}}</a>
+                </div><br />
+                {% endif %}
+
+                <div class="div_choice_display">
+                    <div id="div_produit_tab">
+                        <button id="button_produit_display_tab" class="btn">{{"Tableau"|trans}}</button>
+                    </div>
+                    <div id="div_produit_card">
+                        <button id="button_produit_display_card" class="btn">{{"Vignette"|trans}}</button>
+                    </div>
+                </div>
+
+                <section id="section_produit_tab">
+                    <table class="table table_select_event text-light" id="table_select_event" style = "border: 2px solid white">
+                        <thead style="font-family:Sen-Regular-ExtraBold">
+                            <th>{{"Référence"|trans}}</th>
+                            <th>{{"Libellé"|trans}}</th>
+                            <th>{{"Catégorie"|trans}}</th>
+                            <th>{{"Prix unitaire"|trans}}</th>
+                            <th>{{"Actions"|trans}}</th>
+                        </thead>
+                        <tbody class="center">
+                            {% for produit in produits %}
+                                <tr {% if produit.isArchived == true %}style="background-color: grey"{% endif %}>
+                                    <td class="text-center">
+                                        {{ produit.reference }}
+                                    </td>
+                                    <td class="text-center">
+                                        {{ produit.libelle }}
+                                    </td>
+                                    <td class="text-center">
+                                        {{ produit.typeprod.libelle }}
+                                    </td>
+                                    <td class="text-center">
+                                        {{ produit.pu }} €
+                                    </td>
+                                    <td class="text-center">
+                                        <div id = "div-action">
+                                            <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-success mr-1" href="{{ path('app_produit_show', {'id': produit.id}) }}">{{"CONSULTER"|trans}}</a>
+                                            <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-info mr-1" href="{{ path('produit_edit', {'id': produit.id}) }}">{{"MODIFIER"|trans}}</a>
+
+
+                                            {% if app.user.service.libelle == "Product Owner" %}
+
+                                                {% if produit.isArchived == true %}
+                                                    <a onclick="return confirm('Voulez-vous vraiment archiver ce produit ?');"
+                                                    style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold" class="btn btn-outline-warning ml-1"
+                                                    href="{{ path('app_produit_undelete', {'id': produit.id}) }}">{{"DÉSARCHIVER" |trans}}
+                                                    </a>
+                                                {% else %}
+                                                    <a onclick="return confirm('Voulez-vous vraiment archiver ce produit ?');"
+                                                    style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold" class="btn btn-outline-danger ml-1"
+                                                    href="{{ path('app_produit_delete', {'id': produit.id}) }}">{{"ARCHIVER" |trans}}
+                                                    </a>
+                                                {% endif %}
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% else %}
+                                <tr><td class="center"colspan='4'> {{"Produit non trouvé dans la base de données" |trans }}</td></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="section_produit_card">
+                    <div class="row">
+                    
+                        {% for produit in produits %}
+
+                        {# Récupérer le premier image du produit #}
+
+                        {% set first_img = "" %}
+                        {% set have_img = false %}
+                        {% for image in produit.images %}
+                            {% if loop.first %}
+                                {% set first_img = image.name %}
+                                {% set have_img = true %}
+                            {% endif %}
+                        {% endfor %}
+                        
+                            {% set produit_statement = "transparent" %}
+                        
+                            {% if produit.isArchived %}
+                                {% set produit_statement = "grey" %}
+                            {% endif %}
+                        
+                            <div class="col-sm-4">
+                                <div class="card" style="background-color: transparent; border: none; margin-bottom: 15px">
+                                    <div style="border: 2px solid white; border-radius: 20px; background-color: {{ produit_statement }};" class="card-body">
+                                        <h5 style="text-align: center; margin-bottom: 15px;" class="card-title">{{
+                                            produit.libelle|upper }}</h5>
+                                        {% if have_img %}
+                                            <div class="d-flex justify-content-center">
+                                                <img style="width: 200px; height: 200px" class="card-img-top" src="{{ asset('uploads/product_directory/' ~ first_img) }}"  alt="Card image cap">
+                                            </div>
+                                        {% endif %}
+                                        <p class="card-text" style="margin-bottom: 15px;">
+                                            <strong>{{ "Référence"|trans }} : </strong> {{ produit.reference }}<br />
+                                            <strong>{{ "Catégorie"|trans }} :</strong> {{ produit.typeprod.libelle }}<br />
+                                            <strong>{{ "Prix unitaire"|trans }} :</strong> {{ produit.pu }} <br />
+                                        </p>
+                        
+                                        <div class="text-center">
+                                            <div id="div-action">
+                                                <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-success mr-1"
+                                                    href="{{ path('app_produit_show', {'id': produit.id}) }}">{{"CONSULTER"|trans}}</a>
+                                                <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-info mr-1"
+                                                    href="{{ path('produit_edit', {'id': produit.id}) }}">{{"MODIFIER"|trans}}</a>
+                                            
+                                            
+                                                {% if app.user.service.libelle == "Product Owner" %}
+                                                    {% if produit.isArchived == true %}
+                                                        <a onclick="return confirm('Voulez-vous vraiment archiver ce produit ?');"
+                                                            style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold; margin-top: 10px" class="btn btn-outline-warning ml-1"
+                                                            href="{{ path('app_produit_undelete', {'id': produit.id}) }}">{{"DÉSARCHIVER" |trans}}
+                                                        </a>
+                                                    {% else %}
+                                                        <a onclick="return confirm('Voulez-vous vraiment archiver ce produit ?');"
+                                                            style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold; margin-top: 10px" class="btn btn-outline-danger ml-1"
+                                                            href="{{ path('app_produit_delete', {'id': produit.id}) }}">{{"ARCHIVER" |trans}}
+                                                        </a>
+                                                    {% endif %}
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <p>{{"Produit non trouvé dans la base de données" |trans }}</p>
+                        {% endfor %}
+                    
+                    </div>
+                </section>
+
+            </div>
+            <div style="color : black !important" class="d-flex justify-content-center">
+                {{ knp_pagination_render(produits) }}
+            </div>
+            <div class="d-flex justify-content-center m-5">
+                <a href="{{ path('app_home') }}" class="btn btn-circle btn-secondary" >
+                    <i class="fas fa-home"></i> {{"Retour à l'accueil" | trans}}
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% block javascripts %}
+        <script type="text/javascript">
+            /* Je veut afficher le tableau par défaut mais lorsque le boutton Vignette est cliqué alors je ne veut plus afficher le tableau*/
+
+            $(document).ready(function () {
+                const button_tab = document.getElementById("button_produit_display_tab");
+                const button_card = document.getElementById("button_produit_display_card");
+
+                /* Affichage par défaut */
+                $("#section_produit_tab").show();
+                button_tab.classList.add("btn-primary");
+
+                $("#section_produit_card").hide();
+                button_card.classList.add("btn-secondary");
+
+                /* Affichage du tableau */
+                $("#button_produit_display_tab").click(function () {
+                    /* On affiche le tableau et on  cache les cards */
+                    $("#section_produit_tab").show();
+                    $("#section_produit_card").hide();
+
+                    /* On modifie la classe des boutons */
+                    if (button_card.classList.contains("btn-primary")) {
+                        button_card.classList.remove("btn-primary");
+                        button_card.classList.add("btn-secondary");
+                    }
+                    if (button_tab.classList.contains("btn-secondary")) {
+                        button_tab.classList.remove("btn-secondary");
+                        button_tab.classList.add("btn-primary");
+                    }
+                });
+
+                $("#button_produit_display_card").click(function () {
+                    /* On affiche les cards et on  cache le tableau */
+                    $("#section_produit_tab").hide();
+                    $("#section_produit_card").show();
+
+                    /* On modifie la classe des boutons */
+                    if (button_tab.classList.contains("btn-primary")) {
+                        button_tab.classList.remove("btn-primary");
+                        button_tab.classList.add("btn-secondary");
+                    }
+                    if (button_card.classList.contains("btn-secondary")) {
+                        button_card.classList.remove("btn-secondary");
+                        button_card.classList.add("btn-primary");
+                    }
+                });
+            });
+        </script>
+    {% endblock %}
+    {% endblock %}

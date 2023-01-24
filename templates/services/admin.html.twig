@@ -1,0 +1,74 @@
+
+<h1 class="text-center m-3">{{"Administration"|trans}}</h1>
+<hr style="margin:auto ; height:30px"  width="50%" >
+<div class="row">
+    <div  id="service_fonctions" class="col" style="margin-right: 5px ; margin-left: 5px">
+        <h2 class="text-center">{{"GESTION DES UTILISATEURS" | trans}} </h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('app_user_index') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Liste des utilisateurs" | trans}}</span></a>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('app_service_index') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Liste des départements" | trans}}</span></a>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('app_fonction_index') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Liste des fonctions" | trans}}</span></a>
+        </div>
+    </div>
+    <div  id="service_fonctions" class="col" style="margin-right: 5px ; margin-left: 5px">
+        <h2 class="text-center ">{{"GESTION DES PRODUITS"|trans}}</h2>
+        <hr style="margin:auto ; height:30px"  width="50%" >
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('app_produit_index')}}" ><span style="font-size: 25px;">{{"Liste des produits"|trans}}</span></a>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info btn-lg action" href="{{path('admin_app_field')}}" ><span style="font-size: 25px;">{{"Gestion des champs"|trans}}</span></a>
+        </div>
+    </div>
+</div>
+
+<div id="service_fonctions" >
+    <h2 class="text-center ">{{"EXPORT" | trans}}</h2>
+    <hr style="margin:auto ; height:30px"  width="50%" >
+    <div id="mobile_only">
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('app_export_produit') }}" class="btn btn-info btn-lg action m-2"><span style="font-size: 25px;">{{'Export des produits' | trans}}</span></a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('app_user_export') }}" class="btn btn-info btn-lg action m-2"><span style="font-size: 25px;">{{"Export des utilisateurs" |trans}}</span></a>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('admin_export_bdd') }}" class="btn btn-info btn-lg action m-2"><span style="font-size: 25px;">{{"Export de la Base de données" |trans}}</span></a>
+        </div>
+    </div>
+    <div id="desktop_only">
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('app_export_produit') }}" class="btn btn-info btn-lg action m-2"><span style="font-size: 25px;">{{'Export des produits' | trans}}</span></a>
+            <a href="{{ path('app_user_export') }}" class="btn btn-info btn-lg action m-2"><span style="font-size: 25px;">{{"Export des utilisateurs" |trans}}</span></a>
+            <a href="{{ path('admin_export_bdd') }}" class="btn btn-info btn-lg action m-2"><span style="font-size: 25px;">{{"Export de la Base de données" |trans}}</span></a>
+        </div>
+    </div>
+    
+</div>
+
+<style>
+
+    #mobile_only{
+        display: none;
+    }
+    #desktop_only{
+        display: block;
+    }
+    @media only screen and (max-width: 600px) {
+        #mobile_only{
+            display: block;
+        }
+        #desktop_only{
+            display: none;
+        }
+    }
+
+</style>

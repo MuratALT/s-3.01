@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Gestion des champs" |trans}}{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1 class="titre-page">{{"Gestion des champs"|trans}}</h1>
+
+    <div class="row">
+        <div  id="service_fonctions" class="col">
+            <h2 class="text-center">{{"GESTION DES RÈGLEMENTATIONS" | trans}} </h2>
+            <hr style="margin:auto ; height:30px"  width="50%" >
+            <div class="d-flex justify-content-center">
+                <a href="{{ path('admin_list_reglementation') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Liste des règlementation" | trans}}</span></a>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <a href="{{ path('admin_add_reglementation') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Ajouter une règlementation" | trans}}</span></a>
+            </div>
+        </div>
+        <div  id="service_fonctions" class="col">
+            <h2 class="text-center">{{"GESTION DES CATÉGORIES" | trans}} </h2>
+            <hr style="margin:auto ; height:30px"  width="50%" >
+            <div class="d-flex justify-content-center">
+                <a href="{{ path('admin_list_type_produit') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Liste des catégories" | trans}}</span></a>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <a href="{{ path('admin_add_type_produit') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Ajouter un type" | trans}}</span></a>
+            </div>
+        </div>
+        <div  id="service_fonctions" class="col">
+            <h2 class="text-center">{{"GESTION DES ALIMENTATIONS" | trans}} </h2>
+            <hr style="margin:auto ; height:30px"  width="50%" >
+            <div class="d-flex justify-content-center">
+                <a href="{{ path('admin_list_type_alim') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Liste des alimentations" | trans}}</span></a>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center">
+                <a href="{{ path('admin_add_type_alim') }}" class="btn btn-info btn-lg action"><span style="font-size: 25px;">{{"Ajouter une alimentation" | trans}}</span></a>
+            </div>
+        </div>
+    </div>
+
+</div> 
+
+{% endblock %}

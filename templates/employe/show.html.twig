@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'Employé n°'|trans}}{{ user.id }}{% endblock %}
+
+{% block body %}
+
+<div style="max-width: 50% ;" class="container" id="div_register_container">
+    <h1 class='titre-page'>{% trans %}Consultation d'un employé{% endtrans %}</h1>
+
+    {{ form_start(form) }}
+        <div id="div_employe_show">
+            <div class ="div_horizontale">
+                <div>
+                    {{ form_row(form.nom, {
+                        label: 'NOM'|trans,
+                        attr: {
+                            readonly: true
+                        }
+                    }) }}
+                </div>
+
+                <div></div>
+
+                <div>
+                    {{ form_row(form.prenom, {
+                        label: 'PRÉNOM'|trans,
+                        attr: {
+                            readonly: true
+                        }
+                    }) }}
+                </div>
+            </div>
+
+            <div style="width: 100%">
+                {{ form_row(form.email, {
+                    label: 'MAIL'|trans,
+                    attr: {
+                        readonly: true
+                    }
+                }) }}
+            </div>
+
+            <div class="div_horizontale">
+                <div>
+                    {{ form_row(form.service, {
+                        label: 'SERVICE'|trans,
+                        disabled: true,
+                    }) }}
+                </div>
+            
+                <div></div>
+
+                <div>
+                    {{ form_row(form.fonction, {
+                        label: 'FONCTION'|trans,
+                        disabled: true,
+                    }) }}
+                </div>
+            </div>
+
+            <div>
+                <header id="header_doc">{% trans %}Documents{% endtrans %}</header>
+
+                {# Affichage en mode tableau #}
+
+                <div>
+                    <table id="table_employe_doc_show">
+                        <thead>
+                            <tr>
+                                <th>{{"Fichier"|trans}}</th>
+                                <th>{{"Libellé"|trans}}</th>
+                                <th>{{"Commentaire"|trans}}</th>
+                                <th>{{"Date d'ajout"|trans}}</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for document in user.documentUsers %}
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <li style="list-style-type: circle ; ">
+                                            <a style="color: white; font-size: 18px" href="{{ asset('uploads/employee_documents_directory/' ~ document.name) }}"
+                                                target="_blank">
+                                                <i class="fa fa-file-pdf"></i>
+                                            </a>
+                                        </li>
+                                    </td>
+                                    <td>{{ document.libelle }}</td>
+                                    <td>{{ document.commentaire|raw }}</td>
+                                    <td>{{ document.dateAjout|date('d/m/Y') }}</td>
+                                </tr>
+                                {# Afficher un message lorsqu'il n'existe aucun document #}
+                            {% else %}
+                                <tr>
+                                    <td colspan="4">{{"Aucun document n'existe pour cet employé"|trans}}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: none;">
+            {{ form_row(form.documentsUser) }}
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-secondary m-2" href="{{ path('app_employe_index') }}">{{'Retour' |trans}}</a>
+        </div>
+    {{ form_end(form) }}
+        
+{% endblock %}

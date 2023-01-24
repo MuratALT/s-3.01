@@ -1,0 +1,382 @@
+/* 
+
+    Fond bleu : #274C77
+
+    Bleu clair  : #6096BA
+    Role : #AF929D
+*/
+
+@font-face {
+    font-family: "Sen-Regular";
+    src: url("Sen-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Sen-Regular-Bold";
+    src: url("Sen-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Sen-Regular-ExtraBold";
+    src: url("Sen-ExtraBold.ttf");
+  }
+
+
+a{
+    text-decoration: none;
+    color: #274C77;
+}
+body {
+    background-color: #274C77;
+    color: white;
+}
+
+.login {
+    text-decoration: none;
+    color:  #AF929D;
+}
+
+.login:hover {
+    color: white;
+}
+
+.titre-page{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-family: "Sen-Regular-Bold";
+    text-align: center;
+    color : white;
+    border-bottom: 3px solid white;
+
+}
+
+.div_resp
+{
+    max-width: 60%;
+    align-content: center;
+    margin: auto;
+}
+
+
+.submit{
+    background-color: #AF929D !important;
+    border-color: #AF929D !important;
+}
+
+#div_register_container div {
+    margin: 3px auto;
+}
+
+#div_register_submit {
+    display: flex;
+}
+
+li {
+    list-style: none !important ;
+}
+li a {
+    color: #AF929D;
+}
+span {
+    margin: 0 auto;
+}
+#flag-mobile{
+    margin-left: 10px;
+}
+
+/* Si l'affochage est mobile : */
+
+@media screen and (max-width: 1000px) {
+
+    #only_desktop {
+        display: none;
+    }
+    #only_mobile {
+        display: block;
+    }
+ 
+    #flag-mobile{
+        float: left;
+        /* au bas de la div */
+        
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .div_resp{
+        max-width: 98%;
+    }
+
+    .filtrage{
+        display: none;
+    }
+
+    /* Ajout animation de l'apparation de flag-mobile */
+
+    navbar-collapse collapse show #flag-mobile{
+        animation: apparition 100s;
+    }
+    
+   #name{
+    display: inline-block;
+   }
+
+   #menu_user{
+    float: right;
+   }
+
+
+
+}
+
+
+.menu_langue .dropdown-item {
+    color: white;
+    margin-top: 7px;
+    background-color: #274C77;
+    border : 1px solid white;
+    border-radius: 5px;
+    width: 90px;
+    /* onbre autour */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.menu_langue .dropdown-item:hover {
+    background-color: #6096BA;
+    color: white !important;
+}
+
+.menu_langue
+{
+    margin-right: 30px;
+    color: white;
+}
+
+.menu_langue a
+{
+    color: white;
+    font-size: 16px;
+    font-family: "Sen-Regular-Bold";
+}
+
+label{
+    font-family: "Sen-Regular-Bold";
+}
+
+header.header_produit {
+    font-size: 30px;
+    font-family: "Sen-Regular-Bold";
+    text-decoration: underline;
+    margin: 20px auto 5px auto;
+}
+
+#div_prod_pres_horizontale {
+    display: grid;
+    grid-template-columns: 22% 74%;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+#div_prod_cat_media {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+section#section_prod_dim {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+div#div_prod_dim1 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: end;
+    justify-items: center;
+    margin-bottom: 15px;
+}
+
+div#div_prod_dim2 {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: end;
+}
+
+div#div_prod_dim1 div, div#div_prod_dim2 div {
+    max-width: 80%;
+}
+
+section#section_prod_alim_compat {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+#div_prod_alim_horizontale {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+#produit_alimentation div {
+    max-width: 90%;
+}
+
+
+
+#produit_submit {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.ckeditor
+{
+    margin: 0 0 0 0 !important;
+}
+
+#div-action a
+{
+    margin-left: 20px;
+}
+
+/* .App correspondant à la classe de React */
+.App {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+th 
+{
+    text-align:center; 
+    border: 1px solid white; 
+    background-color : #AF929D !important;
+}
+
+td
+{
+    border: 1px solid white;
+}
+
+#service_fonctions
+{
+    margin-top: 20px;
+    padding: 5px;
+    padding-bottom: 20px ;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+#service_fonctions h2
+{
+    text-align: center;
+    font-family: "Sen-Regular-Bold";
+    margin: 5px;
+    padding: 5px;
+    /* On soutaite que la bordure ne fasse que 50% */
+}
+
+hr {
+    border-top: 4px solid #6096BA !important;
+    opacity: 0.9 !important;
+}
+
+.action {
+    background-color: #6096BA !important;
+    border-color: #6096BA !important;
+    color: white !important;
+    font-family: "Sen-Regular-Bold";
+    font-size: 20px;
+}
+
+.product_show_marketing h2 {
+    font-family: "Sen-Regular-Bold";
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+#only_mobile {
+    display: none;
+}
+
+/* #div_employe_show {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#div_employe_show .horizontale {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+} */
+
+.div_horizontale {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+
+.div_horizontale div:first-child {
+    grid-row-start: 1;
+}/*
+
+.div_horizontale div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+} */
+
+/* .div_horizontale div:first-child {
+    float: right;
+}
+
+.div_horizontale div:last-child {
+    float: left;
+} */
+
+#div_employe_show #header_doc {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+/* Choix d'affichage */
+
+.div_choice_display {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.div_choice_display .btn {
+    margin: 5px;
+}
+
+#table_employe_doc_show th, #table_employe_doc_show td {
+    text-align: center;
+    padding: 10px;
+}
+
+#table_employe_doc_show {
+    width: 100%
+}
+
+#section_ajout_docuser div:not(:last-child) {
+    margin: 15px auto;
+}
+
+#section_ajout_docuser {
+    margin-top: 30px
+}
+
+#cke_documents_user_form_commentaire {
+    margin-top: 0px !important;
+}

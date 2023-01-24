@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ajouter une catégorie" |trans}}{% endblock %}
+
+{% block body %}
+
+    <div style="max-width: 90% ;" class="container">
+
+     {% for message in app.flashes("error") %}
+            <div class="alert alert-danger alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+
+
+     <h1 class='titre-page'>{% trans %}Ajouter une catégorie{% endtrans %}</h1>
+
+     {{ form_start(form)}}
+     {{ form_row(form.libelle)}}
+ 
+<br>
+    
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-success center m-2 submit">
+        {% if editMode %}
+            {{ "Enregistrer les modifications"|trans }}
+        {% else %}
+            {{ "Ajouter la catégorie"|trans }}
+        {% endif %}
+        </button>
+
+        <a class="btn btn-secondary m-2" href="{{ path('app_categorie_index') }}">{{'Retour' |trans}}</a> 
+    </div>
+    {{ form_end(form)}}
+
+    </div>
+{% endblock %}

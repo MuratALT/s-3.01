@@ -1,0 +1,8 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <div class="d-flex justify-content-center m-5">
+        <button class="btn btn-lg btn-primary submit m-2">{{ 'Ajouter' | trans }}</button>
+        <a href="{{ path('app_service_index') }}" class="btn btn-lg btn-danger m-2">{{ 'Annuler' | trans }}</a>
+    </div>
+    
+{{ form_end(form) }}

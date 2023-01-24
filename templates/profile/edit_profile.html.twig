@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Profil"|trans}}{% endblock %}
+
+{% block body %}
+
+    <div style="max-width: 50% ;" class="container" id="div_register_container">
+        <h1 class='titre-page'>{% trans %}PROFIL{% endtrans %}</h1>
+        {{ form_start(editProfileForm) }}
+        <input type="hidden" name="token" value="{{ csrf_token('delete-item') }}"/>
+        <div class="row">
+            <div class="col">
+                {{ form_row(editProfileForm.nom, {
+                    label: 'Nom'|trans
+                }) }}
+            </div>
+
+            <div class="col">
+                {{ form_row(editProfileForm.prenom, {
+                    label: 'Prénom'|trans
+                }) }}
+            </div>
+
+            {{ form_row(editProfileForm.date_naissance, {
+                label: 'Date de naissance'|trans,
+            }) }}
+
+            <div>
+                {{ form_row(editProfileForm.email, {
+                    label: 'Mail'|trans,
+                }) }}
+            </div>
+
+            <div class="col">
+                {{ form_row(editProfileForm.service, {
+                    label: 'Service'|trans,
+                    attr: {
+                        'readonly': 'true'
+                    }
+                }) }}
+            </div>
+
+            <div class="col">
+                {{ form_row(editProfileForm.fonction, {
+                    label: 'Fonction'|trans,
+                    attr: {
+                        'readonly': 'true'
+                    }
+                }) }}
+            </div>
+
+                {{ form_row(editProfileForm.image, {
+                    label: 'Photo de profil'|trans,
+                }) }}
+                <p> {{ "Formats supportés"|trans}} : webp, jpeg, png, jpg </p>
+                
+            <div id="div_register_submit">
+                <div>
+                    {{ form_row(editProfileForm.submitmodif, {
+                        label: 'Modifier'|trans
+                    }) }}
+                </div>
+
+                <div>
+                    <a href="{{ path('profil_profil_data') }}" class="btn btn-lg btn-success m-4">
+                        {% trans %}Télécharger mes données{% endtrans %}
+                    </a>
+                </div>
+            </div>
+            
+
+        </div>
+        {{ form_end(editProfileForm) }}
+        <p> <span class="text-danger">*</span> {{ 'Champs obligatoires'|trans }}</p>
+
+    </div>
+
+    {# A CHANGER AVEC REACT : création d'un composant avec return des vérifications #}
+    {% block javascript %}
+    <script>
+        // Petit script qui ajoute un asterisque  en fin de label pour les champs obligatoires
+       var labels = document.getElementsByTagName('label');
+       for (var i = 0; i < labels.length; i++) {
+           if (labels[i].htmlFor != '') {
+               var elem = document.getElementById(labels[i].htmlFor);
+               if (elem.required) {
+                   labels[i].innerHTML += ' <span class="text-danger">*</span>';
+               }
+           }
+       }
+
+   </script>
+   
+    {% endblock %}
+    {# A CHANGER AVEC REACT #}
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Ajouter une pièce détachée" |trans}}{% endblock %}
+
+{% block body %}
+
+    <div style="max-width: 90% ;" class="container">
+
+     {% for message in app.flashes("error") %}
+            <div class="alert alert-danger alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+
+
+     <h1 class='titre-page'>{% trans %}Modifier la pièce détachée n°{% endtrans %} {{ piece.id }}</h1>
+
+     {{ form_start(PieceForm)}}
+     {{ form_row(PieceForm.libelle)}}
+
+        <h2 class="m-2">{{ "Dimensions"|trans }}</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    {{ form_row(PieceForm.hauteur)}}
+                </div>
+                <div class="col-sm">
+                    {{ form_row(PieceForm.longueur)}}
+                </div>
+                <div class="col-sm">
+                    {{ form_row(PieceForm.profondeur)}}
+                </div>
+            </div>
+        </div>
+        <div class="container" style="width: 25%">
+            {{ form_row(PieceForm.poids)}}
+        </div>
+<br>
+    
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-success center m-2 submit">
+            {{ "Enregistrer les modifications"|trans }}
+        </button>
+
+        <a class="btn btn-secondary m-2" href="{{ path('app_piece_index') }}">{{'Retour' |trans}}</a>
+    </div>
+    {{ form_end(PieceForm)}}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Suppression"|trans}}{% endblock %}
+
+{% block body %}
+
+
+    <div class="container">
+
+        {% for message in app.flashes('error') %}
+        <div class="alert alert-danger alert-dismissible" role="alert">{{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+        <h1 class='titre-page'>{% trans %}SUPPRESSION DU COMPTE{% endtrans %}</h1>
+        
+        {{ form_start(deleteAccountForm) }}
+
+            {{ form_row(deleteAccountForm.oldPassword, {
+                label: 'Mot de passe actuel'|trans, 
+            }) }}
+
+            <div class="text-center">
+                <button class="btn btn-lg btn-danger m-4" type="submit">
+                {% trans %} Supprimer définitivement {% endtrans %}
+                </button>
+            </div>
+
+        {{ form_end(deleteAccountForm) }}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,105 @@
+<?php
+
+namespace App\Repository;
+
+use App\Entity\Produit;
+use App\Model\SearchDataProduit;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\Persistence\ManagerRegistry;
+use Knp\Component\Pager\Pagination\PaginationInterface;
+use Knp\Component\Pager\PaginatorInterface;
+
+/**
+ * @extends ServiceEntityRepository<Produit>
+ *
+ * @method Produit|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Produit|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Produit[]    findAll()
+ * @method Produit[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ */
+class ProduitRepository extends ServiceEntityRepository
+{
+    public function __construct(ManagerRegistry $registry)
+    {
+        parent::__construct($registry, Produit::class);
+
+    }
+
+    public function save(Produit $entity, bool $flush = false): void
+    {
+        $this->getEntityManager()->persist($entity);
+
+        if ($flush) {
+            $this->getEntityManager()->flush();
+        }
+    }
+
+    public function remove(Produit $entity, bool $flush = false): void
+    {
+        $this->getEntityManager()->remove($entity);
+
+        if ($flush) {
+            $this->getEntityManager()->flush();
+        }
+    }
+
+
+    public function findBySearch($prod = null, $categories = null, $archive = false) : array
+    {
+        $query = $this->createQueryBuilder('p');
+
+            if($prod != null) {
+                $query = $query
+                    ->Where('p.libelle LIKE :q')
+                    ->orWhere('p.reference LIKE :q')
+                    ->setParameter('q', $prod);
+            }
+            if ($archive){
+                $query = $query
+                    ->andWhere('p.isArchived = :archive')
+                    ->setParameter('archive', $archive);
+            }
+            else {
+                $query = $query
+                    ->andWhere('p.isArchived = :archive')
+                    ->setParameter('archive', $archive);
+            }
+            if($categories != null){
+                    $query->leftJoin('p.typeprod', 'c');
+                    $query
+                        ->andWhere('c.id = :id')
+                        ->setParameter('id', $categories);
+
+            }
+
+
+        return $query->getQuery()->getResult();
+
+
+
+    }
+//    /**
+//     * @return Produit[] Returns an array of Produit objects
+//     */
+//    public function findByExampleField($value): array
+//    {
+//        return $this->createQueryBuilder('p')
+//            ->andWhere('p.exampleField = :val')
+//            ->setParameter('val', $value)
+//            ->orderBy('p.id', 'ASC')
+//            ->setMaxResults(10)
+//            ->getQuery()
+//            ->getResult()
+//        ;
+//    }
+
+//    public function findOneBySomeField($value): ?Produit
+//    {
+//        return $this->createQueryBuilder('p')
+//            ->andWhere('p.exampleField = :val')
+//            ->setParameter('val', $value)
+//            ->getQuery()
+//            ->getOneOrNullResult()
+//        ;
+//    }
+}

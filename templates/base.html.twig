@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Bienvenue !{% endblock %}</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/805e2cd3aa.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}" />
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        <nav  class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{ path('app_home') }}"><img width="130px" src="{{ asset('img/METZConnect.png') }}"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                {# Div à droite de la navbat#}
+                    <div class="flex-grow-1">
+                        {% if app.user %}
+                            {% if app.user.roles.0 == "ROLE_ADMIN" %}
+                                <a href="{{ path('admin_user_wait') }}" class="btn btn-primary position-relative rounded border-transparent" style="background-color : #485f91 ; border-color : #485f91; color : white !important;" data-mdb-ripple-unbound="true">
+                                    {{"Utilisateurs" | trans}} <br>{{ "en attente"|trans }}
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ml-2">
+                                    {{ UR.getNumberUserWait() }}
+                                 </span>
+                                </a>
+                                {% if app.user.usurp == true %}
+                                    <div class="d-flex justify-content-center" style = "margin-top: -50px;">
+
+                                        <h1 style = "text-align: center">{{ "MODE USURPATION" | trans }} <a href="{{ path('admin_unusurpation') }}" class="text-success">{{"ACTIVÉ" | trans}}</a> <p class="text-center" style="color: #af929d">{{app.user.service.libelle|upper}}</p></h1>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <div id="flag-mobile">
+                        <li class="dropdown menu_langue" style="background-color: transparent ; color : #AF929D ;  text-align: center;">
+                            <a class="bg-transparent border-transparent btn btn-circle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img src="{{ asset('img/'~app.request.locale~'.png') }}" width="35px" height="35px" alt="{{ app.request.locale }}" />
+                                {{ app.request.locale|upper }}
+
+                            </a>
+                            <div class="d-flex justify-content-center">
+                                <ul class="dropdown-menu bg-transparent"  id="flag-desktop" role="menu" style="min-width:0 ; border : none ; background-color : transparent">
+                                {% for locale in locales %}
+                                    {% if locale != app.request.locale %}
+
+                                    <a style="color : #AF929D" class="dropdown-item" href="{{ path('change_locale', {'locale': locale}) }}">
+                                    <img src="{{ asset('img/'~locale~'.png') }}" alt="{{locale}}" width="20px" height="20px" style="margin-right: 5px;"/>
+                                    {{locale | upper}}
+                                    </a>
+
+                                    {% endif %}
+
+                                {% endfor %}
+                                </div>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="float-right" id="menu_user">
+                        {# Ajout d'un petit avatar #}
+                        <div class="d-flex justify-content-center">
+
+                            {% if app.user == null or app.user.image == null %}
+                                <img src="{{ asset('img/user.png') }}" width="30px" alt="profil">
+                            {% else %}
+                                <img src="{{ asset('uploads/picture_directory/') }}{{app.user.image}}" width="60px" height="60px" alt="profil" style = "border-radius: 50px; border: 2px solid #AF929D">
+                            {% endif %}
+
+                            {# Ajout d'un sous menu : s'ouvrant lors du passage de souris sur l'image #}
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            {% if is_granted('ROLE_USER') %}
+                            <li id="name" style="list-style-type: none; color : #AF929D" class="nav-item dropdown ms-auto"> {# Affichage du NOM Prénom #}                                                         {# on récupère le reste du prénom #}
+                                <a href="#" class="nav-link dropdown-toggle login" data-bs-toggle="dropdown">{{ app.user.nom |upper}}</a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                        <p style = "font-weight: bold; text-align: center; margin: 0px;">{{ app.user.nom |upper}} {{ app.user.prenom | slice (0,1) | upper}}{{ app.user.prenom  | slice (1) | lower}}</p>
+                                    <div class="dropdown-divider"></div>
+                                        <a href="{{ path('profil_edit_profil') }}" class="dropdown-item">{% trans %}Modifier ses informations{% endtrans %}</a>
+                                        <a href="{{ path('profil_edit_password') }}" class="dropdown-item">{% trans %}Modifier son mot de passe{% endtrans %}</a>
+                                        <a href="{{ path('profil_delete_account') }}" class="dropdown-item" style = "color: red">{% trans %}Supprimer son compte{% endtrans %}</a>
+                                    <div class="dropdown-divider"></div>
+                                        <a href="{{ path('app_logout') }}" class="dropdown-item">{% trans %}Déconnexion{% endtrans %}</a>
+                                </div>
+                            </li>
+
+                            {% else %}
+
+                            <br>
+                            <a class="login" href="{{ path('app_login') }}">{% trans %}Connexion{% endtrans %}</a>
+
+                            {% endif %}
+
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </nav>
+        {% block body %}{% endblock %}
+        <style>
+            @media (max-width: 1000px) {
+                #only_desktop {
+                    display: none;
+                }
+                #only_mobile {
+                    display: block;
+                }
+            }
+        </style>
+
+        {% if app.request.get('_route') != 'app_register' and app.request.get('_route') != 'app_home' and app.request.get('_route') != 'app_login' and app.request.get('_route') != 'app_home' and
+        app.request.get('_route')!= 'app_produit_index' and app.request.get('_route')!= 'app_export_produit' and app.request.get('_route')!= 'app_user_export'
+        and app.request.get('_route')!= 'app_employe_export' and app.request.get('_route')!= 'app_vente_index' and app.request.get('_route')!= 'app_export_vente'
+        %}
+
+
+            <div class="d-flex justify-content-center m-5">
+                <a href="{{ path('app_home') }}" class="btn btn-circle btn-secondary" >
+                    <i class="fas fa-home"></i> {{"Retour à l'accueil" | trans}}
+
+                </a>
+            </div>
+
+        {% endif %}
+
+        <footer class="text-center text-lg-start text-light m-5" style="clear: both" >
+            <div class="text-center p-4  border-top">
+                <a style="color: white" href="{{ path('app_ticket_new') }}"><b>{{"Assistance - Créer un ticket"|trans}}</b></a>
+                <a style="color: white" href="{{ path('app_contact') }}"><b>- {{"Contacter son référent"|trans}}</b></a>
+                <p class="text-center">&copy;{{"2022-2023 Metz Connect -- Tous droits réservés"|trans}} </p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Inscription"|trans}}{% endblock %}
+
+{% block body %}
+
+
+    <div class="div_resp"  id="div_register_container">
+    <h1 class='titre-page'>{% trans %}INSCRIPTION{% endtrans %}</h1>
+        {% for message in app.flashes("error") %}
+            <div class="alert alert-danger m-5 alert-dismissible">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {{ form_start(registrationForm) }}
+
+   
+        <div class="row">
+            <div class="col">
+                {{ form_row(registrationForm.nom, {
+                    label: 'Nom'|trans
+                }) }}
+            </div>
+            <div class="col">
+                {{ form_row(registrationForm.prenom, {
+                    label: 'Prénom'|trans
+                }) }}
+            </div>
+            {{ form_row(registrationForm.date_naissance, {
+                label: 'Date de naissance'|trans,
+            }) }}
+        </div>
+        <div class="row">
+            <div class="col">
+                {{ form_row(registrationForm.service, {
+                    label: 'Service'|trans,
+                    placeholder: 'Sélectionner un département'|trans 
+                }) }}
+            </div>
+            <div class="col">
+                {{ form_row(registrationForm.fonction, {
+                    label: 'Fonction'|trans,
+                    placeholder: 'Sélectionner une fonction'|trans
+                }) }}
+            </div>
+        </div>
+  
+
+    <br>
+
+        <div>
+        {{ form_row(registrationForm.email) }}
+        </div>
+
+        <div>
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Mot de passe'|trans
+        }) }}
+        </div>
+        
+        <div id="div_register_submit">
+        {{ form_row(registrationForm.submit, {
+            label: 'S\'inscrire'|trans
+        }) }}
+        </div>
+
+      
+    {{ form_end(registrationForm) }}
+
+    <p> <span class="text-danger">*</span> {{ 'Champs obligatoires'|trans }}</p>
+    </div>
+</div>
+
+
+<script>
+     // Petit script qui ajoute un asterisque  en fin de label pour les champs obligatoires
+    var labels = document.getElementsByTagName('label');
+    for (var i = 0; i < labels.length; i++) {
+        if (labels[i].htmlFor != '') {
+            var elem = document.getElementById(labels[i].htmlFor);
+            if (elem.required) {
+                labels[i].innerHTML += ' <span class="text-danger">*</span>';
+            }
+        }
+    }
+
+</script>
+
+{% endblock %}

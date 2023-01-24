@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les catégories" |trans}}{% endblock %}
+
+{% block body %}
+<style>
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #020D24 !important;
+     font-family : "Sen-Regular-Bold";
+}
+
+.pagination > .active > a
+{
+    color: #020D24 !important;
+    background-color: #BE8B24 !Important;
+    border: solid 1px #BE8B24 !Important;
+}
+
+
+</style>
+
+<div class="container">
+    <h1 class="titre-page">{{"Les Catégories"|trans}}</h1>
+
+        {% for message in app.flashes("success") %}
+            <div class="alert alert-success alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+        {% for message in app.flashes("error") %}
+            <div class="alert alert-danger alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+        <p>&nbsp</p>
+        <div class="container">
+    <div class="introduction_accueil">
+    <p>{{"Retrouvez ici toutes les catégories" | trans}} : </p>
+    <div class="d-flex flex-row-reverse mb-2">
+        <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold " href="{{ path("app_categorie_new") }}" class="btn btn-outline-success ml-2 ">{{"AJOUTER UNE CATEGORIE"|trans}}</a>
+        </div><br /> 
+        <table class="table table_select_event text-light" id="table_select_event" style = "border: 2px solid white">
+                <thead style="font-family:Sen-Regular-ExtraBold">    
+                    <th>{{"ID"|trans}}</th>
+                    <th>{{"Libellé"|trans}}</th>
+                    <th>{{"Actions"|trans}}</th>
+        </thead>
+    <tbody class="center">
+            {% for categorie in categories %}
+                <tr>
+                    <td class="text-center">
+                        {{ categorie.id}}
+                    </td>
+                    <td class="text-center">
+                        {{ categorie.libelle }}
+                    </td> 
+                    <td class="text-center">
+                        <div id = "div-action">
+                            <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-info mr-1" href="{{ path("app_categorie_edit" , {'id': categorie.id }) }}">{{"MODIFIER"|trans}}</a> 
+                            <a onclick="return confirm('Voulez-vous vraiment supprimer cette catégorie ?');" style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold" class="btn btn-outline-danger ml-1" href="{{ path("app_categorie_delete" , {'id': categorie.id }) }}">{{"SUPPRIMER" |trans}}</a> 
+                        </div>
+                    </td>
+                </tr>
+            {% else %}
+                <tr><td class="center"colspan='4'> {{"Catégorie non trouvée dans la base de données" |trans }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <div style="color : black !important" class="d-flex justify-content-center">
+            {{ knp_pagination_render(categories) }}
+    </div>
+            
+
+</div>
+{% endblock %}

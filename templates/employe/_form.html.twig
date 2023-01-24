@@ -1,0 +1,149 @@
+{{ form_start(form) }}
+    <div id="div_employe_show">
+        <div class="div_horizontale">
+            <div>
+                {{ form_row(form.nom, {
+                label: 'NOM'|trans,
+                attr: {
+                readonly: true
+                }
+                }) }}
+            </div>
+
+            <div></div>
+        
+            <div>
+                {{ form_row(form.prenom, {
+                label: 'PRÉNOM'|trans,
+                attr: {
+                readonly: true
+                }
+                }) }}
+            </div>
+        </div>
+        
+        <div>
+            {{ form_row(form.email, {
+            label: 'MAIL'|trans,
+            attr: {
+            readonly: true
+            }
+            }) }}
+        </div>
+        
+        <div class="div_horizontale">
+            <div>
+                {{ form_row(form.service, {
+                label: 'SERVICE'|trans,
+                disabled: true,
+                }) }}
+            </div>
+
+            <div></div>
+        
+            <div>
+                {{ form_row(form.fonction, {
+                label: 'FONCTION'|trans,
+                disabled: true,
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <header class="header_produit">{{ "Documents"|trans }}</header>
+
+    <div>
+        <div id="div_ajout_docuser">
+            <button style="color : white ; font-weight: bold ; float: right ; display: block; font-family : Sen-Regular-Bold " type="button" id="btn_ajout_docuser" 
+                class="btn btn-outline-success m-2 ">{{"AJOUTER UN DOCUMENT"|trans}}</button>
+        </div>
+        
+        <table id="table_employe_doc_show">
+            <thead>
+                <tr>
+                    <th>{{"Fichier"|trans}}</th>
+                    <th>{{"Libellé"|trans}}</th>
+                    <th>{{"Commentaire"|trans}}</th>
+                    <th>{{"Date d'ajout"|trans}}</th>
+                    <th>{{"Action"|trans}}</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                {% for document in user.documentUsers %}
+                <tr>
+                    <td style="text-align: center;">
+                        <li style="list-style-type: circle ; ">
+                            <a style="color: white; font-size: 18px" href="{{ asset('uploads/employee_documents_directory/' ~ document.name) }}"
+                               target="_blank">
+                                <i class="fa fa-file-pdf"></i>
+                            </a>
+                        </li>
+                    </td>
+                    <td>{{ document.libelle }}</td>
+                    <td>{{ document.commentaire|raw }}</td>
+                    <td>{{ document.dateAjout|date('d/m/Y \\à G:i') }}</td>
+                    <td>
+                        <a class="btn btn-danger" href="{{ path('app_employe_delete_document', {id: document.id})}}" data-delete
+                            data-token="{{ csrf_token('delete' ~ document.id )}}">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+                {# Afficher un message lorsqu'il n'existe aucun document #}
+                {% else %}
+                <tr>
+                    <td colspan="5">Aucun document n'existe pour cet employé</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    <section id="section_ajout_docuser">
+
+        <div>
+            {{ form_row(form2.libelle, {
+                label: 'Libellé'|trans
+            }) }}
+        </div>
+
+        <div>
+            {{ form_row(form.documentsUser, {
+                label: 'Documents'|trans
+            }) }}
+        </div>
+
+        <div>
+            {{ form_row(form2.commentaire, {
+                label: 'Commentaire'|trans
+            }) }}
+        </div>
+        <div style="text-align: center; margin: 35px 0">
+            <button type="submit" class="btn btn-success m-2">{{'Enregistrer' |trans}}</button>
+        </div>
+        {{ form_end(form) }}
+    </section>
+    <div style="text-align: center; margin: 35px 0">
+        <a class="btn btn-secondary m-2" href="{{ path('app_employe_index') }}">{{'Retour' |trans}}</a>
+    </div>
+
+
+{% block javascript %}
+<script>
+    /* Par défaut cacher le formulaire d'ajout de document section_ajout_docuser */
+    $(document).ready(function () {
+    /* Comportement par défaut */
+    $("#section_ajout_docuser").hide();
+
+    /* Afficher le formulaire d'ajout de document lorsque le bouton btn_ajout_docuser est clické */
+    $("#btn_ajout_docuser").click(function () {
+    if($("#section_ajout_docuser").is(":hidden")) {
+    $("#section_ajout_docuser").show();
+} else {
+    $("#section_ajout_docuser").hide();
+}
+});
+});
+</script>
+{% endblock %}

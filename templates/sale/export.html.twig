@@ -1,0 +1,225 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{"Les ventes" |trans}}{% endblock %}
+
+{% block body %}
+    <style>
+
+        .pagination > li > a
+        {
+            background-color: white;
+            color: #020D24 !important;
+            font-family : "Sen-Regular-Bold";
+        }
+
+        .pagination > .active > a
+        {
+            color: #020D24 !important;
+            background-color: #BE8B24 !Important;
+            border: solid 1px #BE8B24 !Important;
+        }
+
+
+    </style>
+    <div>
+        <h1 class="titre-page">{{"Export des ventes"|trans}}</h1>
+        {% for message in app.flashes("success") %}
+            <div class="alert alert-success alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+        {% for message in app.flashes("error") %}
+            <div class="alert alert-danger alert-dismissible m-3">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+            </div>
+        {% endfor %}
+
+        <div class="col-md-2 filtrage" style="float:left; width:20%; margin-top: 20px; padding-left: 2px ; min-height: 100% ; position: absolute">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading m-4">
+                    <h3 class="panel-title titre-page">{{"Filtrage" |trans}}</h3>
+                </div>
+
+                {{ form_start(form) }}
+
+                    <div class="d-flex justify-content-center mb-2">
+
+                        {{ form_row(form.q) }}
+                    </div>
+                    <p style="font-family: Sen-Regular-Bold">{{"Catégories"|trans}} :</p>
+                    <div class="d-flex justify-content-center mb-2">
+
+                        {{ form_row(form.categories) }}
+                    </div>
+
+                <div class="div_resp">
+                    <div class="row">
+                        <div class="col">
+                            {{ form_row(form.Rechercher) }}
+                        </div>
+                        <div class="col">
+                            <a href="{{ path('app_export_vente') }}" class="btn btn-danger" style='font-family : Sen-Regular-Bold ; color: black'>{{"RÉINITIALISER" |trans}}</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+
+        <p>&nbsp</p>
+
+
+        <div style="width: 80%; float: right;">
+            <div class="introduction_accueil" >
+                <p>{{"Retrouvez ici toutes les ventes" | trans}} : </p>
+
+                <form id="form" method="post" action="{{ path('export_ventes') }}">
+                    <button type="button" class="btn btn-outline-info float-start m-2" style="font-family : Sen-Regular-Bold" onclick="checkAll()">
+                        {{ "Tous cocher"|trans }}</button>
+                    <button type="button" class="btn btn-outline-info float-start m-2" style="font-family : Sen-Regular-Bold" onclick="uncheckAll()">
+                        {{ "Tous décocher"|trans }}</button>
+                    <button type="submit" class="btn btn-success m-2 float-end" style="font-family : Sen-Regular-Bold">{{"EXPORTER LES VENTES"|trans}}</button>
+                    <input type="hidden" name="checked_items" id="checked_items" />
+
+                </form>
+
+                <table class="table table_select_event text-light" id="table_select_event" style = "border: 2px solid white">
+                    <thead style="font-family:Sen-Regular-ExtraBold">
+                    <th>{{"Séléction" |trans}}</th>
+                    <th>{{"Catégorie"|trans}}</th>
+                    <th>{{"Libellé"|trans}}</th>
+                    <th>{{"Commentaire"|trans}}</th>
+                    <th>{{"Actions"|trans}}</th>
+                    </thead>
+                    <tbody class="center">
+                    {% for vente in ventes %}
+                        <tr>
+                            <td style=" text-align: center; vertical-align: middle ;">
+                                <input style="margin: auto ; width: 25px" type="checkbox" class="form-check" data-id="{{ vente.id }}" />
+                            </td>
+                            <td class="text-center">
+                                {{ vente.categorie.libelle }}
+                            </td>
+                            <td class="text-center">
+                                {{ vente.libelle }}
+                            </td>
+                            <td class="text-center">
+                                {{ vente.commentaire | raw}}
+                            </td>
+                            <td class="text-center">
+                                <div id = "div-action">
+                                    
+                                    <a style="color : white ; font-weight: bold ; font-family : Sen-Regular-Bold ;" class="btn btn-outline-info mr-1" href="{{ path('app_vente_edit', {'id': vente.id}) }}">{{"MODIFIER"|trans}}</a>
+                                </div>
+                            </td>
+                        </tr>
+                    {% else %}
+                        <tr><td class="center"colspan='4'> {{"Vente non trouvé dans la base de données" |trans }}</td></tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div style="color : black !important" class="d-flex justify-content-center">
+                {{ knp_pagination_render(ventes) }}
+            </div>
+            <div class="d-flex justify-content-center m-5">
+                <a href="{{ path('app_home') }}" class="btn btn-circle btn-secondary" >
+                    <i class="fas fa-home"></i> {{"Retour à l'accueil" | trans}}
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        var checkedItems = JSON.parse(localStorage.getItem('ExportSales')) || [];
+            function checkAll() {
+                // Cocher uniquement les checkbox qui ont un data-id
+                var checkboxes = document.querySelectorAll('input[type=checkbox]:not([data-id=""])');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].type == 'checkbox') {
+                        checkboxes[i].checked = true;
+                        // On ajoute l'id de l'élément dans le tableau des éléments cochés
+                        checkedItems.push(checkboxes[i].dataset.id);
+
+                    }
+                }
+
+                // On enregistre le tableau des éléments cochés dans le localStorage
+                for (var i = 0; i < checkedItems.length; i++) {
+                    // On vérifie que l'élément n'est pas déjà dans le tableau
+                    if (checkedItems.indexOf(checkedItems[i]) != -1) {
+                        localStorage.setItem('ExportSales', JSON.stringify(checkedItems));
+                    }
+
+                }
+
+                //
+            }
+
+            function uncheckAll()
+            {
+                // Décocher uniquement les checkbox qui ont un data-id
+                var checkboxes = document.querySelectorAll('input[type=checkbox]:not([data-id=""])');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].type == 'checkbox') {
+                        checkboxes[i].checked = false;
+                        // On supprime l'id de l'élément dans le tableau des éléments cochés
+                        checkedItems.splice(checkedItems.indexOf(checkboxes[i].dataset.id), 1);
+                    }
+                }
+
+
+                // On supprime le tableau des éléments cochés dans le localStorage
+                localStorage.removeItem('ExportSales');
+
+
+            }
+
+
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            if (checkedItems.indexOf(checkbox.dataset.id) !== -1) {
+                checkbox.checked = true;
+            }
+        });
+
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('click', event => {
+                let checkedItems = JSON.parse(localStorage.getItem('ExportSales')) || [];
+                let index = checkedItems.indexOf(checkbox.dataset.id);
+                if (event.target.checked) {
+                    if (index === -1) {
+                        checkedItems.push(checkbox.dataset.id);
+                    }
+                } else {
+                    if (index !== -1) {
+                        checkedItems.splice(index, 1);
+                    }
+                }
+                localStorage.setItem('ExportSales', JSON.stringify(checkedItems));
+            });
+        });
+
+        document.querySelector('#form').addEventListener('submit', event => {
+            event.preventDefault();
+            let checkedItems = JSON.parse(localStorage.getItem('ExportSales')) || [];
+            document.querySelector('#checked_items').value = checkedItems.join(',');
+            event.target.submit();
+            // on vide le localStorage
+            localStorage.removeItem('ExportSales');
+        });
+
+
+    </script>
+{% endblock %}

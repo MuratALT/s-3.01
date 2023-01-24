@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{"Modification du produit"|trans}}{% endblock %}
+
+{% block body %}
+<div style="max-width: 90% ;" class="container">
+
+    {% for message in app.flashes("error") %}
+           <div class="alert alert-danger alert-dismissible m-3">
+               {{ message }}
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+           </div>
+       {% endfor %}
+
+
+    <h1 class='titre-page'>{% trans %}Modification du produit{% endtrans %}</h1>
+
+    {% if app.user.roles.0 == 'ROLE_ADMIN' and app.user.usurp == false  %}
+        {{ include('produit/_form.html.twig') }}
+
+    {% elseif app.user.roles.0 == 'ROLE_ADMIN' and app.user.usurp == true %}
+
+        {% if app.user.service.libelle == "Product Owner" %}
+            {{ include('produit/_form.html.twig') }}
+        {% elseif app.user.service.libelle == "Commercial" %}
+            {{ include('produit/services/_commercial_form.html.twig', {'button_label': 'Update'}) }}
+        {% elseif app.user.service.libelle == "Marketing" %}
+            {{ include('produit/services/_marketing_form.html.twig', {'button_label': 'Update'}) }}
+        {% elseif app.user.service.libelle == "Comptabilité" %}
+            {{ include('produit/services/_comptabilite_form.html.twig', {'button_label': 'Update'}) }}
+        {% else %}
+            {{ include('produit/_form.html.twig', {'button_label': 'Update'}) }}
+        {% endif %}
+    {% else %}
+        {% if app.user.service.libelle == "Product Owner" %}
+            {{ include('produit/_form.html.twig') }}
+        {% elseif app.user.service.libelle == "Commercial" %}
+            {{ include('produit/services/_commercial_form.html.twig', {'button_label': 'Update'}) }}
+        {% elseif app.user.service.libelle == "Marketing" %}
+            {{ include('produit/services/_marketing_form.html.twig', {'button_label': 'Update'}) }}
+        {% elseif app.user.service.libelle == "Comptabilité" %}
+            {{ include('produit/services/_comptabilite_form.html.twig', {'button_label': 'Update'}) }}
+        {% else %}
+            {{ include('produit/_form.html.twig', {'button_label': 'Update'}) }}
+        {% endif %}
+
+    {% endif %}
+
+
+   
+
+   
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('js/images.js') }}"></script>
+{% endblock %}

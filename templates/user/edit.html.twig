@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "Modification de l'employé" |trans }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="titre-page">{{ "Modification de l'employé" |trans }}</h1>
+
+        {{ form_start(editProfileForm) }}
+        <div class="row">
+            <div class="col">
+                {{ form_row(editProfileForm.nom, {
+                    label: 'Nom'|trans,
+
+
+                }) }}
+            </div>
+
+            <div class="col">
+                {{ form_row(editProfileForm.prenom, {
+                    label: 'Prénom'|trans,
+                }) }}
+            </div>
+
+            {{ form_row(editProfileForm.date_naissance, {
+                label: 'Date de naissance'|trans,
+            }) }}
+
+            <div>
+                {{ form_row(editProfileForm.email, {
+                    label: 'Mail'|trans,
+                    attr: {
+                        'readonly': 'true'
+                    }
+                }) }}
+            </div>
+
+            <div class="col">
+                {{ form_row(editProfileForm.service, {
+                    label: 'Service'|trans,
+                }) }}
+            </div>
+
+            <div class="col">
+                {{ form_row(editProfileForm.fonction, {
+                    label: 'Fonction'|trans,
+                }) }}
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div>
+                    {{ form_row(editProfileForm.submitmodif, {
+                        label: 'Modifier'|trans
+                    }) }}
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="{{ path('app_user_freeze', {'id': app.user.id}) }}" class="btn btn-outline-warning m-2">{{ 'GELER'|trans }}</a>
+            <a href="{{ path('app_user_archive', {'id': app.user.id}) }}" class="btn btn-outline-danger m-2">{{ 'ARCHIVER'|trans }}</a>
+            <a href="{{ path('app_user_index') }}" class="btn btn-outline-secondary m-2">{{ 'Retour à la liste'|trans }}</a>
+        </div>
+        {{ form_end(editProfileForm) }}
+    </div>
+{% endblock %}
